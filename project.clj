@@ -1,9 +1,9 @@
 ;; -*- comment-column: 70; -*-
 ;; full set of options are here .. https://github.com/technomancy/leiningen/blob/master/sample.project.clj
 
-(defproject metabase "metabase-SNAPSHOT"
+(defproject metabase-core "1.0.0-SNAPSHOT"
   :description "Metabase Community Edition"
-  :url "http://metabase.com/"
+  :url "https://metabase.com/"
   :min-lein-version "2.5.0"
   :aliases {"bikeshed" ["bikeshed" "--max-line-length" "205"]
             "check-reflection-warnings" ["with-profile" "+reflection-warnings" "check"]
@@ -13,7 +13,8 @@
             "h2" ["with-profile" "+h2-shell" "run" "-url" "jdbc:h2:./metabase.db" "-user" "" "-password" "" "-driver" "org.h2.Driver"]
             "generate-automagic-dashboards-pot" ["with-profile" "+generate-automagic-dashboards-pot" "run"]}
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/core.async "0.3.442"]
+                 [org.clojure/core.async "0.3.442"
+                  :exclusions [org.clojure/tools.reader]]
                  [org.clojure/core.match "0.3.0-alpha4"]              ; optimized pattern matching library for Clojure
                  [org.clojure/core.memoize "0.5.9"]                   ; needed by core.match; has useful FIFO, LRU, etc. caching mechanisms
                  [org.clojure/data.csv "0.1.3"]                       ; CSV parsing / generation
@@ -93,8 +94,7 @@
                   :exclusions [ch.qos.logback/logback-classic]]
                  [org.postgresql/postgresql "42.2.2"]                 ; Postgres driver
                  [org.slf4j/slf4j-log4j12 "1.7.25"]                   ; abstraction for logging frameworks -- allows end user to plug in desired logging framework at deployment time
-                 [org.tcrawley/dynapath "0.2.5"]                      ; Dynamically add Jars (e.g. Oracle or Vertica) to classpath
-                 [org.xerial/sqlite-jdbc "3.21.0.1"]                  ; SQLite driver
+                 [org.tcrawley/dynapath "1.0.0"]                      ; Dynamically add Jars (e.g. Oracle or Vertica) to classpath
                  [org.yaml/snakeyaml "1.18"]                          ; YAML parser (required by liquibase)
                  [prismatic/schema "1.1.9"]                           ; Data schema declaration and validation library
                  [puppetlabs/i18n "0.8.0"]                            ; Internationalization library
@@ -105,17 +105,20 @@
                  [ring/ring-json "0.4.0"]                             ; Ring middleware for reading/writing JSON automatically
                  [stencil "0.5.0"]                                    ; Mustache templates for Clojure
                  [toucan "1.1.9"                                      ; Model layer, hydration, and DB utilities
-                  :exclusions [honeysql]]]
+                  :exclusions [org.clojure/java.jdbc
+                               honeysql]]]
   :repositories [["redshift" "https://s3.amazonaws.com/redshift-driver-downloads"]]
   :plugins [[lein-environ "1.1.0"]                                    ; easy access to environment variables
             [lein-ring "0.12.3"                                       ; start the HTTP server with 'lein ring server'
              :exclusions [org.clojure/clojure]]]                      ; TODO - should this be a dev dependency ?
   :main ^:skip-aot metabase.core
+  :java-source-paths ["java-src"]
   :manifest {"Liquibase-Package" "liquibase.change,liquibase.changelog,liquibase.database,liquibase.parser,liquibase.precondition,liquibase.datatype,liquibase.serializer,liquibase.sqlgenerator,liquibase.executor,liquibase.snapshot,liquibase.logging,liquibase.diff,liquibase.structure,liquibase.structurecompare,liquibase.lockservice,liquibase.sdk,liquibase.ext"}
   :target-path "target/%s"
   :jvm-opts ["-XX:+IgnoreUnrecognizedVMOptions"                       ; ignore things not recognized for our Java version instead of refusing to start
              "-Xverify:none"                                          ; disable bytecode verification when running in dev so it starts slightly faster
              "--add-modules=java.xml.bind"                            ; tell Java 9 (Oracle VM only) to add java.xml.bind to classpath. No longer on it by default. See https://stackoverflow.com/questions/43574426/how-to-resolve-java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception-in-j
+             "-Djava.system.class.loader=clojure.lang.DynamicClassLoader"
              "-Djava.awt.headless=true"]                              ; prevent Java icon from randomly popping up in dock when running `lein ring server`
   :javac-options ["-target" "1.8", "-source" "1.8"]
   :uberjar-name "metabase.jar"
@@ -137,7 +140,8 @@
   :docstring-checker {:include [#"^metabase"]
                       :exclude [#"test"
                                 #"^metabase\.http-client$"]}
-  :profiles {:dev {:dependencies [[clj-http-fake "1.0.3"]             ; Library to mock clj-http responses
+  :profiles {:dev {:dependencies [[clj-http-fake "1.0.3"              ; Library to mock clj-http responses
+                                   :exclusions [slingshot]]
                                   [expectations "2.2.0-beta2"]        ; unit tests
                                   [ring/ring-mock "0.3.0"]]           ; Library to create mock Ring requests for unit tests
                    :plugins [[docstring-checker "1.0.3"]              ; Check that all public vars have docstrings. Run with 'lein docstring-checker'
@@ -154,6 +158,7 @@
                    :aot [metabase.logger
                          metabase.task.DynamicClassLoadHelper]}
              :ci {:jvm-opts ["-Xmx2500m"]}
+             :install {:aot :all}
              :reflection-warnings {:global-vars {*warn-on-reflection* true}} ; run `lein check-reflection-warnings` to check for reflection warnings
              :expectations {:injections [(require 'metabase.test-setup  ; for test setup stuff
                                                   'metabase.test.util)] ; for the toucan.util.test default values for temp models

@@ -107,4 +107,4 @@
              ;; TODO - maybe we should rename `connection-properties` -> `connection-properties` on the FE as well?
              [driver {:details-fields (driver/connection-properties driver)
                       :driver-name    (driver/display-name driver)
-                      :features       (features driver)}])))
+                      #_:features       #_(features driver)}])))
