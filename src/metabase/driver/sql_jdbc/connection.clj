@@ -22,7 +22,7 @@
 (defmulti connection-details->spec
   "Given a Database `details-map`, return a JDBC connection spec."
   {:arglists '([driver details-map]), :style/indent 1}
-  driver/dispatch-on-driver
+  driver/dispatch-on-initialized-driver
   :hierarchy #'driver/hierarchy)
 
 
@@ -41,13 +41,14 @@
   (log/debug (u/format-color 'cyan "Creating new connection pool for database %d ..." id))
   (let [details-with-tunnel (ssh/include-ssh-tunnel details) ;; If the tunnel is disabled this returned unchanged
         spec                (connection-details->spec engine details-with-tunnel)]
-    (assoc (mdb/connection-pool (assoc spec
+    (identity #_assoc (mdb/connection-pool (assoc spec
                                   :minimum-pool-size           1
                                   ;; prevent broken connections closed by dbs by testing them every 3 mins
                                   :idle-connection-test-period (* 3 60)
                                   ;; prevent overly large pools by condensing them when connections are idle for 15m+
                                   :excess-timeout              (* 15 60)))
-      :ssh-tunnel (:tunnel-connection details-with-tunnel))))
+      ;; NOCOMMIT
+      #_:ssh-tunnel #_(:tunnel-connection details-with-tunnel))))
 
 (defn notify-database-updated
   "Default implementation of `driver/notify-database-updated` for JDBC SQL drivers. We are being informed that a

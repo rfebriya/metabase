@@ -13,30 +13,24 @@
     (remove-method multifn driver)))
 
 (defn register-delayed-load-driver!
-  [{init-steps :init, {driver-name :name, :keys [display-name connection-properties]} :driver}]
-  (let [driver (keyword driver-name)
+  [{init-steps :init, {driver-name :name, :keys [display-name connection-properties parent]} :driver}]
+  (let [driver (keyword driver-name)]
+    (doseq [[^MultiFn multifn, f] (partition
+                                   2
+                                   [driver/initialize!
+                                    (fn [_]
+                                      (println "\n\n[ LOAD DELAYED LOAD DRIVER" driver "]\n\n") ; NOCOMMIT
+                                      (plugins.init/initialize! init-steps))
 
-        initialize!
-        (fn []
-          (println "INITIALIZE!") ; NOCOMMIT
-          (remove-methods driver)
-          (plugins.init/initialize! init-steps))
+                                    driver/available?
+                                    (constantly true)
 
-        add-impl
-        (fn [^MultiFn multifn, f]
-          (.addMethod multifn driver f))
+                                    driver/display-name
+                                    (constantly display-name)
 
-        add-delayed-load-impl
-        (fn [^MultiFn multifn]
-          (add-impl multifn (fn [& args]
-                              (initialize!)
-                              (apply multifn args))))]
+                                    driver/connection-properties
+                                    (constantly connection-properties)])]
+      (.addMethod multifn driver f))
 
-    (doseq [multifn (driver-multimethods)]
-      (add-delayed-load-impl multifn))
-
-    (add-impl driver/available? (constantly true))
-    (add-impl driver/display-name (constantly display-name))
-    (add-impl driver/connection-properties (constantly connection-properties))
-
-    (driver/register! driver)))
+    (println "[ REGISTERING DELAYED LOAD DRIVER" driver "( parent" parent " ) ]") ; NOCOMMIT
+    (driver/register! driver, :parent (keyword parent))))

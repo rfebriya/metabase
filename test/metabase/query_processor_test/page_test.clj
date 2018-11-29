@@ -3,6 +3,18 @@
   (:require [metabase.query-processor-test :refer :all]
             [metabase.test.data :as data]))
 
+(expectations/expect
+  1000
+  (do
+    (metabase.util/ignore-exceptions
+      (metabase.driver/with-driver :sqlite
+        (data/id)))
+    (println
+     (metabase.util/pprint-to-str 'green (enumeration-seq (java.sql.DriverManager/getDrivers))))
+    (println
+     (clojure.java.jdbc/query {:subprotocol "sqlite", :subname "x.db"}
+                              "SELECT 1;"))))
+
 ;; Test that we can get "pages" of results.
 
 ;; get the first page

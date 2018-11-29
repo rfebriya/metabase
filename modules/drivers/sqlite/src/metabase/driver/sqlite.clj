@@ -30,7 +30,7 @@
 (defmethod sql-jdbc.conn/connection-details->spec :sqlite [_ {:keys [db]
                                                               :or   {db "sqlite.db"}
                                                               :as   details}]
-  (merge {:classname   "org.sqlite.JDBC"
+  (merge {#_:classname   #_"org.sqlite.JDBC"
           :subprotocol "sqlite"
           :subname     db}
          (dissoc details :db)))

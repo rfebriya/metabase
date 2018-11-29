@@ -109,6 +109,7 @@
 ;;; +----------------------------------------------------------------------------------------------------------------+
 
 (defn- load-plugin! [^URL jar-url]
+  (println "(load-plugin!" jar-url ")") ; NOCOMMIT
   (add-jar-to-classpath! jar-url)
   (init-plugin! jar-url))
 

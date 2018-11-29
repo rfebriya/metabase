@@ -324,24 +324,34 @@
            idle-connection-test-period 0
            excess-timeout              (* 30 60)}
     :as   spec}]
-  {:datasource (doto (ComboPooledDataSource.)
-                 (.setDriverClass                  classname)
-                 (.setJdbcUrl                      (str "jdbc:" subprotocol ":" subname))
-                 (.setMaxIdleTimeExcessConnections excess-timeout)
-                 (.setMaxIdleTime                  (* 3 60 60))
-                 (.setInitialPoolSize              3)
-                 (.setMinPoolSize                  minimum-pool-size)
-                 (.setMaxPoolSize                  15)
-                 (.setIdleConnectionTestPeriod     idle-connection-test-period)
-                 (.setTestConnectionOnCheckin      false)
-                 (.setTestConnectionOnCheckout     false)
-                 (.setPreferredTestQuery           nil)
-                 (.setProperties                   (u/prog1 (Properties.)
-                                                     (doseq [[k v] (dissoc spec :classname :subprotocol :subname
-                                                                                :naming :delimiters :alias-delimiter
-                                                                                :excess-timeout :minimum-pool-size
-                                                                                :idle-connection-test-period)]
-                                                       (.setProperty <> (name k) (str v))))))})
+  ;; NOCOMMIT
+  (println "subprotocol:" subprotocol)  ; NOCOMMIT
+  (println "URL >>>" (str "jdbc:" subprotocol ":" subname))
+  (identity                             ;;if (= (name subprotocol) "sqlite")
+   #_(str "jdbc:" subprotocol ":" subname)
+
+   (let [driver-class (u/prog1 (.getCanonicalName (class (java.sql.DriverManager/getDriver (format "jdbc:%s://" subprotocol))))
+                        (println "DRIVER CLASS:" <>) ; NOCOMMIT
+                        )]
+     {:datasource (doto (ComboPooledDataSource.)
+                    #_(.setDriverClass                  #_classname driver-class)
+                    #_(.setForceUseNamedDriverClass     false #_true)
+                    (.setJdbcUrl                      (str "jdbc:" subprotocol ":" subname))
+                    (.setMaxIdleTimeExcessConnections excess-timeout)
+                    (.setMaxIdleTime                  (* 3 60 60))
+                    (.setInitialPoolSize              3)
+                    (.setMinPoolSize                  minimum-pool-size)
+                    (.setMaxPoolSize                  15)
+                    (.setIdleConnectionTestPeriod     idle-connection-test-period)
+                    (.setTestConnectionOnCheckin      false)
+                    (.setTestConnectionOnCheckout     false)
+                    (.setPreferredTestQuery           nil)
+                    (.setProperties                   (u/prog1 (Properties.)
+                                                        (doseq [[k v] (dissoc spec :classname :subprotocol :subname
+                                                                              :naming :delimiters :alias-delimiter
+                                                                              :excess-timeout :minimum-pool-size
+                                                                              :idle-connection-test-period)]
+                                                          (.setProperty <> (name k) (str v))))))})))
 
 (defn- create-connection-pool! [spec]
   (db/set-default-quoting-style! (case (db-type)

@@ -81,15 +81,16 @@
   `register!` below (for parent drivers) and by `driver.u/database->driver` for drivers that have not yet been
   loaded."
   [driver]
-  (when-not (registered? driver)
-    (du/profile (trs "Load driver {0}" driver)
-     (require-driver-ns driver)
-     ;; ok, hopefully it was registered now. If not, try again, but reload the entire driver namespace
-     (when-not (registered? driver)
-       (require-driver-ns driver :reload)
-       ;; if *still* not registered, throw an Exception
-       (when-not (registered? driver)
-         (throw (Exception. (str (tru "Driver not registered after loading: {0}" driver)))))))))
+  (when-not *compile-files*
+    (when-not (registered? driver)
+      (du/profile (trs "Load driver {0}" driver)
+        (require-driver-ns driver)
+        ;; ok, hopefully it was registered now. If not, try again, but reload the entire driver namespace
+        (when-not (registered? driver)
+          (require-driver-ns driver :reload)
+          ;; if *still* not registered, throw an Exception
+          (when-not (registered? driver)
+            (throw (Exception. (str (tru "Driver not registered after loading: {0}" driver))))))))))
 
 (defn the-driver
   "Like Clojure core `the-ns`. Converts argument to a keyword, then loads and registers the driver if not already done,
@@ -124,9 +125,10 @@
 (defn add-parent!
   "Add a new parent to `driver`."
   [driver new-parent]
-  (load-driver-namespace-if-needed driver)
-  (load-driver-namespace-if-needed new-parent)
-  (alter-var-root #'hierarchy derive driver new-parent))
+  (when-not *compile-files*
+    (load-driver-namespace-if-needed driver)
+    (load-driver-namespace-if-needed new-parent)
+    (alter-var-root #'hierarchy derive driver new-parent)))
 
 (defn register!
   "Register a driver.
@@ -153,28 +155,64 @@
   `::concrete`."
   [driver & {:keys [parent abstract?]}]
   {:pre [(keyword? driver)]}
-  ;; validate that the registration isn't stomping on things
-  (check-abstractness-hasnt-changed driver abstract?)
-  ;; ok, if that was successful we can derive the driver from `::driver`/`::concrete` and parent(s)
-  (let [derive! (partial alter-var-root #'hierarchy derive driver)]
-    (derive! ::driver)
-    (when-not abstract?
-      (derive! ::concrete))
-    (doseq [parent (cond
-                     (coll? parent) parent
-                     parent         [parent])
-            :when  parent]
-      (load-driver-namespace-if-needed parent)
-      (derive! parent)))
-  ;; ok, log our great success
-  (when-not (metabase.driver/abstract? driver)
-    (log/info (trs "Registered driver {0} {1}" (u/format-color 'blue driver) (u/emoji "🚚")))))
+  (println "register!" driver "parent:" parent) ; NOCOMMIT
+  (when (and (= driver :sqlite)
+             (nil? parent))
+    (throw (Exception. "WTF!")))
+  ;; no-op during compilation.
+  (when-not *compile-files*
+    ;; validate that the registration isn't stomping on things
+    (check-abstractness-hasnt-changed driver abstract?)
+    ;; ok, if that was successful we can derive the driver from `::driver`/`::concrete` and parent(s)
+    (let [derive! (partial alter-var-root #'hierarchy derive driver)]
+      (derive! ::driver)
+      (when-not abstract?
+        (derive! ::concrete))
+      (doseq [parent (cond
+                       (coll? parent) parent
+                       parent         [parent])
+              :when  parent]
+        (load-driver-namespace-if-needed parent)
+        (derive! parent)))
+    ;; ok, log our great success
+    (when-not (metabase.driver/abstract? driver)
+      (log/info (trs "Registered driver {0} {1}" (u/format-color 'blue driver) (u/emoji "🚚"))))))
 
 (defn dispatch-on-driver
   "Dispatch function to use for driver multimethods. Dispatches on first arg, a driver keyword; loads that driver's
   namespace if not already done."
-  [x & _]
-  (the-driver x))
+  [driver & _]
+  (the-driver driver))
+
+
+;;; +----------------------------------------------------------------------------------------------------------------+
+;;; |                                                 Initialization                                                 |
+;;; +----------------------------------------------------------------------------------------------------------------+
+
+(declare initialize!)
+
+(defn initialized? [driver]
+  ()
+  (isa? hierarchy driver ::initialized))
+
+(defonce ^:private initialization-lock (Object.))
+
+(defn initialize-if-needed! [driver]
+  (when-not *compile-files*
+    (when-not (initialized? driver)
+      (locking initialization-lock
+        (when-not (initialized? driver)
+          (println "<<< INITIALIZING" driver ">>>") ; NOCOMMIT
+          (alter-var-root #'hierarchy derive driver ::initialized)
+          (initialize! driver))))))
+
+(defn the-initialized-driver [driver]
+  (let [driver (the-driver driver)]
+    (initialize-if-needed! driver)
+    driver))
+
+(defn dispatch-on-initialized-driver [driver & _]
+  (the-initialized-driver driver))
 
 
 ;;; +----------------------------------------------------------------------------------------------------------------+
@@ -197,6 +235,14 @@
 ;; Make sure to pass along the `driver` parameter-as when you call other methods, rather than hardcoding the name of
 ;; the current driver (e.g. `:my-driver` in the example above). This way if other drivers use your driver as a parent
 ;; in the future their implementations of any methods called by those methods will get used.
+
+(defmulti initialize!
+  {:arglists '([driver])}
+  dispatch-on-driver
+  :hierarchy #'hierarchy)
+
+(defmethod initialize! ::driver [driver]) ; no-op
+
 
 (defmulti available?
   "Is this driver available for use? (i.e. should we show it as an option when adding a new database?) This is `true` by
@@ -229,7 +275,7 @@
   "Check whether we can connect to a `Database` with DETAILS-MAP and perform a simple query. For example, a SQL
   database might try running a query like `SELECT 1;`. This function should return `true` or `false`."
   {:arglists '([driver details])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 
@@ -241,7 +287,7 @@
 
     (date-interval :postgres :month 1) -> (hsql/call :+ :%now (hsql/raw \"INTERVAL '1 month'\"))"
   {:arglists '([driver unit amount])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod date-interval ::driver [_ unit amount]
@@ -253,7 +299,7 @@
   model. It is expected that this function will be peformant and avoid draining meaningful resources of the database.
   Results should match the `DatabaseMetadata` schema."
   {:arglists '([driver database])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 
@@ -263,7 +309,7 @@
   expected that this function will be peformant and avoid draining meaningful resources of the database. Results
   should match the `TableMetadata` schema."
   {:arglists '([driver database table])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 
@@ -271,7 +317,7 @@
   "Return information about the foreign keys in a `table`. Required for drivers that support `:foreign-keys`. Results
   should match the `FKMetadata` schema."
   {:arglists '([this database table])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod describe-table-fks ::driver [_ _ _]
@@ -333,7 +379,7 @@
      :rows    [[1 \"Lucky Bird\"]
                [2 \"Rasta Can\"]]}"
   {:arglists '([driver query]), :style/indent 1}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 
@@ -392,7 +438,7 @@
   (fn [driver feature]
     (when-not (driver-features feature)
       (throw (Exception. (str (tru "Invalid driver feature: {0}" feature)))))
-    [(dispatch-on-driver driver) feature])
+    [(dispatch-on-initialized-driver driver) feature])
   :hierarchy #'hierarchy)
 
 (defmethod supports? :default [_ _] false)
@@ -409,7 +455,7 @@
   the `:named` clause. Certain drivers like Redshift always lowercase these names, so this method is provided for
   those situations."
   {:arglists '([driver custom-field-name])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod format-custom-field-name ::driver [_ custom-field-name]
@@ -420,7 +466,7 @@
   "Return a humanized (user-facing) version of an connection error message string. Generic error messages are provided
   in `metabase.driver.common/connection-error-messages`; return one of these whenever possible."
   {:arglists '([this message])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod humanize-connection-error-message ::driver [_ message]
@@ -442,7 +488,7 @@
     {:query \"-- Metabase card: 10 user: 5
               SELECT * FROM my_table\"}"
   {:arglists '([driver query])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 
@@ -451,7 +497,7 @@
   specifically relevant in the event that the driver was doing some caching or connection pooling; the driver should
   release ALL related resources when this is called."
   {:arglists '([driver database])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod notify-database-updated ::driver [_ _]
@@ -466,7 +512,7 @@
       (with-connection [_ database]
         (f)))"
   {:arglists '([driver database f]), :style/indent 2}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod sync-in-context ::driver [_ _ f] (f))
@@ -482,7 +528,7 @@
          (fn [query]
            (qp query)))"
   {:arglists '([driver qp])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod process-query-in-context ::driver [_ qp] qp)
@@ -497,14 +543,14 @@
   This method is currently only used by the H2 driver to load the Sample Dataset, so it is not neccesary for any other
   drivers to implement it at this time."
   {:arglists '([driver database table])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmulti current-db-time
   "Return the current time and timezone from the perspective of `database`. You can use
   `metabase.driver.common/current-db-time` to implement this."
   {:arglists '([driver database])}
-  dispatch-on-driver
+  dispatch-on-initialized-driver
   :hierarchy #'hierarchy)
 
 (defmethod current-db-time ::driver [_ _] nil)

@@ -6,6 +6,7 @@ driver:
   name: sqlite
   display-name: SQLite
   delay-loading: true
+  parent: sql-jdbc
   connection-properties:
     - name: db
       display-name: Filename
