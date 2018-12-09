@@ -14,7 +14,8 @@ export type ColorFamily = { [name: ColorName]: ColorString };
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 /* eslint-disable no-color-literals */
 const colors = {
-  brand: "#509EE3",
+  // brand: "#509EE3",
+  brand: "#2e353b",
   accent1: "#9CC177",
   accent2: "#A989C5",
   accent3: "#EF8C8C",
