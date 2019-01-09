@@ -116,9 +116,23 @@ export default class LoginApp extends Component {
     return (
       <div className="full bg-white flex flex-column flex-full md-layout-centered">
         <div className="Login-wrapper wrapper Grid Grid--full md-Grid--1of2 relative z2">
-          <div className="Grid-cell flex layout-centered text-brand">
-            <LogoIcon className="Logo my4 sm-my0" width={66} height={85} />
-          </div>
+        <div class="Grid-cell flex text-brand">	
+          <div>
+            <h1>Tentang Sipp - Jawa</h1> <br>
+              <a style="
+            /* text-indent: initial; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 1.8;
+            text-justify: inter-word;
+            -moz-text-align-last: center;
+            /* text-align-last: center; */
+            display: inline-block;
+            width: 80%;
+            font-size: initial;
+        ">Sipp adalah aplikasi yang dikembangkan oleh bidang kepabeanan dan cukai kantor wilayah bea dan cukai Jawa timur II, dan berfungsi dalam proses perhitungan penerimaan seluruh kantor pelayanan yang berada di bawah pengawasan kantor wilayah bea dan cukai Jawa timur II</a> 
+            </div>
+        </div>
           <div className="Login-content Grid-cell">
             <form
               className="Form-new bg-white bordered rounded shadowed"
