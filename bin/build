@@ -31,6 +31,14 @@ frontend-fast() {
     NODE_ENV=development ./node_modules/.bin/webpack --bail --devtool eval
 }
 
+add-language() {
+    echo "Add Indonesia Locale"
+    if ! ./bin/i18n/update-translation id; then
+        echo "Update indonesia locale failed"
+        exit 1
+    fi
+}
+
 translations() {
     echo "Running './bin/i18n/build-translation-resources' to build translation resources..."
     if ! ./bin/i18n/build-translation-resources; then

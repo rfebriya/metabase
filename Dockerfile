@@ -37,6 +37,7 @@ RUN yarn
 ADD . .
 
 # build the app
+RUN ./bin/i18n/update-translations
 RUN bin/build
 
 # install updated cacerts to /etc/ssl/certs/java/cacerts

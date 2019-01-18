@@ -11,7 +11,6 @@ import CheckBox from "metabase/components/CheckBox";
 import FormField from "metabase/components/form/FormField.jsx";
 import FormLabel from "metabase/components/form/FormLabel.jsx";
 import FormMessage from "metabase/components/form/FormMessage.jsx";
-import LogoIcon from "metabase/components/LogoIcon.jsx";
 import Settings from "metabase/lib/settings";
 import Utils from "metabase/lib/utils";
 
@@ -116,30 +115,24 @@ export default class LoginApp extends Component {
     return (
       <div className="full bg-white flex flex-column flex-full md-layout-centered">
         <div className="Login-wrapper wrapper Grid Grid--full md-Grid--1of2 relative z2">
-        <div class="Grid-cell flex text-brand">	
-          <div>
-            <h1>Tentang Sipp - Jawa</h1> <br>
-              <a style="
-            /* text-indent: initial; */
-            text-align: justify;
-            text-justify: inter-word;
-            line-height: 1.8;
-            text-justify: inter-word;
-            -moz-text-align-last: center;
-            /* text-align-last: center; */
-            display: inline-block;
-            width: 80%;
-            font-size: initial;
-        ">Sipp adalah aplikasi yang dikembangkan oleh bidang kepabeanan dan cukai kantor wilayah bea dan cukai Jawa timur II, dan berfungsi dalam proses perhitungan penerimaan seluruh kantor pelayanan yang berada di bawah pengawasan kantor wilayah bea dan cukai Jawa timur II</a> 
-            </div>
-        </div>
+          <div className="Grid-cell layout-centered text-brand">
+          <h1>Tentang Sipp - Jawa</h1> <br/>
+              <a style={{
+                textAlign: 'justify',
+                lineHeight: '1.8',
+                width: '80%',
+                fontSize: 'initial',
+                display: 'inline-block'
+              }}
+        >Sipp adalah aplikasi yang dikembangkan oleh bidang kepabeanan dan cukai kantor wilayah bea dan cukai Jawa timur II, dan berfungsi dalam proses perhitungan penerimaan seluruh kantor pelayanan yang berada di bawah pengawasan kantor wilayah bea dan cukai Jawa timur II</a>
+          </div>
           <div className="Login-content Grid-cell">
             <form
               className="Form-new bg-white bordered rounded shadowed"
               name="form"
               onSubmit={e => this.formSubmitted(e)}
             >
-              <h3 className="Login-header Form-offset">Sign in to Bea Cukai Malang</h3>
+              <h3 className="Login-header Form-offset">{t`Sign in to Metabase`}</h3>
 
               {Settings.ssoEnabled() && (
                 <div className="mx4 mb4 py3 border-bottom relative">

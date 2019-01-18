@@ -3,15 +3,15 @@
  */
 :root {
   /*--color-brand: #509ee3;*/
-  --color-brand: #2e353b;
+  --color-brand: #002236;
   --color-accent1: #9cc177;
-  --color-accent2: #a989c5;
+  --color-accent2: #002236;
   --color-accent3: #ef8c8c;
   --color-accent4: #f9d45c;
   --color-accent5: #f2a86f;
   --color-accent6: #98d9d9;
-  --color-accent7: #7172ad;
-  --color-admin-navbar: #7172ad;
+  --color-accent7: #002236;
+  --color-admin-navbar: #002236;
   --color-white: #ffffff;
   --color-black: #2e353b;
   --color-success: #84bb4c;
@@ -110,6 +110,7 @@
 .bg-brand-hover:hover,
 .bg-brand-active:active {
   background-color: var(--color-brand);
+  border-bottom: 6px solid #f9cf48;
 }
 
 @media screen and (--breakpoint-min-md) {

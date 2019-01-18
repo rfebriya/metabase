@@ -6,27 +6,27 @@ msgstr ""
 "X-Generator: POEditor.com\n"
 "Project-Id-Version: Metabase\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: frontend/src/metabase/admin/databases/components/CreatedDatabaseModal.jsx:24
 msgid "Your database has been added!"
-msgstr "¡Tu base de datos ha sido añadida!"
+msgstr "Database Anda telah ditambahkan!"
 
 #: frontend/src/metabase/admin/databases/components/CreatedDatabaseModal.jsx:28
 msgid "We took a look at your data, and we have some automated explorations that we can show you!"
-msgstr "Echamos un vistazo a tus datos, y tenemos algunas exploraciones automatizadas que podemos mostrarte!"
+msgstr "Kami sudah melihat data Anda dan kami memiliki eksplorasi otomatis untuk memperkenalkan Anda!"
 
 #: frontend/src/metabase/admin/databases/components/CreatedDatabaseModal.jsx:35
 msgid "I'm good thanks"
-msgstr "Está bien, gracias"
+msgstr "Tidak, terima kasih"
 
 #: frontend/src/metabase/admin/databases/components/CreatedDatabaseModal.jsx:42
 msgid "Explore this data"
-msgstr "Explora estos datos"
+msgstr "Jelajahi data ini"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseEditForms.jsx:42
 msgid "Select a database type"
-msgstr "Selecciona un tipo de base de datos"
+msgstr "Pilih tipe basis data"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseEditForms.jsx:75
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:170
@@ -42,64 +42,63 @@ msgstr "Selecciona un tipo de base de datos"
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:171
 #: frontend/src/metabase/user/components/UpdateUserDetails.jsx:164
 msgid "Save"
-msgstr "Guardar"
+msgstr "Simpan"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:122
 msgid "To do some of its magic, Metabase needs to scan your database. We will also rescan it periodically to keep the metadata up-to-date. You can control when the periodic rescans happen below."
-msgstr "Para hacer algo de su magia, Metabase necesita escanear la base de datos. Lo volveremosa hacer periódicamente para mantener actualizados los metadatos. Puedes controlar cuandose realizan los repasos periódicos a continuación."
+msgstr "Metabase perlu menganalisis basis data Anda, kami akan melakukan pemindaian berkala baru untuk menjaga metadata tetap terbaru, dan Anda dapat memeriksa di bawah ini ketika pemindaian berkala ini akan dilakukan."
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:127
 msgid "Database syncing"
-msgstr "Sincronizando Base de Datos"
+msgstr "Sinkronisasi database"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:128
 msgid "This is a lightweight process that checks for\n"
 "updates to this database’s schema. In most cases, you should be fine leaving this\n"
 "set to sync hourly."
-msgstr "Este es un proceso rápido que busca \n"
-"actualizaciones al esquema de esta base de datos. En la mayoría de los casos, estará bien dejar esto\n"
-"configurado para sincronizar cada hora."
+msgstr "Ini merupakan proses ringan untuk melakukan pengecekan terhadap \n"
+"Pembaharuan skema databse. Secara umum proses ini dapat ditinggalkan."
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:147
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:184
 msgid "Scan"
-msgstr "Explorar"
+msgstr "Analisa"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:152
 msgid "Scanning for Filter Values"
-msgstr "Buscando Valores de Filtrado"
+msgstr "Analisis nilai filter"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
 msgid "Metabase can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase puede escanear los valores presentes en cada \n"
-"campo en esta base de datos para habilitar filtros de casilla de verificación en cuadros de mando ypreguntas. Esto \n"
-"puede ser un proceso que consume muchos recursos, particularmente si tienes una \n"
-"base de datos grande."
+msgstr "Metabase dapat menganalisis bidang dalam database ini \n"
+"untuk memberikan nilai-nilai di dasbor dan filter pertanyaan, \n"
+"yang dapat menjadi proses intensif sumber daya, terutama jika Anda memiliki database yang sangat besar."
+
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:159
 msgid "When should Metabase automatically scan and cache field values?"
-msgstr "¿Cuándo debería Metabase escanear y almacenar automáticamente los valores de campo?"
+msgstr "Kapan Metabase secara otomatis memindai dan meng-cache nilai bidang?"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:164
 msgid "Regularly, on a schedule"
-msgstr "Regularmente, siguiendo un horario"
+msgstr "Secara teratur, sesuai jadwal"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:195
 msgid "Only when adding a new filter widget"
-msgstr "Solo cuando se añade un nuevo elemento de filtro"
+msgstr "Hanya saat menambahkan filter baru"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:199
 msgid "When a user adds a new filter to a dashboard or a SQL question, Metabase will\n"
 "scan the field(s) mapped to that filter in order to show the list of selectable values."
-msgstr "Cuando un usuario añade un nuevo filtro a un cuadro de mando o a una pregunta SQL, Metabaseescaneará\n"
-"los campos asignados a ese filtro para mostrar la lista devalores seleccionables."
+msgstr "Saat pengguna menambahkan filter baru ke dasbor atau kueri SQL, Metabase akan \n"
+"mengurai bidang yang terkait dengan filter itu untuk dapat mengusulkan nilai."
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:210
 msgid "Never, I'll do this manually if I need to"
-msgstr "Nunca, lo haré manualmente si lo necesito"
+msgstr "Saya akan melakukannya secara manual jika perlu"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:222
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:27
@@ -108,38 +107,38 @@ msgstr "Nunca, lo haré manualmente si lo necesito"
 #: frontend/src/metabase/components/ButtonWithStatus.jsx:8
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:426
 msgid "Saving..."
-msgstr "Guardando..."
+msgstr "Menyimpan ..."
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:39
 #: frontend/src/metabase/components/form/FormMessage.jsx:4
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:144
 msgid "Server error encountered"
-msgstr "Se ha encontrado un error en el servidor"
+msgstr "Kesalahan server"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:58
 msgid "Delete this database?"
-msgstr "¿Eliminar esta base de datos?"
+msgstr "Hapus database?"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:66
 msgid "All saved questions, metrics, and segments that rely on this database will be lost."
-msgstr "Todas las preguntas, métricas y segmentos guardados que dependen de esta base de datosse perderán."
+msgstr "Kueri, metrik, dan segmen tersimpan apa pun yang bergantung pada database ini akan hilang."
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:67
 msgid "This cannot be undone."
-msgstr "Esta acción no se puede deshacer."
+msgstr "Tindakan ini tidak dapat dibatalkan."
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:70
 msgid "If you're sure, please type"
-msgstr "Si estás seguro, por favor teclea:"
+msgstr "Jika Anda yakin, silakan masukkan"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:53
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:70
 msgid "DELETE"
-msgstr "ELIMINAR"
+msgstr "HAPUS"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:71
 msgid "in this box:"
-msgstr "en esta casilla:"
+msgstr "di kotak ini:"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:82
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:50
@@ -179,13 +178,13 @@ msgstr "en esta casilla:"
 #: frontend/src/metabase/visualizations/components/ChartSettings.jsx:219
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingsTableFormatting.jsx:461
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Batal"
 
 #: frontend/src/metabase/admin/databases/components/DeleteDatabaseModal.jsx:88
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:123
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingsTableFormatting.jsx:461
 msgid "Delete"
-msgstr "Eliminar"
+msgstr "Hapus"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:128
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:76
@@ -197,19 +196,19 @@ msgstr "Eliminar"
 #: frontend/src/metabase/reference/databases/DatabaseSidebar.jsx:18
 #: frontend/src/metabase/reference/databases/TableSidebar.jsx:21
 msgid "Databases"
-msgstr "Bases de Datos"
+msgstr "Database"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:129
 msgid "Add Database"
-msgstr "Añadir Base de Datos"
+msgstr "Tambahkan database"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:60
 msgid "Connection"
-msgstr "Conexión"
+msgstr "Koneksi"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:61
 msgid "Scheduling"
-msgstr "Programación"
+msgstr "Jadwal"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:170
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:78
@@ -221,17 +220,17 @@ msgstr "Programación"
 #: frontend/src/metabase/query_builder/components/AlertModals.jsx:354
 #: frontend/src/metabase/reference/components/RevisionMessageModal.jsx:47
 msgid "Save changes"
-msgstr "Guardar cambios"
+msgstr "Simpan perubahan"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:185
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:38
 #: frontend/src/metabase/admin/datamodel/components/database/SegmentsList.jsx:38
 msgid "Actions"
-msgstr "Acciones"
+msgstr "Tindakan"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:193
 msgid "Sync database schema now"
-msgstr "Sincronizar el esquema de la base de datos ahora"
+msgstr "Sinkronisasi skema basis data"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:194
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:206
@@ -240,49 +239,49 @@ msgstr "Sincronizar el esquema de la base de datos ahora"
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:109
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:117
 msgid "Starting…"
-msgstr "Empezando…"
+msgstr "Mulai ..."
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:195
 msgid "Failed to sync"
-msgstr "No se ha podido sincronizar"
+msgstr "Sinkronisasi gagal"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:196
 msgid "Sync triggered!"
-msgstr "Sincronización iniciada!"
+msgstr "Sinkronisasi terpicu!"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:205
 msgid "Re-scan field values now"
-msgstr "Vuelva a escanear los valores de campo ahora"
+msgstr "Analisis nilai filter lagi sekarang"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:207
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:16
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:110
 msgid "Failed to start scan"
-msgstr "No se ha podido iniciar la exploración"
+msgstr "Tidak dapat memulai pemindaian"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:208
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:17
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:111
 msgid "Scan triggered!"
-msgstr "Exploración iniciada!"
+msgstr "Analisis dimulai!"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:215
 #: frontend/src/metabase/query_builder/components/AlertModals.jsx:399
 msgid "Danger Zone"
-msgstr "Zona Peligrosa"
+msgstr "Zona Bahaya"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:221
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:224
 msgid "Discard saved field values"
-msgstr "Descartar valores de campo guardados"
+msgstr "Hapus nilai yang disimpan dalam cache"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseEditApp.jsx:239
 msgid "Remove this database"
-msgstr "Eliminar esta base de datos"
+msgstr "Hapus database ini dari Situs"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:75
 msgid "Add database"
-msgstr "Añadir base de datos"
+msgstr "Tambahkan database"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:87
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:36
@@ -298,7 +297,7 @@ msgstr "Añadir base de datos"
 #: frontend/src/metabase/reference/guide/GettingStartedGuideEditForm.jsx:461
 #: frontend/src/metabase/visualizations/visualizations/Scalar.jsx:78
 msgid "Name"
-msgstr "Nombre"
+msgstr "Nama"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:88
 msgid "Engine"
@@ -306,27 +305,27 @@ msgstr "Motor"
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:117
 msgid "Deleting..."
-msgstr "Eliminando..."
+msgstr "Menghapus..."
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:147
 msgid "Loading ..."
-msgstr "Cargando ..."
+msgstr "Memuat ..."
 
 #: frontend/src/metabase/admin/databases/containers/DatabaseListApp.jsx:163
 msgid "Bring the sample dataset back"
-msgstr "Recuperar la base de datos de prueba"
+msgstr "Muat kumpulan data sampel lagi"
 
 #: frontend/src/metabase/admin/databases/database.js:175
 msgid "Couldn't connect to the database. Please check the connection details."
-msgstr "No se ha podido conectar a la base de datos. Por favor, comprueba los detalles de la conexión."
+msgstr "Tidak dapat terhubung ke database, silakan periksa pengaturan koneksi."
 
 #: frontend/src/metabase/admin/databases/database.js:383
 msgid "Successfully created!"
-msgstr "¡Creado con éxito!"
+msgstr "Berhasil dibuat!"
 
 #: frontend/src/metabase/admin/databases/database.js:393
 msgid "Successfully saved!"
-msgstr "¡Guardado con éxito!"
+msgstr "Berhasil disimpan"
 
 #. Editar
 #: frontend/src/metabase/admin/datamodel/components/ObjectActionSelect.jsx:44
@@ -335,75 +334,75 @@ msgstr "¡Guardado con éxito!"
 #: frontend/src/metabase/query_builder/components/AlertListPopoverContent.jsx:209
 #: frontend/src/metabase/reference/components/EditButton.jsx:18
 msgid "Edit"
-msgstr "Editar"
+msgstr "Ubah"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectActionSelect.jsx:59
 msgid "Revision History"
-msgstr "Historial de Revisiones"
+msgstr "Riwayat Perubahan"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:33
 msgid "Retire this {0}?"
-msgstr "¿Retirar este {0}?"
+msgstr "Hapus ini {0}?"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:38
 msgid "Saved questions and other things that depend on this {0} will continue to work, but this {1} will no longer be selectable from the query builder."
-msgstr "Las preguntas guardadas y otras cosas que dependen de este {0} continuarán funcionando, pero este {1} ya no se podrá seleccionar desde el generador de consultas."
+msgstr "Pertanyaan yang disimpan dan item lain yang bergantung pada ini {0} akan tetap berfungsi, tetapi ini {1} tidak akan lagi dapat dipilih di pembuat kueri."
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:39
 msgid "If you're sure you want to retire this {0}, please write a quick explanation of why it's being retired:"
-msgstr "Si estás seguro de querer retirar este {0}, escribe una explicación de por qué está siendo retirado:"
+msgstr "Jika Anda yakin ingin menghapus ini {0}, silakan tulis alasan mengapa dihapus:"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:43
 msgid "This will show up in the activity feed and in an email that will be sent to anyone on your team who created something that uses this {0}."
-msgstr "Esto se mostrará en el resumen de actividades y en un correo electrónico que se enviará a cualquier persona de tu equipo que haya creado algo que use este {0}."
+msgstr "Penghapusan ini {0} akan muncul di umpan aktivitas dan dalam email yang dikirim ke semua pengguna yang telah menggunakannya."
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:58
 msgid "Retire"
-msgstr "Retirar"
+msgstr "Hapus"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:59
 msgid "Retiring…"
-msgstr "Retirando…"
+msgstr "Penarikan ..."
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:60
 msgid "Failed"
-msgstr "Ha fallado"
+msgstr "Gagal"
 
 #: frontend/src/metabase/admin/datamodel/components/ObjectRetireModal.jsx:61
 msgid "Success"
-msgstr "Exito"
+msgstr "Sukses"
 
 #: frontend/src/metabase/admin/datamodel/components/PartialQueryBuilder.jsx:118
 #: frontend/src/metabase/public/components/widgets/AdvancedEmbedPane.jsx:110
 msgid "Preview"
-msgstr "Vista Preliminar"
+msgstr "Preview"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:99
 msgid "No column description yet"
-msgstr "No hay una descripción de la columna"
+msgstr "Tidak ada deskripsi untuk kolom ini"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:135
 msgid "Select a field visibility"
-msgstr "Selecciona una visibilidad de campo"
+msgstr "Pilih visibilitas bidang"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:210
 msgid "No special type"
-msgstr "Sin tipo especial"
+msgstr "Tidak ada tipe khusus"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:211
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionEditorTextfield.jsx:34
 #: frontend/src/metabase/reference/components/Field.jsx:57
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:42
 msgid "Other"
-msgstr "Otro"
+msgstr "Lain"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:231
 msgid "Select a special type"
-msgstr "Selección un tipo especial"
+msgstr "Pilih tipe"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnItem.jsx:277
 msgid "Select a target"
-msgstr "Selecciona una referencia"
+msgstr "Pilih target"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnsList.jsx:17
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:77
@@ -411,98 +410,98 @@ msgstr "Selecciona una referencia"
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:106
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:122
 msgid "Columns"
-msgstr "Columnas"
+msgstr "Kolom"
 
 #. Campo
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnsList.jsx:22
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataSchema.jsx:44
 msgid "Column"
-msgstr "Campo"
+msgstr "Kolom"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnsList.jsx:24
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:121
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:306
 msgid "Visibility"
-msgstr "Visibilidad"
+msgstr "Visibility"
 
 #: frontend/src/metabase/admin/datamodel/components/database/ColumnsList.jsx:25
 msgid "Type"
-msgstr "Tipo"
+msgstr "Tipe"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataHeader.jsx:87
 msgid "Current database:"
-msgstr "Base de Datos actual:"
+msgstr "Database saat ini:"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataHeader.jsx:92
 msgid "Show original schema"
-msgstr "Mostrar Esquema Original"
+msgstr "Tampilkan skema asli"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataSchema.jsx:45
 msgid "Data Type"
-msgstr "Tipo de Dato"
+msgstr "Tipe data"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataSchema.jsx:46
 msgid "Additional Info"
-msgstr "Información Adicional"
+msgstr "Informasi tambahan"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataSchemaList.jsx:44
 msgid "Find a schema"
-msgstr "Encontrar un esquema"
+msgstr "Temukan Skema"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataSchemaList.jsx:51
 msgid "{0} schema"
 msgid_plural "{0} schemas"
-msgstr[0] "Ver esquema"
-msgstr[1] "Ver esquemas"
+msgstr[0] "{0} skema"
+msgstr[1] "{0} skema"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:82
 msgid "Why Hide?"
-msgstr "¿Por qué esconderlo?"
+msgstr "Kenapa bersembunyi?"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:83
 msgid "Technical Data"
-msgstr "Datos Técnicos"
+msgstr "Data teknis"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:84
 msgid "Irrelevant/Cruft"
-msgstr "Irrelevante"
+msgstr "Tidak relevan"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:90
 msgid "Queryable"
-msgstr "Consultable"
+msgstr "Dicari"
 
 #. Oculto
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:91
 msgid "Hidden"
-msgstr "Oculto"
+msgstr "Disembunyikan"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:117
 msgid "No table description yet"
-msgstr "No hay una descripción de la tabla"
+msgstr "Tidak ada deskripsi untuk tabel ini"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTable.jsx:124
 msgid "Metadata Strength"
-msgstr "Alcance Metadatos"
+msgstr "Kekuatan metadata"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTableList.jsx:87
 msgid "{0} Queryable Table"
 msgid_plural "{0} Queryable Tables"
-msgstr[0] "{0] Tabla Consultable"
-msgstr[1] "{0] Tablas Consultables"
+msgstr[0] "{0} Tabel dicari"
+msgstr[1] "{0} Tabel yang Dapat Dicari"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTableList.jsx:96
 msgid "{0} Hidden Table"
 msgid_plural "{0} Hidden Tables"
-msgstr[0] "{0] Tabla Escondida"
-msgstr[1] "{0] Tablas Escondidas"
+msgstr[0] "{0} tabel tersembunyi"
+msgstr[1] "{0} Tabel tersembunyi "
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTableList.jsx:113
 msgid "Find a table"
-msgstr "Encontrar una tabla"
+msgstr "Cari tabel"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetadataTableList.jsx:126
 msgid "Schemas"
-msgstr "Esquemas"
+msgstr "Skema"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:24
 #: frontend/src/metabase/new_query/containers/NewQueryOptions.jsx:137
@@ -513,21 +512,21 @@ msgstr "Esquemas"
 #: frontend/src/metabase/reference/metrics/MetricSidebar.jsx:21
 #: frontend/src/metabase/routes.jsx:231
 msgid "Metrics"
-msgstr "Métricas"
+msgstr "Metrik"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:30
 msgid "Add a Metric"
-msgstr "Añadir una Métrica"
+msgstr "Tambahkan metrik"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:37
 #: frontend/src/metabase/admin/datamodel/components/database/SegmentsList.jsx:37
 #: frontend/src/metabase/query_builder/components/QueryDefinitionTooltip.jsx:30
 msgid "Definition"
-msgstr "Definición"
+msgstr "Definisi"
 
 #: frontend/src/metabase/admin/datamodel/components/database/MetricsList.jsx:54
 msgid "Create metrics to add them to the View dropdown in the query builder"
-msgstr "Crea métricas para añadirlas al menú Ver en el generador de consultas"
+msgstr "Buat metrik untuk menambahkannya ke menu tarik-turun 'Tampilan' di pembuat kueri"
 
 #: frontend/src/metabase/admin/datamodel/components/database/SegmentsList.jsx:24
 #: frontend/src/metabase/query_builder/components/DataSelector.jsx:922
@@ -536,293 +535,295 @@ msgstr "Crea métricas para añadirlas al menú Ver en el generador de consultas
 #: frontend/src/metabase/reference/segments/SegmentList.jsx:56
 #: frontend/src/metabase/reference/segments/SegmentSidebar.jsx:21
 msgid "Segments"
-msgstr "Segmentos"
+msgstr "Segmen"
 
 #: frontend/src/metabase/admin/datamodel/components/database/SegmentsList.jsx:30
 msgid "Add a Segment"
-msgstr "Añadir un Segmento"
+msgstr "Tambahkan segmen"
 
 #: frontend/src/metabase/admin/datamodel/components/database/SegmentsList.jsx:54
 msgid "Create segments to add them to the Filter dropdown in the query builder"
-msgstr "Crea segmentos para añadirlos al menú Filtro en el generador de consultas"
+msgstr "Buat segmen untuk menambahkannya ke daftar tarik-turun Filter di pembuat kueri"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:24
 msgid "created"
-msgstr "creado"
+msgstr "Dibuat"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:27
 msgid "reverted to a previous version"
-msgstr "revertido a una versión anterior"
+msgstr "kembali ke versi sebelumnya"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:33
 msgid "edited the title"
-msgstr "editado el título"
+msgstr "ubah judul"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:35
 msgid "edited the description"
-msgstr "editado la descripción"
+msgstr "ubah deskripsi"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:37
 msgid "edited the "
-msgstr "editado el"
+msgstr "ubah"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:40
 msgid "made some changes"
-msgstr "he hecho algunos cambios"
+msgstr "membuat perubahan"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/Revision.jsx:46
 #: frontend/src/metabase/home/components/Activity.jsx:80
 #: frontend/src/metabase/query_builder/components/AlertListPopoverContent.jsx:343
 msgid "You"
-msgstr "Tu"
+msgstr "Anda"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/RevisionHistory.jsx:37
 msgid "Datamodel"
-msgstr "Modelo de datos"
+msgstr "Model data"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/RevisionHistory.jsx:43
 msgid " History"
-msgstr "Historia"
+msgstr "Riwayat"
 
 #: frontend/src/metabase/admin/datamodel/components/revisions/RevisionHistory.jsx:48
 msgid "Revision History for"
-msgstr "Historial de Revisiones para"
+msgstr "Ubah Riwayat untuk"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:239
 msgid "{0} – Field Settings"
-msgstr "{0} – Configuración de campos"
+msgstr "{0} - Pengaturan Lapangan"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:307
 msgid "Where this field will appear throughout Metabase"
-msgstr "Donde aparecerá este campo en Metabase"
+msgstr "Di mana bidang ini akan muncul di Metabase"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:329
 msgid "Filtering on this field"
-msgstr "Filtrando sobre este campo"
+msgstr "Filter di bidang ini"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:330
 msgid "When this field is used in a filter, what should people use to enter the value they want to filter on?"
-msgstr "Cuando este campo se usa en un filtro, ¿qué valores debería aceptar?"
+msgstr "Saat bidang ini digunakan dalam filter, apa yang harus dilakukan pengguna untuk memasukkan nilai yang akan difilter?"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:453
 msgid "No description for this field yet"
-msgstr "No hay descripción para este campo todavía"
+msgstr "Tidak ada deskripsi untuk bidang ini"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:379
 msgid "Original value"
-msgstr "Valor original"
+msgstr "Nilai asli"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:380
 msgid "Mapped value"
-msgstr "Valor asignado"
+msgstr "Nilai yang sesuai"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:423
 msgid "Enter value"
-msgstr "Introduce un valor"
+msgstr "Masukkan nilai"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:25
 msgid "Use original value"
-msgstr "Utiliza valor original"
+msgstr "Gunakan nilai asli"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:26
 msgid "Use foreign key"
-msgstr "Utilizar clave foránea"
+msgstr "Gunakan kunci asing"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:27
 msgid "Custom mapping"
-msgstr "Mapeo personalizado"
+msgstr "Pencocokan khusus"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:55
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:155
 msgid "Unrecognized mapping type"
-msgstr "Tipo de mapeo no reconocido"
+msgstr "Jenis kecocokan tidak dikenal"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:89
 msgid "Current field isn't a foreign key or FK target table metadata is missing"
-msgstr "El campo actual no es una clave foránea o faltan los metadatos de clave foránea en la tabla de destino"
+msgstr "Bidang saat ini bukan kunci asing atau metadata tabel target kunci asing yang hilang"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:187
 msgid "The selected field isn't a foreign key"
-msgstr "El campo seleccionado no es una clave foránea"
+msgstr "Bidang yang dipilih bukan kunci asing"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:347
 msgid "Display values"
-msgstr "Valores mostrados"
+msgstr "Tampilkan nilai"
+
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:348
 msgid "Choose to show the original value from the database, or have this field display associated or custom information."
-msgstr "Elige si quieres mostrar el valor original de la base de datos, o mostrar información asociada o personalizada."
+msgstr "Pilih untuk menampilkan nilai asli dalam database, atau informasi terkait atau pribadi."
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:268
 msgid "Choose a field"
-msgstr "Elige un campo"
+msgstr "Pilih sebuah bidang"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:289
 msgid "Please select a column to use for display."
-msgstr "Selecciona una columna para mostrar."
+msgstr "Silakan, pilih kolom yang akan digunakan untuk tampilan"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:771
 msgid "Tip:"
-msgstr "Consejo:"
+msgstr "Tip:"
 
 #: frontend/src/metabase/admin/datamodel/components/FieldRemapping.jsx:433
 msgid "You might want to update the field name to make sure it still makes sense based on your remapping choices."
-msgstr "Es posible que quieras actualizar el nombre del campo para asegurarte de que todavía tenga sentidoen función de las opciones de asignación."
+msgstr "Anda mungkin ingin memperbarui nama bidang untuk memastikannya masih relevan dengan pilihan pencocokan Anda."
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:364
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:102
 msgid "Cached field values"
-msgstr "Valores de campo en caché"
+msgstr "Nilai untuk filter cache"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:365
 msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase puede escanear los valores de este campo para habilitar los filtros de casilla de verificación en cuadros de mando y preguntas."
+msgstr "Metabase dapat mengurai nilai dalam bidang ini untuk menyediakan filter di dasbor dan pertanyaan."
+
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:14
 msgid "Re-scan this field"
-msgstr "Vuelve a escanear este campo"
+msgstr "Pindai bidang ini lagi"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:22
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:116
 msgid "Discard cached field values"
-msgstr "Descartar valores de campo en caché"
+msgstr "Hapus nilai dari filter cache"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:24
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:118
 msgid "Failed to discard values"
-msgstr "Error al descartar valores"
+msgstr "Tidak dapat menghapus nilai"
 
 #: frontend/src/metabase/admin/datamodel/components/UpdateCachedFieldValues.jsx:25
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:119
 msgid "Discard triggered!"
-msgstr "Limpieza iniciada!"
+msgstr "Penghapusan dimulai"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetadataEditorApp.jsx:105
 msgid "Select any table to see its schema and add or edit metadata."
-msgstr "Selecciona cualquier tabla para ver su esquema y añadir o editar metadatos."
+msgstr "Pilih sebuah tabel untuk melihat skema dan memperkaya metadatanya"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:37
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:34
 #: frontend/src/metabase/entities/collections.js:89
 msgid "Name is required"
-msgstr "Nombre es obligatorio"
+msgstr "Nama diperlukan"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:40
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:37
 msgid "Description is required"
-msgstr "Descripción es obligatorio"
+msgstr "Keterangan diperlukan"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:44
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:41
 msgid "Revision message is required"
-msgstr "Mensaje de la revisión es obligatorio"
+msgstr "Sebuah pesan riwayat diperlukan"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:50
 msgid "Aggregation is required"
-msgstr "Agregación es obligatoria"
+msgstr "Agregasi diperlukan."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:110
 msgid "Edit Your Metric"
-msgstr "Edita tu Métrica"
+msgstr "Edit metrik Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:111
 msgid "Create Your Metric"
-msgstr "Crea tu Métrica"
+msgstr "Buat metrik Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:115
 msgid "Make changes to your metric and leave an explanatory note."
-msgstr "Haz cambios en tu métrica y deja una nota explicativa."
+msgstr "Edit metrik Anda dan berikan komentar untuk perubahan ini."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:116
 msgid "You can create saved metrics to add a named metric option to this table. Saved metrics include the aggregation type, the aggregated field, and optionally any filter you add. As an example, you might use this to create something like the official way of calculating \"Average Price\" for an Orders table."
-msgstr "Puedes crear métricas y guardarlas como campo calculado en esta tabla.Las métricas guardadas incluyen el tipo de agregación, el campo agregado y, opcionalmente, cualquier filtro que añadas.Por ejemplo, puedes usar esto para definir la forma oficial de calcular el \"Precio promedio\" para una tabla de Pedidos."
+msgstr "Simpan metrik untuk membuatnya tersedia dalam opsi Tampilan tabel ini Metrik ditentukan oleh tipe agregasi, kolom gabungan, dan secara opsional filter apa pun yang Anda tambahkan. Misalnya, Anda mungkin ingin membuat metrik untuk menentukan cara resmi menghitung \"Harga rata-rata \" dari tabel yang berisi Perintah. "
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:149
 msgid "Result: "
-msgstr "Resultado:"
+msgstr "Hasil:"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:157
 msgid "Name Your Metric"
-msgstr "Ponle nombre a tu Métrica"
+msgstr "Nama metrik Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:158
 msgid "Give your metric a name to help others find it."
-msgstr "Dale un nombre a tu métrica para ayudar a otros a encontrarla."
+msgstr "Beri nama pada metrik Anda untuk membantu orang lain menemukannya."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:162
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:166
 msgid "Something descriptive but not too long"
-msgstr "Algo descriptivo pero no demasiado largo"
+msgstr "Penjelasan singkat"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:166
 msgid "Describe Your Metric"
-msgstr "Describe tu Métrica"
+msgstr "Jelaskan metrik Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:167
 msgid "Give your metric a description to help others understand what it's about."
-msgstr "Dale una descripción a tu métrica para ayudar a otros a entender de qué se trata."
+msgstr "Berikan deskripsi ke metrik Anda untuk membantu orang lain menggunakannya dengan lebih baik."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:171
 msgid "This is a good place to be more specific about less obvious metric rules"
-msgstr "Este es un buen lugar para ser más específico sobre las reglas métricas menos obvias"
+msgstr "Ini adalah tempat yang tepat untuk menjelaskan lebih tepat apa metrik Anda dan bagaimana Anda membangunnya."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:175
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:179
 msgid "Reason For Changes"
-msgstr "Motivo de los cambios"
+msgstr "Alasan perubahan"
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:177
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:181
 msgid "Leave a note to explain what changes you made and why they were required."
-msgstr "Deja una nota para explicar qué cambios has hecho y por qué fueron necesarios."
+msgstr "Tinggalkan kata penjelasan tentang perubahan yang Anda buat dan mengapa mereka dibutuhkan."
 
 #: frontend/src/metabase/admin/datamodel/containers/MetricForm.jsx:181
 msgid "This will show up in the revision history for this metric to help everyone remember why things changed"
-msgstr "Esto aparecerá en el historial de revisiones de esta métrica para ayudar a todos a recordar por qué se realizó el cambio"
+msgstr "Akan ditampilkan dalam riwayat revisi metrik ini untuk membantu semua orang mengingat perubahan yang dibuat."
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:49
 msgid "At least one filter is required"
-msgstr "Se requiere al menos un filtro"
+msgstr "Sebuah filter minimum diperlukan"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:116
 msgid "Edit Your Segment"
-msgstr "Edita tu Segmento"
+msgstr "Edit segmen Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:117
 msgid "Create Your Segment"
-msgstr "Crea tu Segmento"
+msgstr "Buat segmen Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:121
 msgid "Make changes to your segment and leave an explanatory note."
-msgstr "Haz cambios en tu segmento y deja una nota explicativa."
+msgstr "Buat perubahan pada segmen Anda dan tinggalkan catatan penjelasan"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:122
 msgid "Select and add filters to create your new segment for the {0} table"
-msgstr "Selecciona y añade filtros para crear un nuevo segmento para la tabla {0}"
+msgstr "Pilih dan tambahkan filter untuk membuat segement baru untuk tabel {0}"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:161
 msgid "Name Your Segment"
-msgstr "Ponle nombre a tu segmento"
+msgstr "Namai segmen Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:162
 msgid "Give your segment a name to help others find it."
-msgstr "Dale un nombre a tu segmento para ayudar a otros a encontrarla."
+msgstr "Berikan nama pada segmen Anda untuk membantu pengguna menemukannya."
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:170
 msgid "Describe Your Segment"
-msgstr "Describe tu Segmento"
+msgstr "Jelaskan segmen Anda"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:171
 msgid "Give your segment a description to help others understand what it's about."
-msgstr "Dale una descripción a tu segmento para ayudar a otros a entender de qué se trata."
+msgstr "Berikan deskripsi ke segmen Anda untuk membantu orang lain menggunakannya dengan lebih baik."
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:175
 msgid "This is a good place to be more specific about less obvious segment rules"
-msgstr "Este es un buen lugar para ser más específico sobre las reglas de segmentación menos obvias"
+msgstr "Ini adalah tempat yang tepat untuk lebih spesifik tentang aturan segmen yang kurang jelas"
 
 #: frontend/src/metabase/admin/datamodel/containers/SegmentForm.jsx:185
 msgid "This will show up in the revision history for this segment to help everyone remember why things changed"
-msgstr "Esto aparecerá en el historial de revisiones de este segmento para ayudar a todos a recordar por qué se realizó el cambio"
+msgstr "Ini akan ditampilkan dalam riwayat revisi untuk segmen ini, untuk membantu semua orang mengingat ini telah diubah"
 
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:88
 #: frontend/src/metabase/admin/routes.jsx:91
@@ -831,40 +832,41 @@ msgstr "Esto aparecerá en el historial de revisiones de este segmento para ayud
 #: frontend/src/metabase/nav/containers/Navbar.jsx:200
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorSidebar.jsx:99
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Pengaturan"
 
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:103
 msgid "Metabase can scan the values in this table to enable checkbox filters in dashboards and questions."
-msgstr "Metabase puede leer los valores en esta tabla para habilitar filtros de casillas de verificación en cuadros de mandos y preguntas."
+msgstr "Metabase dapat mengurai nilai bidang dalam tabel ini untuk mengaktifkan filter kotak centang di dasbor dan pertanyaan."
+
 
 #: frontend/src/metabase/admin/datamodel/containers/TableSettingsApp.jsx:108
 msgid "Re-scan this table"
-msgstr "Re-Leer esta tabla"
+msgstr "Analisis tabel ini lagi"
 
 #: frontend/src/metabase/admin/people/components/AddRow.jsx:34
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:194
 #: frontend/src/metabase/admin/settings/components/widgets/LdapGroupMappingsWidget.jsx:253
 #: frontend/src/metabase/dashboard/components/DashCard.jsx:278
 msgid "Add"
-msgstr "Añadir"
+msgstr "Tambah"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:80
 #: frontend/src/metabase/setup/components/UserStep.jsx:103
 #: frontend/src/metabase/user/components/UpdateUserDetails.jsx:67
 msgid "Not a valid formatted email address"
-msgstr "Formato de Email incorrecto"
+msgstr "Format alamat email salah"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:135
 #: frontend/src/metabase/setup/components/UserStep.jsx:186
 #: frontend/src/metabase/user/components/UpdateUserDetails.jsx:100
 msgid "First name"
-msgstr "Nombre"
+msgstr "Nama depan"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:156
 #: frontend/src/metabase/setup/components/UserStep.jsx:203
 #: frontend/src/metabase/user/components/UpdateUserDetails.jsx:117
 msgid "Last name"
-msgstr "Apellidos"
+msgstr "Nama belakang"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:178
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:77
@@ -874,34 +876,33 @@ msgstr "Apellidos"
 #: frontend/src/metabase/setup/components/UserStep.jsx:222
 #: frontend/src/metabase/user/components/UpdateUserDetails.jsx:138
 msgid "Email address"
-msgstr "Dirección de Email"
+msgstr "Alamat email"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:202
 msgid "Permission Groups"
-msgstr "Grupos de Permisos"
+msgstr "Hak Akses Group"
 
 #: frontend/src/metabase/admin/people/components/EditUserForm.jsx:238
 msgid "Make this user an admin"
-msgstr "Convertir a este usuario en administrador"
+msgstr "Jadikan pengguna ini sebagai administrator"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:32
-msgid "All users belong to the {0} group and can't be removed from it. Setting permissions for this group is a great way to\n"
-"make sure you know what new Metabase users will be able to see."
-msgstr "Todos los usuarios pertenecen al grupo {0} y no se pueden eliminar de él. Establecer permisos para este grupo es una excelente manera de asegurarte de saber qué podrán ver los nuevos usuarios de Metabase."
+msgid "All users belong to the {0} group and can't be removed from it. Setting permissions for this group is a great way to"
+msgstr "Semua pengguna termasuk dalam grup {0} dan tidak dapat dihapus darinya. Pengaturan izin untuk grup ini adalah cara yang baik untuk memastikan bahwa pengguna Metabase baru akan melihat."
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:41
 msgid "This is a special group whose members can see everything in the Metabase instance, and who can access and make changes to the\n"
 "settings in the Admin Panel, including changing permissions! So, add people to this group with care."
-msgstr "Este es un grupo especial cuyos miembros pueden ver todo en la instancia de Metabase, y quienes pueden acceder y realizar cambios en la configuración en el Panel de administración, ¡incluyendo el cambio de permisos!Así que añade personas a este grupo con cuidado."
+msgstr "Ini adalah grup khusus yang anggotanya dapat melihat semuanya dalam instance Metabase dan dapat mengakses dan membuat perubahan pada pengaturan panel admin, termasuk mengubah izin! Jadi tambah orang ke grup ini dengan hati-hati."
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:45
 msgid "To make sure you don't get locked out of Metabase, there always has to be at least one user in this group."
-msgstr "Para asegurarte de no quedar sin acceso a Metabase, siempre debe haber al menos un usuario en este grupo."
+msgstr "Untuk memastikan bahwa Anda tidak dikecualikan dari Metabase, harus selalu ada setidaknya satu pengguna dalam grup ini."
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:177
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:219
 msgid "Members"
-msgstr "Miembros"
+msgstr "Anggota"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:177
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:470
@@ -913,7 +914,7 @@ msgstr "Email"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:203
 msgid "A group is only as good as its members."
-msgstr "Un grupo solo vale lo que valen sus miembros."
+msgstr "Grup hanya memiliki nilai bila berisi pengguna."
 
 #: frontend/src/metabase/admin/people/components/GroupSummary.jsx:15
 #: frontend/src/metabase/admin/routes.jsx:38
@@ -925,14 +926,14 @@ msgstr "Admin"
 #: frontend/src/metabase/query_builder/components/GuiQueryEditor.jsx:237
 #: frontend/src/metabase/query_builder/components/GuiQueryEditor.jsx:290
 msgid "and"
-msgstr "y"
+msgstr "dan"
 
 #: frontend/src/metabase/admin/people/components/GroupSummary.jsx:19
 #: frontend/src/metabase/admin/people/components/GroupSummary.jsx:31
 msgid "{0} other group"
 msgid_plural "{0} other groups"
-msgstr[0] "[0] grupo más"
-msgstr[1] "[0] grupos más"
+msgstr[0] "{0} grup lain"
+msgstr[1] "{0} grup lain"
 
 #: frontend/src/metabase/admin/people/components/GroupSummary.jsx:37
 msgid "Default"
@@ -940,34 +941,33 @@ msgstr "Por defecto"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:40
 msgid "Something like \"Marketing\""
-msgstr "Algo como \"Marketing\""
+msgstr "Sesuatu seperti \" Pemasaran \""
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:59
 msgid "Remove this group?"
-msgstr "¿Eliminar este grupo?"
+msgstr "Hapus grup ini?"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:61
 msgid "Are you sure? All members of this group will lose any permissions settings they have based on this group.\n"
 "This can't be undone."
-msgstr "¿Estás seguro? Todos los miembros de este grupo perderán las configuraciones de permisos que tengan basadas en este grupo.\n"
-"Esto no puede deshacerse."
+msgstr "Anda yakin? Semua anggota grup ini akan kehilangan semua izin mereka berdasarkan grup ini."
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:72
 #: frontend/src/metabase/components/ConfirmContent.jsx:17
 msgid "Yes"
-msgstr "Sí"
+msgstr "Ya"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:75
 msgid "No"
-msgstr "No"
+msgstr "Tidak"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:93
 msgid "Edit Name"
-msgstr "Editar Nombre"
+msgstr "Edit Nama"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:96
 msgid "Remove Group"
-msgstr "Borrar Grupo"
+msgstr "Hapus grup"
 
 #: frontend/src/metabase/admin/databases/components/CreatedDatabaseModal.jsx:46
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:139
@@ -983,11 +983,11 @@ msgstr "Borrar Grupo"
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.jsx:96
 #: frontend/src/metabase/visualizations/components/ChartSettings.jsx:225
 msgid "Done"
-msgstr "Hecho"
+msgstr "Selesai"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:219
 msgid "Group name"
-msgstr "Nombre Grupo"
+msgstr "Nama grup"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:399
 #: frontend/src/metabase/admin/people/containers/AdminPeopleApp.jsx:25
@@ -995,388 +995,388 @@ msgstr "Nombre Grupo"
 #: frontend/src/metabase/admin/routes.jsx:76
 #: frontend/src/metabase/admin/settings/components/widgets/LdapGroupMappingsWidget.jsx:154
 msgid "Groups"
-msgstr "Grupos"
+msgstr "Grup"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:400
 msgid "Create a group"
-msgstr "Crear un grupo"
+msgstr "Buat grup"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:406
 msgid "You can use groups to control your users' access to your data. Put users in groups and then go to the Permissions section to control each group's access. The Administrators and All Users groups are special default groups that can't be removed."
-msgstr "Puedes usar grupos para controlar el acceso de tus usuarios a los datos. Coloca a los usuarios en grupos y después, ves a la sección de Permisos para controlar el acceso de cada grupo. Los grupos Administradores y All Users son grupos predeterminados especiales que no se pueden eliminar."
+msgstr "Anda dapat menggunakan grup untuk mengontrol akses pengguna Anda ke data Anda. Tempatkan pengguna dalam grup, lalu buka bagian Izin untuk mengontrol akses untuk setiap grup. Grup administrator dan \"Semua pengguna \"adalah grup standar khusus yang tidak dapat dihapus."
 
 #: frontend/src/metabase/admin/people/components/UserActionsSelect.jsx:79
 msgid "Edit Details"
-msgstr "Editar Detalles"
+msgstr "Edit Detail"
 
 #: frontend/src/metabase/admin/people/components/UserActionsSelect.jsx:85
 msgid "Re-send Invite"
-msgstr "Reenviar Invitación"
+msgstr "Kirim ulang undangan"
 
 #: frontend/src/metabase/admin/people/components/UserActionsSelect.jsx:90
 msgid "Reset Password"
-msgstr "Restablecer la contraseña"
+msgstr "Setel ulang kata sandi"
 
 #: frontend/src/metabase/admin/people/components/UserActionsSelect.jsx:97
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:304
 msgid "Deactivate"
-msgstr "Desactivar"
+msgstr "Nonaktifkan"
 
 #: frontend/src/metabase/admin/people/containers/AdminPeopleApp.jsx:24
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:435
 #: frontend/src/metabase/admin/routes.jsx:74
 #: frontend/src/metabase/nav/containers/Navbar.jsx:205
 msgid "People"
-msgstr "Personas"
+msgstr "Pengguna"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:192
 msgid "Who do you want to add?"
-msgstr "¿A quien quieres añadir?"
+msgstr "Siapa yang ingin Anda tambahkan?"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:207
 msgid "Edit {0}'s details"
-msgstr "Edita los detalles de {0}"
+msgstr "Ubah detail dari {0}"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:220
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:258
 msgid "{0} has been added"
-msgstr "Se ha añadido {0}"
+msgstr "{0} telah ditambahkan"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:224
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:262
 msgid "Add another person"
-msgstr "Añade otra persona"
+msgstr "Tambahkan orang lain"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:231
 msgid "We couldn’t send them an email invitation,\n"
 "so make sure to tell them to log in using {0}\n"
 "and this password we’ve generated for them:"
-msgstr "No se ha podido enviarles una invitación por correo electrónico, así que asegúraste de indicarles que inicien sesión con {0} y la contraseña que les hemos generado:"
+msgstr "Kami tidak dapat mengiriminya email undangan, jadi pastikan dia masuk menggunakan {0} dan kata sandi yang kami buat:"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:242
 msgid "If you want to be able to send email invites, just go to the {0} page."
-msgstr "Si quieres poder enviar invitaciones por correo electrónico, simplemente ves a la página {0}."
+msgstr "Jika Anda ingin dapat mengirim email undangan, masuk ke {0}."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:268
 msgid "We’ve sent an invite to {0} with instructions to set their password."
-msgstr "Hemos enviado una invitación a {0} con instrucciones para configurar su contraseña."
+msgstr "Kami mengirim undangan ke {0} dengan instruksi untuk mengubah kata sandi"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:283
 msgid "We've re-sent {0}'s invite"
-msgstr "Hemos vuelto a enviar la invitación de {0}"
+msgstr "Kami mengirim ulang undangan dari {0}"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:285
 #: frontend/src/metabase/query_builder/components/SavedQuestionIntroModal.jsx:22
 #: frontend/src/metabase/tutorial/Tutorial.jsx:253
 msgid "Okay"
-msgstr "Vale"
+msgstr "Okay"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:289
 msgid "Any previous email invites they have will no longer work."
-msgstr "Cualquier invitación de correo electrónico anterior que tengan ya no funcionará."
+msgstr "Undangan sebelumnya, dikirim melalui email, tidak akan berfungsi lagi."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:300
 msgid "Deactivate {0}?"
-msgstr "¿Desactivar {0}?"
+msgstr "Nonaktifkan {0}?"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:309
 msgid "{0} won't be able to log in anymore."
-msgstr "{0} ya no podrá iniciar sesión."
+msgstr "{0} tidak akan bisa terhubung lagi."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:320
 msgid "Reactivate {0}'s account?"
-msgstr "¿Activar la cuenta de {0}?"
+msgstr "Aktifkan kembali akun dari {0}?"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:326
 msgid "Reactivate"
-msgstr "Activar"
+msgstr "Aktifkan kembali"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:330
 msgid "They'll be able to log in again, and they'll be placed back into the groups they were in before their account was deactivated."
-msgstr "Podrán volver a iniciar sesión y se les volverá a colocar en los grupos en los que estaban antes de que se desactivara su cuenta."
+msgstr "Pengguna ini akan dapat masuk lagi dan mereka akan dipindahkan ke grup tempat mereka sebelum akun mereka dinonaktifkan."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:341
 msgid "Reset {0}'s password?"
-msgstr "¿Restablecer la contraseña de {0}?"
+msgstr "Reset kata sandi untuk {0}"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:347
 #: frontend/src/metabase/components/form/StandardForm.jsx:75
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Reset"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:351
 #: frontend/src/metabase/components/ConfirmContent.jsx:13
 #: frontend/src/metabase/dashboard/components/ArchiveDashboardModal.jsx:44
 msgid "Are you sure you want to do this?"
-msgstr "¿Seguro que quieres hacer esto?"
+msgstr "Apaka anda yakin?"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:362
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:384
 msgid "{0}'s password has been reset"
-msgstr "La contraseña de {0} ha sido restablecida"
+msgstr "Kata sandi untuk {0} telah direset"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:371
 msgid "Here’s a temporary password they can use to log in and then change their password."
-msgstr "Aquí hay una contraseña temporal que pueden usar para iniciar sesión y luego cambiar su contraseña."
+msgstr "Ini adalah kata sandi sementara yang dapat digunakan pengguna untuk masuk dan kemudian mengubah kata sandinya."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:388
 msgid "We've sent them an email with instructions for creating a new password."
-msgstr "Les hemos enviado un correo electrónico con instrucciones para crear una nueva contraseña."
+msgstr "Kami telah mengirim email kepada pengguna ini dengan instruksi untuk membuat kata sandi baru."
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:443
 msgid "Active"
-msgstr "Activo"
+msgstr "Aktif"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:444
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:473
 msgid "Deactivated"
-msgstr "Desactivado"
+msgstr "Nonaktif"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:459
 msgid "Add someone"
-msgstr "Añadir alguien"
+msgstr "Tambahkan seseorang"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:478
 msgid "Last Login"
-msgstr "Ultimo acceso"
+msgstr "Login terakhir"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:501
 msgid "Signed up via Google"
-msgstr "Acceso via Google"
+msgstr "Mendaftar melalui Google"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:506
 msgid "Signed up via LDAP"
-msgstr "Acceso via LDAP"
+msgstr "Mendaftar melalui LDAP"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:518
 msgid "Reactivate this account"
-msgstr "Activar esta cuenta"
+msgstr "Aktifkan kembali akun ini"
 
 #: frontend/src/metabase/admin/people/containers/PeopleListingApp.jsx:545
 msgid "Never"
-msgstr "Nunca"
+msgstr "Tidak pernah"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:27
 #: frontend/src/metabase/query_builder/components/dataref/MainPane.jsx:24
 #: src/metabase/automagic_dashboards/core.clj
 msgid "{0} table"
 msgid_plural "{0} tables"
-msgstr[0] "{0} tabla"
-msgstr[1] "{0} tablas"
+msgstr[0] "{0} tabel"
+msgstr[1] "{0} tabel"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:45
 msgid " will be "
-msgstr "será"
+msgstr "akan"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:48
 msgid "given access to"
-msgstr "dado el acceso a"
+msgstr "memberikan akses untuk"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:53
 msgid " and "
-msgstr " y "
+msgstr " dan "
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:56
 msgid "denied access to"
-msgstr "denegado el acceso a"
+msgstr "akses yang tidak diberikan kepada"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:70
 msgid " will no longer be able to "
-msgstr "ya no podrá"
+msgstr "tidak akan diizinkan lagi"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:71
 msgid " will now be able to "
-msgstr "ahora será capaz de"
+msgstr "sekarang akan diizinkan untuk"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsConfirm.jsx:79
 msgid " native queries for "
-msgstr "consultas nativas para"
+msgstr "query native untuk"
 
 #: frontend/src/metabase/admin/permissions/routes.jsx:12
 #: frontend/src/metabase/nav/containers/Navbar.jsx:220
 msgid "Permissions"
-msgstr "Permisos"
+msgstr "Hak akses"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:32
 msgid "Save permissions?"
-msgstr "¿Guardar permisos?"
+msgstr "Simpan hak akses?"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:38
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:161
 msgid "Save Changes"
-msgstr "Guardar Cambios"
+msgstr "Simpan perubahan"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:44
 msgid "Discard changes?"
-msgstr "¿Descartar los cambios?"
+msgstr "Tinggalkan perubahan?"
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:46
 msgid "No changes to permissions will be made."
-msgstr "No se realizarán cambios en los permisos."
+msgstr "Tidak ada perubahan pada hak akses yang akan dibuat."
 
 #: frontend/src/metabase/admin/permissions/components/PermissionsEditor.jsx:65
 msgid "You've made changes to permissions."
-msgstr "Has realizado cambios en los permisos."
+msgstr "Anda telah membuat perubahan pada hak akses."
 
 #: frontend/src/metabase/admin/permissions/containers/CollectionPermissionsModal.jsx:52
 msgid "Permissions for this collection"
-msgstr "Permisos de esta colección"
+msgstr "Hak akses pada koleksi ini"
 
 #: frontend/src/metabase/admin/permissions/containers/PermissionsApp.jsx:53
 msgid "You have unsaved changes"
-msgstr "Tiene cambios sin guardar"
+msgstr "Anda belum menyimpan perubahan"
 
 #: frontend/src/metabase/admin/permissions/containers/PermissionsApp.jsx:54
 msgid "Do you want to leave this page and discard your changes?"
-msgstr "¿Quieres abandonar esta página y descartar tus cambios?"
+msgstr "Apakah anda ingin meninggalkan halaman ini dan meninggalkan perubahan yang telah dibuat?"
 
 #: frontend/src/metabase/admin/permissions/permissions.js:137
 msgid "Sorry, an error occurred."
-msgstr "Lo siento, ocurrió un error."
+msgstr "Maaf, terjadi kesalahan."
 
 #: frontend/src/metabase/admin/permissions/selectors.js:59
 msgid "Administrators always have the highest level of access to everything in Metabase."
-msgstr "Los administradores siempre tienen el más alto nivel de acceso a todo en Metabase."
+msgstr "Administrator selalu memiliki hak akses tertinggi di situs ini"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:61
 msgid "Every Metabase user belongs to the All Users group. If you want to limit or restrict a group's access to something, make sure the All Users group has an equal or lower level of access."
-msgstr "Todos los usuarios de Metabase pertenecen al grupo All Users. Si quieres limitar o restringir el acceso de un grupo a algo, asegúrate de que el grupo All Users tenga un nivel de acceso igual o inferior."
+msgstr "Semua pengguna Metabase termasuk dalam \" Semua pengguna\" grup. Jika Anda ingin membatasi atau membatasi akses grup ke suatu item, pastikan bahwa kelompok \"Semua pengguna \" memiliki tingkat akses sama atau lebih rendah. "
 
 #: frontend/src/metabase/admin/permissions/selectors.js:63
 msgid "MetaBot is Metabase's Slack bot. You can choose what it has access to here."
-msgstr "MetaBot es el bot de Slack de Metabase. Puedes elegir a qué tiene acceso aquí."
+msgstr "MetaBot adalah Metabase bot Slack, Anda dapat memilih apa yang bisa diakses di sini."
 
 #: frontend/src/metabase/admin/permissions/selectors.js:115
 msgid "The \"{0}\" group may have access to a different set of {1} than this group, which may give this group additional access to some {2}."
-msgstr "El grupo \"{0}\" puede tener acceso a un conjunto diferente de {1} que este grupo, lo que puede darle a este grupo acceso adicional a algún {2}."
+msgstr "Grup \"{0}\" dapat mengakses satu set selain {1} dari grup ini, yang dapat memberi grup ini akses tambahan ke beberapa {2}."
 
 #: frontend/src/metabase/admin/permissions/selectors.js:120
 msgid "The \"{0}\" group has a higher level of access than this, which will override this setting. You should limit or revoke the \"{1}\" group's access to this item."
-msgstr "El grupo \"{0}\" tiene un mayor nivel de acceso que este, lo que anulará esta configuración. Debes limitar o revocar el acceso del grupo \"{1}\" a este elemento."
+msgstr "Grup \"{0}\" memiliki tingkat akses yang lebih tinggi daripada yang ini, yang akan menggantikan pengaturan ini. Anda harus membatasi atau mencabut akses grup \"{1}\" ke elemen ini. "
 
 #: frontend/src/metabase/admin/permissions/selectors.js:150
 msgid "Limit"
-msgstr "¿Limitar"
+msgstr "Batasi"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:150
 msgid "Revoke"
-msgstr "¿Revocar"
+msgstr "Hapus"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:152
 msgid "access even though \"{0}\" has greater access?"
-msgstr "el acceso a pesar de que el grupo \"{0}\" tiene mayor acceso?"
+msgstr "akses bahkan  \"{0}\" memiliki akses lebih tinggi?"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:155
 #: frontend/src/metabase/admin/permissions/selectors.js:254
 msgid "Limit access"
-msgstr "Limita el acceso"
+msgstr "Batasi akses"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:155
 #: frontend/src/metabase/admin/permissions/selectors.js:219
 #: frontend/src/metabase/admin/permissions/selectors.js:262
 msgid "Revoke access"
-msgstr "Revocar el acceso"
+msgstr "Cabut akses"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:164
 msgid "Change access to this database to limited?"
-msgstr "¿Cambiar el acceso a esta base de datos a limitado?"
+msgstr "Ubah akses dari basis data ini menjadi terbatas?"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:165
 msgid "Change"
-msgstr "Cambiar"
+msgstr "Ubah"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:178
 msgid "Allow Raw Query Writing?"
-msgstr "Permitir escritura de consultas directas"
+msgstr "Izinkan penulisan query mentah?"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:179
 msgid "This will also change this group's data access to Unrestricted for this database."
-msgstr "Esto también cambiará el acceso de datos de este grupo a Sin restricciones para esta base de datos."
+msgstr "Ini juga akan memberi grup ini akses tak terbatas ke database ini."
 
 #: frontend/src/metabase/admin/permissions/selectors.js:180
 msgid "Allow"
-msgstr "Permitir"
+msgstr "Perbolehkan"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:217
 msgid "Revoke access to all tables?"
-msgstr "¿Revoca el acceso a todas las tablas?"
+msgstr "Cabut akses ke semua tabel?"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:218
 msgid "This will also revoke this group's access to raw queries for this database."
-msgstr "Esto también revocará el acceso de este grupo a consultas sin formato para esta base de datos."
+msgstr "Ini, juga akan mencabut penggunaan pertanyaan mentah ke database ini untuk grup ini."
 
 #: frontend/src/metabase/admin/permissions/selectors.js:247
 msgid "Grant unrestricted access"
-msgstr "Conceder acceso sin restricciones"
+msgstr "Berikan akses tak terbatas"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:248
 msgid "Unrestricted access"
-msgstr "Acceso no restingido"
+msgstr "Akses tidak terbatas"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:255
 msgid "Limited access"
-msgstr "Acceso limitado"
+msgstr "Akses terbatas"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:263
 msgid "No access"
-msgstr "Sin acceso"
+msgstr "Tidak ada akses"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:269
 msgid "Write raw queries"
-msgstr "Escribir consultas directas"
+msgstr "Tulis pertanyaan mentah"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:270
 msgid "Can write raw queries"
-msgstr "Puede escribir consultas directas"
+msgstr "Dapat / Dapat menulis pertanyaan mentah"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:277
 msgid "Curate collection"
-msgstr "Mima la colección"
+msgstr "Mengatur koleksi"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:284
 msgid "View collection"
-msgstr "Ver colección"
+msgstr "Lihat isi koleksi"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:327
 #: frontend/src/metabase/admin/permissions/selectors.js:423
 #: frontend/src/metabase/admin/permissions/selectors.js:520
 msgid "Data Access"
-msgstr "Acceso a Datos"
+msgstr "Akses ke data"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:488
 #: frontend/src/metabase/admin/permissions/selectors.js:645
 #: frontend/src/metabase/admin/permissions/selectors.js:650
 msgid "View tables"
-msgstr "Ver tablas"
+msgstr "Lihat tabel"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:586
 msgid "SQL Queries"
-msgstr "Consultas SQL"
+msgstr "Query SQL"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:656
 msgid "View schemas"
-msgstr "Ver esquemas"
+msgstr "Lihat skema"
 
 #: frontend/src/metabase/admin/routes.jsx:49
 #: frontend/src/metabase/nav/containers/Navbar.jsx:210
 msgid "Data Model"
-msgstr "Modelo de Datos"
+msgstr "Model data"
 
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:11
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:118
 msgid "Sign in with Google"
-msgstr "Accede con Google"
+msgstr "Otentikasi dengan Google"
 
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:13
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:120
 msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
-msgstr "Permite a los usuarios con cuentas Metabase existentes iniciar sesión con una cuenta de Google que coincida con su dirección de correo electrónico además de su nombre de usuario y contraseña de Metabase."
+msgstr "Izinkan pengguna dengan akun Metabase untuk masuk dengan Akun Google dengan alamat email yang sama di samping ID Metabase dan kata sandi mereka."
 
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:17
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:29
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:32
 msgid "Configure"
-msgstr "Configura"
+msgstr "Konfigurasikan"
 
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:23
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:13
@@ -1386,79 +1386,79 @@ msgstr "LDAP"
 
 #: frontend/src/metabase/admin/settings/components/SettingsAuthenticationOptions.jsx:25
 msgid "Allows users within your LDAP directory to log in to Metabase with their LDAP credentials, and allows automatic mapping of LDAP groups to Metabase groups."
-msgstr "Permite a los usuarios de tu directorio LDAP iniciar sesión en la Metabase con sus credenciales LDAP, y permite la asignación automática de grupos LDAP a grupos de metabase."
+msgstr "Memungkinkan pengguna di direktori LDAP Anda untuk terhubung ke Metabase dengan akun LDAP mereka, dan menyediakan kemampuan untuk secara otomatis mencocokkan grup LDAP dan Metabase."
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:17
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:69
 #: frontend/src/metabase/admin/settings/selectors.js:160
 msgid "That's not a valid email address"
-msgstr "Esa no es una dirección de correo electrónico válida"
+msgstr "Ini bukan alamat email yang valid"
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:21
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:73
 msgid "That's not a valid integer"
-msgstr "Ese no es un entero válido"
+msgstr "Ini bukan bilangan bulat yang valid"
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:28
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:161
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:223
 msgid "Changes saved!"
-msgstr "¡Cambios guardados!"
+msgstr "Modifikasi disimpan!"
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:157
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:132
 msgid "Looks like we ran into some problems"
-msgstr "Parece que nos encontramos con algunos problemas"
+msgstr "Sepertinya kita punya masalah"
 
 #: frontend/src/metabase/admin/settings/components/SettingsEmailForm.jsx:12
 msgid "Send test email"
-msgstr "Enviar email de comprobación"
+msgstr "Kirim email percobaan"
 
 #: frontend/src/metabase/admin/settings/components/SettingsEmailForm.jsx:13
 msgid "Sending..."
-msgstr "Enviando..."
+msgstr "Mengirim ..."
 
 #: frontend/src/metabase/admin/settings/components/SettingsEmailForm.jsx:14
 msgid "Sent!"
-msgstr "Enviado!"
+msgstr "Terkirim!"
 
 #: frontend/src/metabase/admin/settings/components/SettingsEmailForm.jsx:82
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Hapus"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:12
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:113
 #: frontend/src/metabase/admin/settings/selectors.js:202
 msgid "Authentication"
-msgstr "Autenticación"
+msgstr "Otentikasi"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:18
 msgid "Server Settings"
-msgstr "Configuración Servidor"
+msgstr "Pengaturan Server"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:29
 msgid "User Schema"
-msgstr "Esquema de Usuario"
+msgstr "Skema pengguna"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:33
 msgid "Attributes"
-msgstr "Atributos"
+msgstr "Atribut"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLdapForm.jsx:42
 msgid "Group Schema"
-msgstr "Esquema de Grupo"
+msgstr "Skema grup"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetting.jsx:28
 msgid "Using "
-msgstr "Utilizando"
+msgstr "Penggunaan"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:105
 msgid "Getting set up"
-msgstr "Preparándote"
+msgstr "Konfigurasi sedang berlangsung"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:106
 msgid "A few things you can do to get the most out of Metabase."
-msgstr "Algunas cosas que puedes hacer para sacar el máximo provecho de Metabase."
+msgstr "Beberapa kiat untuk mendapatkan hasil maksimal Metabase."
 
 #: frontend/src/metabase/admin/settings/components/SettingsSetupList.jsx:115
 msgid "Recommended next step"
@@ -1529,7 +1529,7 @@ msgstr "Elimina mapa personalizado"
 #: frontend/src/metabase/parameters/components/ParameterWidget.jsx:181
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.jsx:104
 msgid "Remove"
-msgstr "Borrar"
+msgstr "Hapus"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:226
 #: frontend/src/metabase/dashboard/containers/DashCardCardParameterMapper.jsx:187
@@ -1537,23 +1537,23 @@ msgstr "Borrar"
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:145
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:187
 msgid "Select…"
-msgstr "Selecciona…"
+msgstr "Pilih..."
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:241
 msgid "Sample values:"
-msgstr "Valores de muestra:"
+msgstr "Nilai contoh:"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:279
 msgid "Add a new map"
-msgstr "Añade un nuevo mapa"
+msgstr "Tambah peta baru"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:279
 msgid "Edit map"
-msgstr "Editar mapa"
+msgstr "Edit peta"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:280
 msgid "What do you want to call this map?"
-msgstr "¿Cómo quieres llamar a este mapa?"
+msgstr "Bagaimana Anda ingin memanggil peta ini?"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:285
 msgid "e.g. United Kingdom, Brazil, Mars"
@@ -1561,64 +1561,64 @@ msgstr "e.g. United Kingdom, Brazil, Mars"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:292
 msgid "URL for the GeoJSON file you want to use"
-msgstr "URL para el archivo GeoJSON que quieres usar"
+msgstr "URL file GeoJSON yang ingin Anda gunakan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:298
 msgid "Like https://my-mb-server.com/maps/my-map.json"
-msgstr "Como https://my-mb-server.com/maps/my-map.json"
+msgstr "Contoh: https://my-mb-server.com/maps/my-map.json"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:309
 #: frontend/src/metabase/query_builder/components/RunButton.jsx:33
 msgid "Refresh"
-msgstr "Actualizar"
+msgstr "Muat ulang"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:309
 msgid "Load"
-msgstr "Carga"
+msgstr "Muat"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:315
 msgid "Which property specifies the region’s identifier?"
-msgstr "¿Qué propiedad especifica el identificador de la región?"
+msgstr "Properti mana yang menentukan ID wilayah?"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:324
 msgid "Which property specifies the region’s display name?"
-msgstr "¿Qué propiedad especifica el nombre de la región?"
+msgstr "Properti mana yang menentukan label wilayah itu?"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:345
 msgid "Load a GeoJSON file to see a preview"
-msgstr "Carga un archivo GeoJSON para ver una vista previa"
+msgstr "Muat file GeoJSON untuk melihat pratinjau"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:363
 msgid "Save map"
-msgstr "Guardar mapa"
+msgstr "Simpan peta"
 
 #: frontend/src/metabase/admin/settings/components/widgets/CustomGeoJSONWidget.jsx:363
 msgid "Add map"
-msgstr "Añadir mapa"
+msgstr "Tambah peta"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese.jsx:7
 msgid "Using embedding"
-msgstr "Utilizando embebido"
+msgstr "Gunakan integrasi"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese.jsx:9
 msgid "By enabling embedding you're agreeing to the embedding license located at"
-msgstr "Al habilitar el embebido, aceptas la licencia de incorporación ubicada en"
+msgstr "Dengan mengaktifkan integrasi, Anda menyetujui lisensi integrasi yang terletak di"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese.jsx:19
 msgid "In plain English, when you embed charts or dashboards from Metabase in your own application, that application isn't subject to the Affero General Public License that covers the rest of Metabase, provided you keep the Metabase logo and the \"Powered by Metabase\" visible on those embeds. You should, however, read the license text linked above as that is the actual license that you will be agreeing to by enabling this feature."
-msgstr "En lenguaje sencillo, cuando insertas tablas o cuadros de mando de Metabase en tu propia aplicación, esa aplicación no está sujeta a la Licencia AGPL que cubre el resto de Metabase, siempre que mantengas el logotipo de Metabase y el \"Powered by Metabase\" visible en esas incrustaciones. Sin embargo, debes leer el texto de licencia, ya que esa es la licencia real que aceptas al habilitar esta función."
+msgstr "Tepat ketika Anda menanamkan pertanyaan atau dasbor dari Metabase ke dalam aplikasi Anda sendiri, aplikasi ini bukan subjek dari Lisensi Publik Umum Affero yang mencakup sisa Metabase, selama Anda menyimpannya Metabase logo dan \"Powered by Metabase\" terlihat dalam integrasi ini Anda harus, bagaimanapun, membaca teks lisensi yang direferensikan di atas, karena ini adalah lisensi yang Anda benar-benar setuju dengan mengaktifkan fitur ini . "
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese.jsx:32
 msgid "Enable"
-msgstr "Habilitar"
+msgstr "Aktifkan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:24
 msgid "Premium embedding enabled"
-msgstr "Embebido Premium habilitado"
+msgstr "Integrasi Premium diaktifkan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:26
 msgid "Enter the token you bought from the Metabase Store"
-msgstr "Ingresa el token que compraste en la Tienda Metabase"
+msgstr "Silakan masukkan token yang Anda beli di Toko Metabase"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:53
 msgid "Premium embedding lets you disable \"Powered by Metabase\" on your embedded dashboards and questions."
@@ -1642,7 +1642,7 @@ msgstr "Asignaciones de Grupo"
 
 #: frontend/src/metabase/admin/settings/components/widgets/LdapGroupMappingsWidget.jsx:147
 msgid "Create a mapping"
-msgstr "Crear una asignación"
+msgstr "Buat pemetaan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/LdapGroupMappingsWidget.jsx:149
 msgid "Mappings allow Metabase to automatically add and remove users from groups based on the membership information provided by the\n"
@@ -1652,185 +1652,186 @@ msgstr "Las asignaciones permiten que Metabase agregue y elimine automáticament
 
 #: frontend/src/metabase/admin/settings/components/widgets/LdapGroupMappingsWidget.jsx:154
 msgid "Distinguished Name"
-msgstr "Nombre Distinguido"
+msgstr "Nama Unik"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:92
 msgid "Public Link"
-msgstr "Enlace Público"
+msgstr "Tautan publik"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:93
 msgid "Revoke Link"
-msgstr "Eliminar Enlace"
+msgstr "Hapus tautan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:121
 msgid "Disable this link?"
-msgstr "¿Deshabilitar este enlace?"
+msgstr "Nonaktifkan tautan ini?"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:122
 msgid "They won't work anymore, and can't be restored, but you can create new links."
-msgstr "Ya no funcionarán y no se pueden restaurar, pero puedes crear nuevos enlaces."
+msgstr "Mereka tidak akan berfungsi lagi, dan tidak akan dikembalikan, tetapi Anda dapat membuat tautan baru."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:149
 msgid "Public Dashboard Listing"
-msgstr "Listado de Cuadros de Mando Públicos"
+msgstr "Daftar dasbor publik"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:152
 msgid "No dashboards have been publicly shared yet."
-msgstr "Aún no se ha compartido públicamente ningún cuadro de mando."
+msgstr "Belum ada dasbor yang dibagikan secara publik."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:160
 msgid "Public Card Listing"
-msgstr "Listado de tarjetas públicas"
+msgstr "Daftar pertanyaan publik"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:163
 msgid "No questions have been publicly shared yet."
-msgstr "Aún no se ha compartido públicamente ninguna pregunta."
+msgstr "Belum ada pertanyaan yang dibagikan secara publik."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:172
 msgid "Embedded Dashboard Listing"
-msgstr "Listado de cuadros de mando embebidos"
+msgstr "Daftar dasbor terintegrasi"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:173
 msgid "No dashboards have been embedded yet."
-msgstr "No se han incrustado cuadros de mando todavía."
+msgstr "Belum ada dasbor yang terintegrasi."
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:183
 msgid "Embedded Card Listing"
-msgstr "Listado de tarjetas embebidas"
+msgstr "Daftar pertanyaan built-in"
 
 #: frontend/src/metabase/admin/settings/components/widgets/PublicLinksListing.jsx:184
 msgid "No questions have been embedded yet."
-msgstr "No se han incrustado preguntas todavía."
+msgstr "Belum ada pertanyaan yang ditambahkan."
 
 #: frontend/src/metabase/admin/settings/components/widgets/SecretKeyWidget.jsx:35
 msgid "Regenerate embedding key?"
-msgstr "¿Regenerar la clave de inserción?"
+msgstr "Regenerasikan kunci integrasi?"
 
 #: frontend/src/metabase/admin/settings/components/widgets/SecretKeyWidget.jsx:36
 msgid "This will cause existing embeds to stop working until they are updated with the new key."
-msgstr "Esto hará que las inserciones existentes dejen de funcionar hasta que se actualicen con la nueva clave."
+msgstr "Ini akan menyebabkan integrasi yang ada menjadi malfungsi sampai diperbarui dengan kunci baru."
 
 #: frontend/src/metabase/admin/settings/components/widgets/SecretKeyWidget.jsx:39
 msgid "Regenerate key"
-msgstr "Regenerar clave"
+msgstr "Hasilkan ulang kunci"
 
 #: frontend/src/metabase/admin/settings/components/widgets/SecretKeyWidget.jsx:47
 msgid "Generate Key"
-msgstr "Generar clave"
+msgstr "Hasilkan kunci"
 
 #: frontend/src/metabase/admin/settings/components/widgets/SettingToggle.jsx:11
 #: frontend/src/metabase/admin/settings/selectors.js:78
 #: frontend/src/metabase/admin/settings/selectors.js:87
 msgid "Enabled"
-msgstr "Habilitado"
+msgstr "Diaktifkan"
 
 #: frontend/src/metabase/admin/settings/components/widgets/SettingToggle.jsx:11
 #: frontend/src/metabase/admin/settings/selectors.js:83
 #: frontend/src/metabase/public/components/widgets/AdvancedSettingsPane.jsx:103
 msgid "Disabled"
-msgstr "Deshabilitado"
+msgstr "Nonaktif"
 
 #: frontend/src/metabase/admin/settings/containers/SettingsEditorApp.jsx:116
 msgid "Unknown setting {0}"
-msgstr "La directiva de configuración {0} es desconocida"
+msgstr "Pengaturan tidak dikenal {0}"
 
 #: frontend/src/metabase/admin/settings/selectors.js:23
 msgid "Setup"
-msgstr "Configura"
+msgstr "Pengaturan"
 
 #: frontend/src/metabase/admin/datamodel/containers/FieldApp.jsx:217
 #: frontend/src/metabase/admin/settings/selectors.js:28
 msgid "General"
-msgstr "General"
+msgstr "Umum"
 
 #: frontend/src/metabase/admin/settings/selectors.js:33
 msgid "Site Name"
-msgstr "Nombre Sitio"
+msgstr "Nama situs"
 
 #: frontend/src/metabase/admin/settings/selectors.js:38
 msgid "Site URL"
-msgstr "URL Sitio"
+msgstr "URL Situs"
 
 #: frontend/src/metabase/admin/settings/selectors.js:43
 msgid "Email Address for Help Requests"
-msgstr "Dirección de correo electrónico para solicitudes de ayuda"
+msgstr "Alamat email untuk permintaan bantuan"
 
 #: frontend/src/metabase/admin/settings/selectors.js:48
 msgid "Report Timezone"
-msgstr "Zona horaria de los Informes"
+msgstr "Laporkan zona waktu"
 
 #: frontend/src/metabase/admin/settings/selectors.js:51
 msgid "Database Default"
-msgstr "La de la base de datos"
+msgstr "Nilai standar dari database"
 
 #: frontend/src/metabase/admin/settings/selectors.js:54
 msgid "Select a timezone"
-msgstr "Selecciona una zona horaria"
+msgstr "Pilih zona waktu"
 
 #: frontend/src/metabase/admin/settings/selectors.js:55
 msgid "Not all databases support timezones, in which case this setting won't take effect."
-msgstr "No todas las bases de datos admiten zonas horarias, en cuyo caso esta configuración no tendrá efecto."
+msgstr "Tidak semua basisdata mendukung zona waktu, jika tidak pengaturan ini tidak akan berpengaruh."
 
 #: frontend/src/metabase/admin/settings/selectors.js:60
 msgid "Language"
-msgstr "Idioma"
+msgstr "Bahasa"
+
 
 #: frontend/src/metabase/admin/settings/selectors.js:65
 msgid "Select a language"
-msgstr "Selecciona un idioma"
+msgstr "Pilih bahasa"
 
 #: frontend/src/metabase/admin/settings/selectors.js:70
 msgid "Anonymous Tracking"
-msgstr "Seguimiento anónimo"
+msgstr "Pelacakan Anonim"
 
 #: frontend/src/metabase/admin/settings/selectors.js:75
 msgid "Friendly Table and Field Names"
-msgstr "Nombres de tablas y campos amistosos"
+msgstr "Adaptasi nama tabel dan field"
 
 #: frontend/src/metabase/admin/settings/selectors.js:81
 msgid "Only replace underscores and dashes with spaces"
-msgstr "Solo reemplaza los guiones bajos y guiones por espacios"
+msgstr "Ganti hanya menggarisbawahi dan ditarik oleh spasi"
 
 #: frontend/src/metabase/admin/settings/selectors.js:91
 msgid "Enable Nested Queries"
-msgstr "Habilitar consultas anidadas"
+msgstr "Izinkan kueri bertingkat"
 
 #: frontend/src/metabase/admin/settings/selectors.js:102
 msgid "Updates"
-msgstr "Actualizaciones"
+msgstr "Pembaruan"
 
 #: frontend/src/metabase/admin/settings/selectors.js:107
 msgid "Check for updates"
-msgstr "Buscar actualizaciones"
+msgstr "Periksa pembaruan"
 
 #: frontend/src/metabase/admin/settings/selectors.js:118
 msgid "SMTP Host"
-msgstr "Servidor SMTP"
+msgstr "SMTP Host"
 
 #: frontend/src/metabase/admin/settings/selectors.js:126
 msgid "SMTP Port"
-msgstr "Puerto SMTP"
+msgstr "Port SMTP"
 
 #: frontend/src/metabase/admin/settings/selectors.js:130
 #: frontend/src/metabase/admin/settings/selectors.js:230
 msgid "That's not a valid port number"
-msgstr "Ese no es un número de puerto válido"
+msgstr "Ini bukan nomor port yang valid"
 
 #: frontend/src/metabase/admin/settings/selectors.js:134
 msgid "SMTP Security"
-msgstr "Seguridad SMTP"
+msgstr "Keamanan SMTP"
 
 #: frontend/src/metabase/admin/settings/selectors.js:142
 msgid "SMTP Username"
-msgstr "Usuario SMTP"
+msgstr "Pengguna SMTP"
 
 #: frontend/src/metabase/admin/settings/selectors.js:149
 msgid "SMTP Password"
-msgstr "Contraseña SMTP"
+msgstr "Kata sandi SMTP"
 
 #: frontend/src/metabase/admin/settings/selectors.js:156
 msgid "From Address"
-msgstr "Email De"
+msgstr "Dari alamat"
 
 #: frontend/src/metabase/admin/settings/selectors.js:170
 msgid "Slack API Token"
@@ -1842,73 +1843,73 @@ msgstr "Introduce el token que has recibido de Slack"
 
 #: frontend/src/metabase/admin/settings/selectors.js:189
 msgid "Single Sign-On"
-msgstr "Inicio de sesión único"
+msgstr "Single sign-on"
 
 #: frontend/src/metabase/admin/settings/selectors.js:213
 msgid "LDAP Authentication"
-msgstr "Autentificación LDAP"
+msgstr "LDAP Authentication"
 
 #: frontend/src/metabase/admin/settings/selectors.js:219
 msgid "LDAP Host"
-msgstr "Servidor LDAP"
+msgstr "LDAP Host"
 
 #: frontend/src/metabase/admin/settings/selectors.js:227
 msgid "LDAP Port"
-msgstr "Puerto LDAP"
+msgstr "LDAP port"
 
 #: frontend/src/metabase/admin/settings/selectors.js:234
 msgid "LDAP Security"
-msgstr "Seguridad LDAP"
+msgstr "Keamanan LDAP"
 
 #: frontend/src/metabase/admin/settings/selectors.js:242
 msgid "Username or DN"
-msgstr "Nombre de Usuario o DN"
+msgstr "Pengguna"
 
 #: frontend/src/metabase/admin/settings/selectors.js:247
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:188
 #: frontend/src/metabase/user/components/UserSettings.jsx:72
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Sandi"
 
 #: frontend/src/metabase/admin/settings/selectors.js:252
 msgid "User search base"
-msgstr "Base de búsqueda de usuario"
+msgstr "Dasar pencarian pengguna"
 
 #: frontend/src/metabase/admin/settings/selectors.js:258
 msgid "User filter"
-msgstr "Filtro de usuario"
+msgstr "Filter pengguna"
 
 #: frontend/src/metabase/admin/settings/selectors.js:264
 msgid "Check your parentheses"
-msgstr "Verifica los paréntesis"
+msgstr "Periksa tanda kurung Anda"
 
 #: frontend/src/metabase/admin/settings/selectors.js:270
 msgid "Email attribute"
-msgstr "Atributo de Email"
+msgstr "Atribut alamat e-mail"
 
 #: frontend/src/metabase/admin/settings/selectors.js:275
 msgid "First name attribute"
-msgstr "Atributo de Nombre"
+msgstr "Nama depan atribut"
 
 #: frontend/src/metabase/admin/settings/selectors.js:280
 msgid "Last name attribute"
-msgstr "Atributo de Apellidos"
+msgstr "Nama belakang Atribut"
 
 #: frontend/src/metabase/admin/settings/selectors.js:285
 msgid "Synchronize group memberships"
-msgstr "Sincronizar membresías de grupo"
+msgstr "Sinkronisasi keanggotaan grup"
 
 #: frontend/src/metabase/admin/settings/selectors.js:291
 msgid "Group search base"
-msgstr "Base de búsqueda para Grupo"
+msgstr "Cari Kelompok Basis"
 
 #: frontend/src/metabase/admin/settings/selectors.js:300
 msgid "Maps"
-msgstr "Mapas"
+msgstr "Peta"
 
 #: frontend/src/metabase/admin/settings/selectors.js:305
 msgid "Map tile server URL"
-msgstr "URL del servidor de capas de mapa"
+msgstr "URL dari server peta"
 
 #: frontend/src/metabase/admin/settings/selectors.js:306
 msgid "Metabase uses OpenStreetMaps by default."
@@ -1920,199 +1921,199 @@ msgstr "Mapas Personalizados"
 
 #: frontend/src/metabase/admin/settings/selectors.js:312
 msgid "Add your own GeoJSON files to enable different region map visualizations"
-msgstr "Añade tus propios archivos GeoJSON para habilitar diferentes visualizaciones de mapas de región"
+msgstr "Tambahkan file GeoJSON Anda sendiri untuk dilihat di wilayah lain"
 
 #: frontend/src/metabase/admin/settings/selectors.js:331
 msgid "Public Sharing"
-msgstr "Uso compartido público"
+msgstr "Berbagi Publik"
 
 #: frontend/src/metabase/admin/settings/selectors.js:336
 msgid "Enable Public Sharing"
-msgstr "Habilitar el intercambio público"
+msgstr "Aktifkan pembagian publik"
 
 #: frontend/src/metabase/admin/settings/selectors.js:341
 msgid "Shared Dashboards"
-msgstr "Cuadros de Mando compartidos"
+msgstr "Dasbor bersama"
 
 #: frontend/src/metabase/admin/settings/selectors.js:347
 msgid "Shared Questions"
-msgstr "Preguntas compartidas"
+msgstr "Pertanyaan yang Dibagikan"
 
 #: frontend/src/metabase/admin/settings/selectors.js:354
 msgid "Embedding in other Applications"
-msgstr "Incrustar en otras aplicaciones"
+msgstr "Integrasi ke dalam aplikasi lain"
 
 #: frontend/src/metabase/admin/settings/selectors.js:381
 msgid "Enable Embedding Metabase in other Applications"
-msgstr "Habilitar incrustación de Metabase en otras aplicaciones"
+msgstr "Izinkan integrasi Metabase di aplikasi lain"
 
 #: frontend/src/metabase/admin/settings/selectors.js:391
 msgid "Embedding secret key"
-msgstr "Clave secreta de incrustación"
+msgstr "Kunci integrasi rahasia"
 
 #: frontend/src/metabase/admin/settings/selectors.js:397
 msgid "Embedded Dashboards"
-msgstr "Cuadros de Mando embebidos"
+msgstr "Dasbor terintegrasi"
 
 #: frontend/src/metabase/admin/settings/selectors.js:403
 msgid "Embedded Questions"
-msgstr "Preguntas embebidas"
+msgstr "Pertanyaan teringegrasi"
 
 #: frontend/src/metabase/admin/settings/selectors.js:410
 msgid "Caching"
-msgstr "Almacenamiento en caché"
+msgstr "Caching"
 
 #: frontend/src/metabase/admin/settings/selectors.js:415
 msgid "Enable Caching"
-msgstr "Habilitar caché"
+msgstr "Perbolehkan caching"
 
 #: frontend/src/metabase/admin/settings/selectors.js:420
 msgid "Minimum Query Duration"
-msgstr "Duración mínima de la consulta"
+msgstr "Waktu eksekusi minimum dari sebuah query"
 
 #: frontend/src/metabase/admin/settings/selectors.js:427
 msgid "Cache Time-To-Live (TTL) multiplier"
-msgstr "Multiplicador Time-to-Live (TTL) de caché"
+msgstr "Pengali cache TTL"
 
 #: frontend/src/metabase/admin/settings/selectors.js:434
 msgid "Max Cache Entry Size"
-msgstr "Tamaño máximo de entrada de caché"
+msgstr "Ukuran maksimum dari entri cache"
 
 #: frontend/src/metabase/alert/alert.js:60
 msgid "Your alert is all set up."
-msgstr "Tu alerta está configurada."
+msgstr "Peringatan Anda dikonfigurasikan."
 
 #: frontend/src/metabase/alert/alert.js:101
 msgid "Your alert was updated."
-msgstr "Tu alerta fue actualizada."
+msgstr "Peringatan Anda telah diperbarui"
 
 #: frontend/src/metabase/alert/alert.js:149
 msgid "The alert was successfully deleted."
-msgstr "La alerta fue eliminada correctamente."
+msgstr "Peringatan telah berhasil dihapus."
 
 #: frontend/src/metabase/auth/auth.js:33
 msgid "Please enter a valid formatted email address."
-msgstr "Por favor ingresa una dirección de correo electrónico con formato válido."
+msgstr "Silakan masukkan alamat email yang valid."
 
 #: frontend/src/metabase/auth/auth.js:116
 #: frontend/src/metabase/setup/components/UserStep.jsx:110
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:69
 msgid "Passwords do not match"
-msgstr "Las contraseñas no coinciden"
+msgstr "Kata sandi tidak cocok"
 
 #: frontend/src/metabase/auth/components/BackToLogin.jsx:6
 msgid "Back to login"
-msgstr "Volver al inicio de sesión"
+msgstr "Kembali ke halaman login"
 
 #: frontend/src/metabase/auth/components/GoogleNoAccount.jsx:15
 msgid "No Metabase account exists for this Google account."
-msgstr "No existe una cuenta de Metabase para esta cuenta de Google."
+msgstr "Tidak ada akun untuk Akun Google ini"
 
 #: frontend/src/metabase/auth/components/GoogleNoAccount.jsx:17
 msgid "You'll need an administrator to create a Metabase account before you can use Google to log in."
-msgstr "Necesitará un administrador para crear una cuenta Metabase antes de poder usar Google para iniciar sesión."
+msgstr "Anda akan membutuhkan administrator Metabase untuk membuat akun sebelum Anda dapat menggunakan Google untuk masuk."
 
 #: frontend/src/metabase/auth/components/SSOLoginButton.jsx:18
 msgid "Sign in with {0}"
-msgstr "Inicia sesión con {0}"
+msgstr "Terhubung dengan {0}"
 
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:56
 msgid "Please contact an administrator to have them reset your password"
-msgstr "Por favor, ponte en contacto con un administrador para que restablezca tu contraseña"
+msgstr "Tolong, minta administrator Metabase untuk mereset kata sandi Anda"
 
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:69
 msgid "Forgot password"
-msgstr "Olvidé mi contraseña"
+msgstr "Lupa kata sandi Anda"
 
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:84
 msgid "The email you use for your Metabase account"
-msgstr "El correo electrónico que utilizas para tu cuenta Metabase"
+msgstr "Alamat email yang Anda gunakan untuk akun Anda"
 
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:99
 msgid "Send password reset email"
-msgstr "Enviar correo electrónico de restablecimiento de contraseña"
+msgstr "Kirim email pengaturan ulang kata sandi"
 
 #: frontend/src/metabase/auth/containers/ForgotPasswordApp.jsx:110
 msgid "Check your email for instructions on how to reset your password."
-msgstr "Consulta tu correo electrónico para obtener instrucciones sobre cómo restablecer tu contraseña."
+msgstr "Periksa email Anda untuk instruksi untuk mereset kata sandi Anda."
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:128
 msgid "Sign in to Metabase"
-msgstr "Iniciar sesión en Metabase"
+msgstr "Masuk ke SIPP - Jawa"
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:138
 msgid "OR"
-msgstr "O"
+msgstr "ATAU"
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:157
 msgid "Username or email address"
-msgstr "Nombre de usuario o dirección de correo electrónico"
+msgstr "Nama Pengguna atau Email"
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:217
 msgid "Sign in"
-msgstr "Acceder"
+msgstr "Hubungkan"
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:230
 msgid "I seem to have forgotten my password"
-msgstr "Parece que olvidé mi contraseña"
+msgstr "Saya sepertinya lupa kata sandi saya"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:102
 msgid "request a new reset email"
-msgstr "solicitar un nuevo correo electrónico de reinicio"
+msgstr "minta email reset baru"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:120
 msgid "Whoops, that's an expired link"
-msgstr "Vaya, ese es un enlace caducado"
+msgstr "Ups, tautan ini telah kedaluwarsa"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:122
 msgid "For security reasons, password reset links expire after a little while. If you still need\n"
 "to reset your password, you can {0}."
-msgstr "Por razones de seguridad, los enlaces de restablecimiento de contraseña caducan después de un tiempo.\n"
-"Si aún necesita restablecer tu contraseña, puedes {0}"
+msgstr "Untuk alasan keamanan, tautan setel ulang kata sandi akan kedaluwarsa setelah beberapa saat, jadi jika Anda masih perlu mengatur ulang kata sandi, Anda bisa {0}."
+
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:147
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:126
 msgid "New password"
-msgstr "Nueva contraseña"
+msgstr "Kata sandi baru"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:149
 msgid "To keep your data secure, passwords {0}"
-msgstr "Para mantener tus datos seguros, las contraseñas {0}"
+msgstr "Untuk menjaga data Anda aman, kata sandi {0}"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:163
 msgid "Create a new password"
-msgstr "Crear una nueva contraseña"
+msgstr "Buat kata sandi baru"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:170
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:141
 msgid "Make sure its secure like the instructions above"
-msgstr "Ha de cumplir las instrucciones anteriores"
+msgstr "Pastikan keamanannya sesuai dengan petunjuk di atas"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:184
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:150
 msgid "Confirm new password"
-msgstr "Confirmar nueva contraseña"
+msgstr "Konfirmasi kata sandi baru"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:191
 #: frontend/src/metabase/user/components/SetUserPassword.jsx:159
 msgid "Make sure it matches the one you just entered"
-msgstr "Tiene que coincidir con la que acabas de poner"
+msgstr "Pastikan itu cocok dengan yang baru saja Anda masukkan"
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:216
 msgid "Your password has been reset."
-msgstr "Tu contraseña ha sido restablecida."
+msgstr "Kata sandi Anda telah direset."
 
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:222
 #: frontend/src/metabase/auth/containers/PasswordResetApp.jsx:227
 msgid "Sign in with your new password"
-msgstr "Inicia sesión con tu nueva contraseña"
+msgstr "Masuk dengan kata sandi baru Anda"
 
 #: frontend/src/metabase/components/ActionButton.jsx:53
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:182
 #: frontend/src/metabase/pulse/components/PulseEdit.jsx:184
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:251
 msgid "Save failed"
-msgstr "Ha fallado"
+msgstr "Backup gagal"
 
 #: frontend/src/metabase/components/ActionButton.jsx:54
 #: frontend/src/metabase/components/SaveStatus.jsx:60
@@ -2122,19 +2123,19 @@ msgstr "Ha fallado"
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:225
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:252
 msgid "Saved"
-msgstr "Guardado"
+msgstr "Simpan"
 
 #: frontend/src/metabase/components/Alert.jsx:12
 msgid "Ok"
-msgstr "Vale"
+msgstr "Ok"
 
 #: frontend/src/metabase/components/ArchiveCollectionModal.jsx:40
 msgid "Archive this collection?"
-msgstr "¿Archivar esta colección?"
+msgstr "Arsipkan koleksi ini?"
 
 #: frontend/src/metabase/components/ArchiveCollectionModal.jsx:45
 msgid "The dashboards, collections, and pulses in this collection will also be archived."
-msgstr "Los cuadros de mando, colecciones y pulsos guardados en esta colección también se archivarán."
+msgstr "Dahsboard, kolesi, dan pulses pada koleksi ini akan diarsipkan."
 
 #: frontend/src/metabase/components/ArchiveCollectionModal.jsx:49
 #: frontend/src/metabase/components/CollectionLanding.jsx:587
@@ -2149,86 +2150,86 @@ msgstr "Los cuadros de mando, colecciones y pulsos guardados en esta colección 
 #: frontend/src/metabase/query_builder/containers/ArchiveQuestionModal.jsx:53
 #: frontend/src/metabase/routes.jsx:199
 msgid "Archive"
-msgstr "Archivar"
+msgstr "Arsip"
 
 #: frontend/src/metabase/containers/ErrorPages.jsx:63
 msgid "This {0} has been archived"
-msgstr "Este {0} ha sido archivado"
+msgstr "Ini / ini {0} telah diarsipkan"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:679
 msgid "View the archive"
-msgstr "Ver el archivo"
+msgstr "Lihat arsip"
 
 #: frontend/src/metabase/components/ArchivedItem.jsx:39
 msgid "Unarchive this {0}"
-msgstr "Desarchive este {0}"
+msgstr "Batalkan pengarsipan ini / ini {0}"
 
 #: frontend/src/metabase/components/BrowseApp.jsx:95
 #: frontend/src/metabase/components/BrowseApp.jsx:157
 #: frontend/src/metabase/components/BrowseApp.jsx:250
 #: frontend/src/metabase/containers/Overworld.jsx:224
 msgid "Our data"
-msgstr "Nuestros datos"
+msgstr "Data kami"
 
 #: frontend/src/metabase/components/BrowseApp.jsx:194
 #: frontend/src/metabase/reference/databases/TableSidebar.jsx:55
 msgid "X-ray this table"
-msgstr "Aplica rayos-X a esta tabla"
+msgstr "Radiograph tabel ini"
 
 #: frontend/src/metabase/components/BrowseApp.jsx:208
 #: frontend/src/metabase/containers/Overworld.jsx:251
 msgid "Learn about this table"
-msgstr "Aprende sobre esta tabla"
+msgstr "Pelajari tentang tabel ini"
 
 #: frontend/src/metabase/components/Button.info.js:11
 #: frontend/src/metabase/components/Button.info.js:12
 #: frontend/src/metabase/components/Button.info.js:13
 msgid "Clickity click"
-msgstr "Clic"
+msgstr "Klik clickity"
 
 #: frontend/src/metabase/components/ButtonWithStatus.jsx:9
 msgid "Saved!"
-msgstr "Guardado!"
+msgstr "Tersimpan!"
 
 #: frontend/src/metabase/components/ButtonWithStatus.jsx:10
 msgid "Saving failed."
-msgstr "No se ha podido guardar."
+msgstr "Gagal menyimpan."
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Su"
-msgstr "D"
+msgstr "Mi"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Mo"
-msgstr "L"
+msgstr "Sen"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Tu"
-msgstr "M"
+msgstr "Sel"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "We"
-msgstr "X"
+msgstr "Rab"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Th"
-msgstr "J"
+msgstr "Kam"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Fr"
-msgstr "V"
+msgstr "Jum"
 
 #: frontend/src/metabase/components/Calendar.jsx:119
 msgid "Sa"
-msgstr "S"
+msgstr "Sab"
 
 #: frontend/src/metabase/components/ChannelSetupMessage.jsx:41
 msgid "Your admin's email address"
-msgstr "La dirección de correo electrónico de tu administrador"
+msgstr "Alamat email administrator Anda"
 
 #: frontend/src/metabase/components/ChannelSetupModal.jsx:37
 msgid "To send {0}, you'll need to set up {1} integration."
-msgstr "Para enviar {0}, tendrás que configurar la integración con {1}."
+msgstr "Untuk mengirim {0}, Anda harus mengonfigurasi integrasi {1}"
 
 #: frontend/src/metabase/components/ChannelSetupModal.jsx:38
 #: frontend/src/metabase/components/ChannelSetupModal.jsx:41
@@ -2241,146 +2242,145 @@ msgstr "Para enviar {0}, un administrador necesita configurar la integración co
 
 #: frontend/src/metabase/components/CollectionEmptyState.jsx:15
 msgid "This collection is empty, like a blank canvas"
-msgstr "Esta colección está vacía, como una hoja en blanco"
+msgstr "Koleksi ini kosong, seperti kanvas kosong"
 
 #: frontend/src/metabase/components/CollectionEmptyState.jsx:16
 msgid "You can use collections to organize and group dashboards, questions and pulses for your team or yourself"
-msgstr "Puedes usar colecciones para organizar y agrupar cuadros de mando, preguntas y pulsos para tu equipo o para ti"
+msgstr "Anda dapat menggunakan koleksi untuk mengatur dan mengelompokkan dasbor Anda, pertanyaan, dan detak jantung untuk tim Anda atau diri Anda sendiri"
 
 #: frontend/src/metabase/components/CollectionEmptyState.jsx:28
 msgid "Create another collection"
-msgstr "Crea otra colección"
+msgstr "Buat koleksi lain"
+
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:61
 msgid "Dashboards let you collect and share data in one place."
-msgstr "Los cuadros de mando te permiten recopilar y compartir datos en un solo lugar."
+msgstr "Dasbor memungkinkan Anda mengumpulkan dan berbagi data di satu tempat."
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:70
 msgid "Pulses let you send out the latest data to your team on a schedule via email or slack."
-msgstr "Los pulsos te permiten enviar datos de Metabase a correo electrónico o Slack en el horario que deseas."
+msgstr "Pulsa memungkinkan Anda mengirim data terbaru ke tim Anda secara terjadwal, melalui email atau slack."
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:79
 msgid "Questions are a saved look at your data."
-msgstr "Las preguntas son vistas guardadas de tus datos."
+msgstr "Sebuah pertanyaan adalah pandangan tersimpan dari data Anda."
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:275
 msgid "Pins"
-msgstr "Pins"
+msgstr "Pin"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:329
 msgid "Drag something here to pin it to the top"
-msgstr "Arrastra algo aquí para pegarlo arriba"
+msgstr "Kirim sesuatu di sini untuk menyematkannya"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:733
 #: frontend/src/metabase/components/CollectionLanding.jsx:341
 #: frontend/src/metabase/home/containers/SearchApp.jsx:35
 #: frontend/src/metabase/home/containers/SearchApp.jsx:96
 msgid "Collections"
-msgstr "Colecciones"
+msgstr "Koleksi"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:411
 #: frontend/src/metabase/components/CollectionLanding.jsx:434
 msgid "Drag here to un-pin"
-msgstr "Arrastra aquí para despegarlo"
+msgstr "Letakkan di sini untuk menghapus pin"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:469
 msgid "{0} item selected"
 msgid_plural "{0} items selected"
-msgstr[0] "{0} elemento seleccionado"
-msgstr[1] "{0} elementos seleccionados"
+msgstr[0] "{0} item yang dipilih"
+msgstr[1] "{0} item yang dipilih"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:487
 msgid "Move {0} items?"
-msgstr "¿Mover {1} elemento(s)?"
+msgstr "Pindahkan {0} item?"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:488
 msgid "Move \"{0}\"?"
-msgstr "¿Mover \"{0}\"?"
+msgstr "Pindahkan \"{0}\"?"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:594
 #: frontend/src/metabase/components/EntityMenu.info.js:29
 #: frontend/src/metabase/components/EntityMenu.info.js:85
 #: frontend/src/metabase/containers/CollectionMoveModal.jsx:78
 msgid "Move"
-msgstr "Mover"
+msgstr "Pindahkan"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:656
 msgid "Edit this collection"
-msgstr "Edita esta colección"
+msgstr "Edit koleksi ini"
 
 #: frontend/src/metabase/components/CollectionLanding.jsx:664
 msgid "Archive this collection"
-msgstr "Archivar esta colección"
+msgstr "Arsipkan koleksi ini"
 
 #: frontend/src/metabase/components/CollectionList.jsx:64
 #: frontend/src/metabase/entities/collections.js:148
 msgid "My personal collection"
-msgstr "Mi colección personal"
+msgstr "Koleksi pribadi saya"
 
 #: frontend/src/metabase/components/CollectionList.jsx:106
 #: frontend/src/metabase/containers/CollectionForm.jsx:9
 msgid "New collection"
-msgstr "Nueva colección"
+msgstr "Koleksi Baru"
 
 #: frontend/src/metabase/components/CopyButton.jsx:35
 msgid "Copied!"
-msgstr "Copiado!"
+msgstr "Disalin!"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:216
 msgid "Use an SSH-tunnel for database connections"
-msgstr "Utiliza un túnel SSH para las conexiones a la base de datos"
+msgstr "Gunakan SSH untuk koneksi basis data"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:218
 msgid "Some database installations can only be accessed by connecting through an SSH bastion host.\n"
 "This option also provides an extra layer of security when a VPN is not available.\n"
 "Enabling this is usually slower than a direct connection."
-msgstr "Algunas instalaciones de bases de datos solo se pueden acceder conectándose a través de un túnel SSH.\n"
-"Esta opción también proporciona una capa adicional de seguridad cuando no dispones de una VPN.\n"
-"Esto suele ser más lento que una conexión directa."
+msgstr "Beberapa database hanya dapat diakses di SSH melalui server bastion, opsi ini juga menambahkan lapisan keamanan pada koneksi non-VPN, dan memungkinkannya lebih lambat daripada koneksi langsung."
+
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:271
 msgid "This is a large database, so let me choose when Metabase syncs and scans"
-msgstr "Esta es una base de datos grande, así que déjame elegir cuándo Metabase sincroniza y escanea"
+msgstr "Ini adalah database besar, jadi biarkan saya memilih ketika Metabase memulai sinkronisasi dan pemindaian."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:273
 msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
-msgstr "De forma predeterminada, Metabase realiza una sincronización ligera cada hora y un análisis diario intensivo de los valores de campo.\n"
-"Si tienes una base de datos grande, te recomendamos activarla y revisar cuándo y con qué frecuencia ocurren los escaneos de valores de campo."
+msgstr "Secara default, Metabase melakukan sinkronisasi waktu cahaya dan analisis harian intensif dari nilai filter."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:289
 msgid "{0} to generate a Client ID and Client Secret for your project."
-msgstr "{0} para generar un ID y clave secreta de cliente para tu proyecto."
+msgstr "{0} untuk menghasilkan ID dan rahasia klien untuk proyek Anda."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:291
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:318
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:353
 msgid "Click here"
-msgstr "Haz clic aquí"
+msgstr "Klik di sini"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:294
 msgid "Choose \"Other\" as the application type. Name it whatever you'd like."
-msgstr "Elige \"Otro\" como tipo de aplicación. Llámalo como quieras"
+msgstr "Pilih \" Lainnya \"sebagai jenis aplikasi, beri nama sesuai keinginan Anda."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:316
 msgid "{0} to get an auth code"
-msgstr "{0} para obtener un código de autenticación"
+msgstr "{0} untuk mendapatkan kode autentikasi"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:328
 msgid "with Google Drive permissions"
-msgstr "con permisos de Google Drive"
+msgstr "dengan izin Google Drive"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:348
 msgid "To use Metabase with this data you must enable API access in the Google Developers Console."
-msgstr "Para usar Metabase con estos datos, debes habilitar el acceso a la API en Google Developers Console."
+msgstr "Untuk menggunakan Metabase dengan data ini, Anda harus mengaktifkan akses API di Google Developers Console."
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:351
 msgid "{0} to go to the console if you haven't already done so."
-msgstr "{0} para ir a la consola si aún no lo has hecho."
+msgstr "{0} untuk pergi ke konsol jika belum selesai. "
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:400
 msgid "How would you like to refer to this database?"
-msgstr "¿Cómo te gustaría llamar esta base de datos?"
+msgstr "dengan nama apa Anda ingin mereferensikan database ini?"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:427
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:97
@@ -2390,69 +2390,69 @@ msgstr "¿Cómo te gustaría llamar esta base de datos?"
 #: frontend/src/metabase/setup/components/PreferencesStep.jsx:116
 #: frontend/src/metabase/setup/components/UserStep.jsx:308
 msgid "Next"
-msgstr "Siguiente"
+msgstr "Berikutnya"
 
 #: frontend/src/metabase/components/DeleteModalWithConfirm.jsx:80
 msgid "Delete this {0}"
-msgstr "Elimina este {0}"
+msgstr "Hapus ini {0}"
 
 #: frontend/src/metabase/components/EntityItem.jsx:42
 msgid "Pin this item"
-msgstr "Fija este elemento"
+msgstr "Sematkan item ini"
 
 #: frontend/src/metabase/components/EntityItem.jsx:48
 msgid "Move this item"
-msgstr "Mueve este elemento"
+msgstr "Pindahkan item ini"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:24
 #: frontend/src/metabase/components/EntityMenu.info.js:80
 msgid "Edit this question"
-msgstr "Editar esta pregunta"
+msgstr "Edit pertanyaan ini"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:26
 #: frontend/src/metabase/components/EntityMenu.info.js:47
 #: frontend/src/metabase/components/EntityMenu.info.js:82
 #: frontend/src/metabase/components/EntityMenu.info.js:99
 msgid "Action type"
-msgstr "Tipo acción"
+msgstr "Jenis tindakan"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:28
 #: frontend/src/metabase/components/EntityMenu.info.js:84
 msgid "View revision history"
-msgstr "Ver el historial de revisiones"
+msgstr "Lihat riwayat perubahan"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:29
 #: frontend/src/metabase/components/EntityMenu.info.js:85
 msgid "Move action"
-msgstr "Acción de mover"
+msgstr "Pindahkan"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:33
 #: frontend/src/metabase/components/EntityMenu.info.js:89
 msgid "Archive action"
-msgstr "Acción de archivar"
+msgstr "Pengarsipan"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:45
 #: frontend/src/metabase/components/EntityMenu.info.js:97
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:329
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:342
 msgid "Add to dashboard"
-msgstr "Añadir a Cuadro de Mando"
+msgstr "Tambahkan ke dasbor"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:49
 #: frontend/src/metabase/components/EntityMenu.info.js:101
 msgid "Download results"
-msgstr "Descarga los resultados"
+msgstr "Unduh hasil"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:51
 #: frontend/src/metabase/components/EntityMenu.info.js:103
 #: frontend/src/metabase/public/components/widgets/EmbedWidget.jsx:52
 msgid "Sharing and embedding"
-msgstr "Compartiendo y Incrustando"
+msgstr "Bagikan dan integrasikan"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:53
 #: frontend/src/metabase/components/EntityMenu.info.js:105
 msgid "Another action type"
-msgstr "Otro tipo de acción"
+msgstr "Tipe tindakan lain"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:65
 #: frontend/src/metabase/components/EntityMenu.info.js:67
@@ -2461,64 +2461,64 @@ msgstr "Otro tipo de acción"
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:449
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:454
 msgid "Get alerts about this"
-msgstr "Recibe alertas sobre esto"
+msgstr "Dapatkan peringatan tentang topik ini"
 
 #: frontend/src/metabase/components/EntityMenu.info.js:69
 #: frontend/src/metabase/components/EntityMenu.info.js:117
 msgid "View the SQL"
-msgstr "Ver el SQL"
+msgstr "Visualisasikan SQL"
 
 #: frontend/src/metabase/components/EntitySegments.jsx:18
 msgid "Segments for this"
-msgstr "Segmentos para este"
+msgstr "Segmen terkait"
 
 #: frontend/src/metabase/components/ErrorDetails.jsx:20
 msgid "Show error details"
-msgstr "Mostrar detalles del error"
+msgstr "Tampilkan kesalahan secara mendetail"
 
 #: frontend/src/metabase/components/ErrorDetails.jsx:26
 msgid "Here's the full error message"
-msgstr "Este es el mensaje de error completo"
+msgstr "Ini adalah pesan kesalahan penuh"
 
 #: frontend/src/metabase/components/ExplorePane.jsx:19
 msgid "Hi, Metabot here."
-msgstr "Hola, soy Metabot"
+msgstr "Hai, di sini MetaBot."
 
 #: frontend/src/metabase/components/ExplorePane.jsx:95
 msgid "Based on the schema"
-msgstr "Basado en el esquema"
+msgstr "Menurut skema"
 
 #: frontend/src/metabase/components/ExplorePane.jsx:174
 msgid "A look at your"
-msgstr "Una vista a tus"
+msgstr "Lihatlah Anda"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:234
 msgid "Search the list"
-msgstr "Busca la lista"
+msgstr "Cari dalam daftar"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:238
 msgid "Search by {0}"
-msgstr "Buscar por {0}"
+msgstr "Cari berdasarkan {0}"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:240
 msgid " or enter an ID"
-msgstr "o introduce un ID"
+msgstr "atau masukkan ID"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:244
 msgid "Enter an ID"
-msgstr "Introduce un ID"
+msgstr "Masukkan ID"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:246
 msgid "Enter a number"
-msgstr "Introduce un número"
+msgstr "Masukkan angka"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:248
 msgid "Enter some text"
-msgstr "Introduce un texto"
+msgstr "Masukkan teks"
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:355
 msgid "No matching {0} found."
-msgstr "No se encontraron {0} coincidentes."
+msgstr "Tidak ada yang cocok {0} ditemukan."
 
 #: frontend/src/metabase/components/FieldValuesWidget.jsx:363
 msgid "Including every option in your filter probably won’t do much…"
@@ -2526,11 +2526,11 @@ msgstr "Incluir cada opción en tu filtro probablemente no hará mucho…"
 
 #: frontend/src/metabase/containers/ErrorPages.jsx:24
 msgid "Something's gone wrong"
-msgstr "Lo siento. Algo salió mal."
+msgstr "Ada yang tidak beres"
 
 #: frontend/src/metabase/containers/ErrorPages.jsx:25
 msgid "We've run into an error. You can try refreshing the page, or just go back."
-msgstr "Nos encontramos con un error. Puedes intentar refrescar la página, o simplemente volver atrás"
+msgstr "Sebuah kesalahan telah terjadi, Anda dapat mencoba untuk me-refresh halaman, atau kembali saja."
 
 #: frontend/src/metabase/components/Header.jsx:97
 #: frontend/src/metabase/components/HeaderBar.jsx:45
@@ -2543,102 +2543,102 @@ msgstr "Nos encontramos con un error. Puedes intentar refrescar la página, o si
 #: frontend/src/metabase/reference/segments/SegmentDetail.jsx:209
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:209
 msgid "No description yet"
-msgstr "Sin descripción todavía"
+msgstr "Tidak ada deskripsi"
 
 #: frontend/src/metabase/components/Header.jsx:112
 msgid "New {0}"
-msgstr "Nuevo {0}"
+msgstr "Baru / Baru {0}"
 
 #: frontend/src/metabase/components/Header.jsx:123
 msgid "Asked by {0}"
-msgstr "Preguntado por {0}"
+msgstr "Diminta oleh {0}"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:13
 msgid "Today, "
-msgstr "Hoy."
+msgstr "Hari ini,"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:15
 msgid "Yesterday, "
-msgstr "Ayer."
+msgstr "Kemarin,"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:68
 msgid "First revision."
-msgstr "Primera revisión."
+msgstr "Versi pertama."
 
 #: frontend/src/metabase/components/HistoryModal.jsx:70
 msgid "Reverted to an earlier revision and {0}"
-msgstr "Revertido a una revisión anterior y {0}"
+msgstr "Kembali ke versi sebelumnya dan {0}"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:82
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:289
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:379
 #: frontend/src/metabase/reference/segments/SegmentSidebar.jsx:58
 msgid "Revision history"
-msgstr "Historial de Revisiones"
+msgstr "Perubahan Riwayat"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:90
 msgid "When"
-msgstr "Cuando"
+msgstr "Kapan"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:91
 msgid "Who"
-msgstr "Quien"
+msgstr "Siapa"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:92
 msgid "What"
-msgstr "Que"
+msgstr "Apa"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:113
 msgid "Revert"
-msgstr "Revertir"
+msgstr "Kembali ke versi sebelumnya"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:114
 msgid "Reverting…"
-msgstr "Revertiendo…"
+msgstr "Kembali ke versi sebelumnya ..."
 
 #: frontend/src/metabase/components/HistoryModal.jsx:115
 msgid "Revert failed"
-msgstr "Falló la reversión"
+msgstr "Kembali ke versi sebelumnya gagal"
 
 #: frontend/src/metabase/components/HistoryModal.jsx:116
 msgid "Reverted"
-msgstr "Revertido"
+msgstr "Kembali ke versi sebelumnya"
 
 #: frontend/src/metabase/components/ItemTypeFilterBar.jsx:13
 msgid "Everything"
-msgstr "Todo"
+msgstr "Semua"
 
 #: frontend/src/metabase/components/ItemTypeFilterBar.jsx:18
 #: frontend/src/metabase/home/containers/SearchApp.jsx:73
 msgid "Dashboards"
-msgstr "Cuadros de Mando"
+msgstr "Dasbor"
 
 #: frontend/src/metabase/components/ItemTypeFilterBar.jsx:23
 #: frontend/src/metabase/home/containers/SearchApp.jsx:119
 msgid "Questions"
-msgstr "Preguntas"
+msgstr "Pertanyaan"
 
 #: frontend/src/metabase/components/ItemTypeFilterBar.jsx:28
 #: frontend/src/metabase/routes.jsx:320
 msgid "Pulses"
-msgstr "Pulsos"
+msgstr "Pulsa"
 
 #: frontend/src/metabase/components/LeftNavPane.jsx:36
 #: frontend/src/metabase/query_builder/components/dataref/DataReference.jsx:86
 msgid "Back"
-msgstr "Atrás"
+msgstr "Kembali"
 
 #: frontend/src/metabase/components/ListSearchField.jsx:18
 msgid "Find..."
-msgstr "Encontrar..."
+msgstr "Pencarian ..."
 
 #: frontend/src/metabase/components/LoadingAndErrorWrapper.jsx:48
 msgid "An error occured"
-msgstr "Ha ocurrido un error"
+msgstr "Sebuah kesalahan telah terjadi"
 
 #: frontend/src/metabase/components/LoadingAndErrorWrapper.jsx:35
 msgid "Loading..."
-msgstr "Cargando..."
+msgstr "Memuat ..."
 
 #: frontend/src/metabase/components/NewsletterForm.jsx:71
 msgid "Metabase Newsletter"
@@ -2658,218 +2658,219 @@ msgstr "Estás suscrito. ¡Gracias por usar Metabase!"
 
 #: frontend/src/metabase/containers/ErrorPages.jsx:44
 msgid "We're a little lost..."
-msgstr "Estamos un poco perdidos..."
+msgstr "Kami sedikit tersesat ..."
 
 #: frontend/src/metabase/components/PasswordReveal.jsx:27
 msgid "Temporary Password"
-msgstr "Contraseña Temporal"
+msgstr "Kata sandi sementara"
 
 #: frontend/src/metabase/components/PasswordReveal.jsx:68
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:421
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:436
 msgid "Hide"
-msgstr "Esconder"
+msgstr "Sembunyikan"
 
 #: frontend/src/metabase/components/PasswordReveal.jsx:68
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:422
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:437
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Tampilkan"
 
 #: frontend/src/metabase/components/QuestionSavedModal.jsx:17
 msgid "Saved! Add this to a dashboard?"
-msgstr "¡Guardado! ¿Añadir esto a un cuadro de mando?"
+msgstr "Tersimpan! Tambahkan ini ke dashboard?"
 
 #: frontend/src/metabase/components/QuestionSavedModal.jsx:25
 msgid "Yes please!"
-msgstr "Sí, por favor!"
+msgstr "Ya, tolong!"
 
 #: frontend/src/metabase/components/QuestionSavedModal.jsx:29
 msgid "Not now"
-msgstr "Ahora no"
+msgstr "Jangan sekarang"
 
 #: frontend/src/metabase/components/SaveStatus.jsx:53
 msgid "Error:"
-msgstr "Error:"
+msgstr "Galat:"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:23
 msgid "Sunday"
-msgstr "Domingo"
+msgstr "Minggu"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:24
 msgid "Monday"
-msgstr "Lunes"
+msgstr "Senin"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:25
 msgid "Tuesday"
-msgstr "Martes"
+msgstr "Selasa"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:26
 msgid "Wednesday"
-msgstr "Miércoles"
+msgstr "Rabu"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:27
 msgid "Thursday"
-msgstr "Jueves"
+msgstr "Kamis"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:28
 msgid "Friday"
-msgstr "Viernes"
+msgstr "Jumat"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:29
 msgid "Saturday"
-msgstr "Sábado"
+msgstr "Sabtu"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:33
 msgid "First"
-msgstr "Primero"
+msgstr "Pertama"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:34
 msgid "Last"
-msgstr "Ultimo"
+msgstr "Terbaru"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:35
 msgid "15th (Midpoint)"
-msgstr "15to (punto medio)"
+msgstr "tanggal Kelima belas"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:125
 msgid "Calendar Day"
-msgstr "Día Calendario"
+msgstr "Kalender hari"
 
 #: frontend/src/metabase/components/SchedulePicker.jsx:210
 msgid "your Metabase timezone"
-msgstr "tu zona horaria en Metabase"
+msgstr "zona waktu"
 
 #: frontend/src/metabase/components/SearchHeader.jsx:21
 msgid "Filter this list..."
-msgstr "Filtra esta lista..."
+msgstr "Filter daftar ini ..."
 
 #: frontend/src/metabase/components/Select.info.js:8
 msgid "Blue"
-msgstr "Azul"
+msgstr "Biru"
 
 #: frontend/src/metabase/components/Select.info.js:9
 msgid "Green"
-msgstr "Verde"
+msgstr "Hijau"
 
 #: frontend/src/metabase/components/Select.info.js:10
 msgid "Red"
-msgstr "Rojo"
+msgstr "Merah"
 
 #: frontend/src/metabase/components/Select.info.js:11
 msgid "Yellow"
-msgstr "Amarillo"
+msgstr "Kuning"
 
 #: frontend/src/metabase/components/Select.info.js:14
 msgid "A component used to make a selection"
-msgstr "Un componente utilizado para hacer una selección"
+msgstr "Sebuah komponen yang digunakan untuk membuat pilihan"
 
 #: frontend/src/metabase/components/Select.info.js:20
 #: frontend/src/metabase/components/Select.info.js:28
 msgid "Selected"
-msgstr "Seleccionado"
+msgstr "Dipilih"
 
 #: frontend/src/metabase/components/Select.jsx:297
 msgid "Nothing to select"
-msgstr "Nada para seleccionar"
+msgstr "Tidak ada yang dipilih"
 
 #: frontend/src/metabase/containers/ErrorPages.jsx:54
 msgid "Sorry, you don’t have permission to see that."
-msgstr "Lo siento, no tienes permiso para ver eso."
+msgstr "Maaf, Anda tidak memiliki izin untuk melihat ini."
 
 #: frontend/src/metabase/components/form/FormMessage.jsx:5
 msgid "Unknown error encountered"
-msgstr "Error desconocido encontrado"
+msgstr "Sebuah kesalahan yang tidak diketahui telah ditemukan"
 
 #: frontend/src/metabase/components/form/StandardForm.jsx:67
 #: frontend/src/metabase/nav/containers/Navbar.jsx:305
 msgid "Create"
-msgstr "Crea"
+msgstr "Buat"
 
 #: frontend/src/metabase/containers/DashboardForm.jsx:9
 msgid "Create dashboard"
-msgstr "Crea un Cuadro de Mando"
+msgstr "Buat sebuah dasbor"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:35
 #: frontend/src/metabase/query_builder/components/NativeQueryEditor.jsx:331
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:60
 msgid "Table"
-msgstr "Tabla"
+msgstr "Tabel"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:42
 #: frontend/src/metabase/query_builder/components/NativeQueryEditor.jsx:306
 msgid "Database"
-msgstr "Base de Datos"
+msgstr "Database"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:49
 msgid "Creator"
-msgstr "Creador"
+msgstr "Pembuat"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:238
 msgid "No results found"
-msgstr "No se han encontrado resultados"
+msgstr "Tidak ada hasil yang ditemukan"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:239
 msgid "Try adjusting your filter to find what you’re looking for."
-msgstr "Intenta ajustar tu filtro para encontrar lo que estás buscando."
+msgstr "Coba sesuaikan filter Anda untuk menemukan apa yang Anda cari"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:258
 msgid "View by"
-msgstr "Ver por"
+msgstr "Lihat berdasarkan"
 
 #: frontend/src/metabase/containers/EntitySearch.jsx:494
 #: frontend/src/metabase/query_builder/components/AggregationWidget.jsx:69
 #: frontend/src/metabase/tutorial/TutorialModal.jsx:34
 msgid "of"
-msgstr "de"
+msgstr " atas "
 
 #: frontend/src/metabase/containers/Overworld.jsx:80
 msgid "Don't tell anyone, but you're my favorite."
-msgstr "No se lo digas a nadie, pero eres mi favorito."
+msgstr "Jangan beri tahu siapa pun, tetapi Anda adalah favorit saya."
+
 
 #: frontend/src/metabase/setup/containers/PostSetupApp.jsx:85
 msgid "Once you connect your own data, I can show you some automatic explorations called x-rays. Here are some examples with sample data."
-msgstr "En cuanto conectas tus propios datos, puedo mostrarte algunas exploraciones automáticas llamadas rayos-X. Aquí hay algunos ejemplos con datos de muestra."
+msgstr "Setelah terhubung ke data Anda sendiri, saya bisa menunjukkan beberapa eksplorasi secara otomatis, yang disebut x-ray. Contoh berdasarkan data demonstrasi."
 
 #: frontend/src/metabase/containers/Overworld.jsx:133
 #: frontend/src/metabase/containers/Overworld.jsx:304
 #: frontend/src/metabase/reference/components/GuideHeader.jsx:12
 msgid "Start here"
-msgstr "Empieza aquí"
+msgstr "Mulai di sini"
 
 #: frontend/src/metabase/containers/Overworld.jsx:299
 #: frontend/src/metabase/entities/collections.js:140
 #: src/metabase/models/collection.clj
 msgid "Our analytics"
-msgstr "Nuestra Analítica"
+msgstr "Pengambilan keputusan kami"
 
 #: frontend/src/metabase/containers/Overworld.jsx:208
 msgid "Browse all items"
-msgstr "Ver todos los elementos"
+msgstr "Jelajahi semua item"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:165
 msgid "Replace or save as new?"
-msgstr "¿Reemplazar o guardar como nuevo?"
+msgstr "Ganti atau simpan sebagai item baru?"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:173
 msgid "Replace original question, \"{0}\""
-msgstr "Reemplazar la pregunta original, \"{0}\""
+msgstr "Ganti pertanyaan asli. \" {0} \""
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:178
 msgid "Save as new question"
-msgstr "Guardar como nueva pregunta"
+msgstr "Simpan sebagai pertanyaan baru"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:187
 msgid "First, save your question"
-msgstr "Primero, guarda tu pregunta"
+msgstr "Pertama-tama, simpan pertanyaan Anda"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:188
 msgid "Save question"
-msgstr "Guardar pregunta"
+msgstr "Simpan pertanyaan"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:224
 msgid "What is the name of your card?"
-msgstr "¿Cuál es el nombre de tu tarjeta?"
+msgstr "Apa nama kartu Anda?"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:232
 #: frontend/src/metabase/entities/collections.js:94
@@ -2883,200 +2884,200 @@ msgstr "¿Cuál es el nombre de tu tarjeta?"
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:207
 #: frontend/src/metabase/visualizations/lib/settings/visualization.js:24
 msgid "Description"
-msgstr "Descripción"
+msgstr "Keterangan"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:238
 #: frontend/src/metabase/entities/dashboards.js:104
 msgid "It's optional but oh, so helpful"
-msgstr "Es opcional pero, tan útil"
+msgstr "Ini opsional, tapi sangat berguna"
 
 #: frontend/src/metabase/containers/SaveQuestionModal.jsx:245
 #: frontend/src/metabase/entities/dashboards.js:108
 msgid "Which collection should this go in?"
-msgstr "¿En qué colección debería ir esto?"
+msgstr "Dalam koleksi apa itu harus pergi?"
 
 #: frontend/src/metabase/containers/UndoListing.jsx:34
 msgid "modified"
-msgstr "modificado"
+msgstr "ubah"
 
 #: frontend/src/metabase/containers/UndoListing.jsx:34
 msgid "item"
-msgstr "elemento"
+msgstr "elemen"
 
 #: frontend/src/metabase/containers/UndoListing.jsx:81
 msgid "Undo"
-msgstr "Deshacer"
+msgstr "Batalkan perubahan"
 
 #: frontend/src/metabase/dashboard/components/AddSeriesModal.jsx:270
 msgid "Applying Question"
-msgstr "Aplicando Pregunta"
+msgstr "Ajukan pertanyaan"
 
 #: frontend/src/metabase/dashboard/components/AddSeriesModal.jsx:274
 msgid "That question isn't compatible"
-msgstr "Esa pregunta no es compatible"
+msgstr "Pertanyaan ini tidak kompatibel"
 
 #: frontend/src/metabase/dashboard/components/AddSeriesModal.jsx:310
 msgid "Search for a question"
-msgstr "Busca una pregunta"
+msgstr "Cari sebuah pertanyaan"
 
 #: frontend/src/metabase/dashboard/components/AddSeriesModal.jsx:339
 msgid "We're not sure if this question is compatible"
-msgstr "No estamos seguros si esta pregunta es compatible"
+msgstr "Kami tidak yakin pertanyaan ini kompatibel"
 
 #: frontend/src/metabase/dashboard/components/ArchiveDashboardModal.jsx:43
 msgid "Archive Dashboard"
-msgstr "Archivar Cuadro de Mando"
+msgstr "Dasbor Arsip"
 
 #: frontend/src/metabase/dashboard/components/DashCardParameterMapper.jsx:20
 msgid "Make sure to make a selection for each series, or the filter won't work on this card."
-msgstr "Asegúrate de hacer una selección para cada serie, o el filtro no funcionará en esta tarjeta."
+msgstr "Pastikan Anda membuat pilihan untuk setiap set data, atau filter tidak akan berfungsi dengan kartu ini."
 
 #: frontend/src/metabase/dashboard/components/Dashboard.jsx:286
 msgid "This dashboard is looking empty."
-msgstr "Este cuadro de mando parece estar vacío."
+msgstr "Dasbor ini terlihat kosong."
 
 #: frontend/src/metabase/dashboard/components/Dashboard.jsx:289
 msgid "Add a question to start making it useful!"
-msgstr "¡Añade una pregunta para hacerlo útil!"
+msgstr "Tambahkan pertanyaan untuk mulai membuatnya bermanfaat!"
 
 #: frontend/src/metabase/dashboard/components/DashboardActions.jsx:38
 msgid "Daytime mode"
-msgstr "Modo Diurno"
+msgstr "Mode siang"
 
 #: frontend/src/metabase/dashboard/components/DashboardActions.jsx:38
 msgid "Nighttime mode"
-msgstr "Modo Nocturno"
+msgstr "Mode malam"
 
 #: frontend/src/metabase/dashboard/components/DashboardActions.jsx:56
 msgid "Exit fullscreen"
-msgstr "Desactivar Pantalla Completa"
+msgstr "Keluar dari mode layar penuh"
 
 #: frontend/src/metabase/dashboard/components/DashboardActions.jsx:56
 msgid "Enter fullscreen"
-msgstr "Activar Pantalla Completa"
+msgstr "Beralih ke mode layar penuh"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:181
 #: frontend/src/metabase/pulse/components/PulseEdit.jsx:183
 #: frontend/src/metabase/query_builder/components/QueryHeader.jsx:250
 msgid "Saving…"
-msgstr "Guardando…"
+msgstr "Menyimpan..."
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:216
 msgid "Add a question"
-msgstr "Añade una pregunta"
+msgstr "Tambahkan pertanyaan"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:219
 msgid "Add a question to this dashboard"
-msgstr "Añade una pregunta a este cuadro de mando"
+msgstr "Tambah pertanyaan ke dasbor ini"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:248
 msgid "Add a filter"
-msgstr "Añadir filtro"
+msgstr "Tambahkan filter"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:254
 #: frontend/src/metabase/public/components/widgets/AdvancedSettingsPane.jsx:78
 msgid "Parameters"
-msgstr "Parámetros"
+msgstr "Parameters"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:275
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:279
 msgid "Add a text box"
-msgstr "Añade una caja de texto"
+msgstr "Tambahkan sebuah kotak teks"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:302
 msgid "Move dashboard"
-msgstr "Mover cuadro de mando"
+msgstr "Pindahkan dasbor"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:315
 msgid "Edit dashboard"
-msgstr "Editar Cuadro de Mando"
+msgstr "Edit dasbor"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:319
 msgid "Edit Dashboard Layout"
-msgstr "Editar Disposición del Cuadro de Mando"
+msgstr "Ubah tata letak dasbor"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:357
 msgid "You are editing a dashboard"
-msgstr "Estás editando un cuadro de mando"
+msgstr "Anda sedang mengedit dasbor"
 
 #: frontend/src/metabase/dashboard/components/DashboardHeader.jsx:362
 msgid "Select the field that should be filtered for each card"
-msgstr "Selecciona el campo que debe filtrarse para cada tarjeta"
+msgstr "Pilih bidang yang harus difilter untuk setiap kartu"
 
 #: frontend/src/metabase/dashboard/components/DashboardMoveModal.jsx:28
 msgid "Move dashboard to..."
-msgstr "Mover cuadro de mando a..."
+msgstr "Pindahkan dasbor ke ..."
 
 #: frontend/src/metabase/dashboard/components/DashboardMoveModal.jsx:52
 msgid "Dashboard moved to {0}"
-msgstr "Cuadro de Mando movido a {0}"
+msgstr "Dasbor dipindahkan ke {0}"
 
 #: frontend/src/metabase/dashboard/components/ParametersPopover.jsx:82
 msgid "What do you want to filter?"
-msgstr "¿Qué quieres filtrar?"
+msgstr "Apa yang ingin Anda saring?"
 
 #: frontend/src/metabase/dashboard/components/ParametersPopover.jsx:115
 msgid "What kind of filter?"
-msgstr "¿Qué tipo de filtro?"
+msgstr "Filter seperti apa?"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:13
 #: frontend/src/metabase/visualizations/lib/settings/column.js:231
 #: frontend/src/metabase/visualizations/lib/settings/series.js:90
 #: frontend/src/metabase/visualizations/visualizations/Table.jsx:179
 msgid "Off"
-msgstr "Apagado"
+msgstr "Tidak aktif"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:14
 msgid "1 minute"
-msgstr "1 minuto"
+msgstr "1 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:15
 msgid "5 minutes"
-msgstr "5 minutos"
+msgstr "5 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:16
 msgid "10 minutes"
-msgstr "10 minutos"
+msgstr "10 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:17
 msgid "15 minutes"
-msgstr "15 minutos"
+msgstr "15 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:18
 msgid "30 minutes"
-msgstr "30 minutos"
+msgstr "30 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:19
 msgid "60 minutes"
-msgstr "60 minutos"
+msgstr "60 menit"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:31
 msgid "Auto-refresh"
-msgstr "Auto-Refresco"
+msgstr "Penyegaran otomatis"
 
 #: frontend/src/metabase/dashboard/components/RefreshWidget.jsx:37
 msgid "Refreshing in"
-msgstr "Actualizando en"
+msgstr "Segarkan dalam"
 
 #: frontend/src/metabase/dashboard/components/RemoveFromDashboardModal.jsx:36
 msgid "Remove this question?"
-msgstr "¿Eliminar esta pregunta?"
+msgstr "Hapus pertanyaan ini?"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp.jsx:71
 msgid "Your dashboard was saved"
-msgstr "Se ha guardado tu cuadro de mando."
+msgstr "Dasbor Anda telah disimpan"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp.jsx:76
 msgid "See it"
-msgstr "Verlo"
+msgstr "Lihat hasilnya"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp.jsx:137
 msgid "Save this"
-msgstr "Guardalo"
+msgstr "Simpan semua ini"
 
 #: frontend/src/metabase/dashboard/containers/AutomaticDashboardApp.jsx:170
 msgid "Show more about this"
-msgstr "Mostrar más sobre este/a"
+msgstr "Lihat informasi lebih lanjut tentang ini"
 
 #: frontend/src/metabase/dashboard/containers/DashCardCardParameterMapper.jsx:140
 msgid "This card doesn't have any fields or parameters that can be mapped to this parameter type."
@@ -3084,250 +3085,250 @@ msgstr "Esta tarjeta no tiene campos ni parámetros que coincidan con este tipo 
 
 #: frontend/src/metabase/dashboard/containers/DashCardCardParameterMapper.jsx:142
 msgid "The values in this field don't overlap with the values of any other fields you've chosen."
-msgstr "Los valores en este campo no coinciden con los valores de ningún otro campo que hayas elegido."
+msgstr "Nilai dalam bidang ini tidak tumpang tindih dengan nilai dari bidang lain yang dipilih."
 
 #: frontend/src/metabase/dashboard/containers/DashCardCardParameterMapper.jsx:186
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingFieldPicker.jsx:37
 msgid "No valid fields"
-msgstr "No hay campos válidos"
+msgstr "Tidak ada kolom yang valid"
 
 #: frontend/src/metabase/entities/collections.js:90
 msgid "Name must be 100 characters or less"
-msgstr "El nombre debe tener 100 caracteres o menos"
+msgstr "Nama tidak mengandung lebih dari 100 karakter"
 
 #: frontend/src/metabase/entities/collections.js:104
 msgid "Color is required"
-msgstr "Color es obligatorio"
+msgstr "Sebuah warna diperlukan"
 
 #: frontend/src/metabase/entities/dashboards.js:97
 msgid "What is the name of your dashboard?"
-msgstr "¿Cuál es el nombre de tu cuadro de mando?"
+msgstr "Apa nama dasbor Anda"
 
 #: frontend/src/metabase/home/components/Activity.jsx:92
 msgid "did some super awesome stuff that's hard to describe"
-msgstr "he hecho algunas cosas geniales que son difíciles de describir"
+msgstr "apakah keajaiban sulit dijelaskan"
 
 #: frontend/src/metabase/home/components/Activity.jsx:101
 #: frontend/src/metabase/home/components/Activity.jsx:116
 msgid "created an alert about - "
-msgstr "creado una alerta sobre - "
+msgstr "telah membuat peringatan untuk -"
 
 #: frontend/src/metabase/home/components/Activity.jsx:126
 #: frontend/src/metabase/home/components/Activity.jsx:141
 msgid "deleted an alert about - "
-msgstr "eliminado una alerta sobre - "
+msgstr "hapus peringatan untuk -"
 
 #: frontend/src/metabase/home/components/Activity.jsx:152
 msgid "saved a question about "
-msgstr "guardado una pregunta sobre"
+msgstr "simpan pertanyaan tentang"
 
 #: frontend/src/metabase/home/components/Activity.jsx:165
 msgid "saved a question"
-msgstr "guardado una pregunta"
+msgstr "simpan sebuah pertanyaan"
 
 #: frontend/src/metabase/home/components/Activity.jsx:169
 msgid "deleted a question"
-msgstr "eliminado una pregunta"
+msgstr "hapus sebuah pertanyaan"
 
 #: frontend/src/metabase/home/components/Activity.jsx:172
 msgid "created a dashboard"
-msgstr "creado un cuadro de mando"
+msgstr "membuat sebuah dashboard"
 
 #: frontend/src/metabase/home/components/Activity.jsx:175
 msgid "deleted a dashboard"
-msgstr "eliminado un cuadro de mando"
+msgstr "hapus sebuah dasbor"
 
 #: frontend/src/metabase/home/components/Activity.jsx:181
 #: frontend/src/metabase/home/components/Activity.jsx:196
 msgid "added a question to the dashboard - "
-msgstr "añadido una pregunta al cuadro de mando - "
+msgstr "tambah pertanyaan ke dasbor -"
 
 #: frontend/src/metabase/home/components/Activity.jsx:206
 #: frontend/src/metabase/home/components/Activity.jsx:221
 msgid "removed a question from the dashboard - "
-msgstr "eliminado una pregunta del cuadro de mando - "
+msgstr "hapus pertanyaan dari dasbor -"
 
 #: frontend/src/metabase/home/components/Activity.jsx:231
 #: frontend/src/metabase/home/components/Activity.jsx:238
 msgid "received the latest data from"
-msgstr "recibido los últimos datos de"
+msgstr "terima data terbaru dari"
 
 #: frontend/src/metabase/home/components/Activity.jsx:244
 #: frontend/src/metabase/visualizations/visualizations/ObjectDetail.jsx:273
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr "Tidak Diketahui"
 
 #: frontend/src/metabase/home/components/Activity.jsx:251
 msgid "Hello World!"
-msgstr "Hola Mundo!"
+msgstr "Hai Dunia!"
 
 #: frontend/src/metabase/home/components/Activity.jsx:252
 msgid "Metabase is up and running."
-msgstr "Metabase está funcionando."
+msgstr "Metabase dimulai"
 
 #: frontend/src/metabase/home/components/Activity.jsx:258
 #: frontend/src/metabase/home/components/Activity.jsx:288
 msgid "added the metric "
-msgstr "añadido la métrica"
+msgstr "tambah metrik"
 
 #: frontend/src/metabase/home/components/Activity.jsx:272
 #: frontend/src/metabase/home/components/Activity.jsx:362
 msgid " to the "
-msgstr "a la"
+msgstr " ke "
 
 #: frontend/src/metabase/home/components/Activity.jsx:282
 #: frontend/src/metabase/home/components/Activity.jsx:322
 #: frontend/src/metabase/home/components/Activity.jsx:372
 #: frontend/src/metabase/home/components/Activity.jsx:413
 msgid " table"
-msgstr "tabla"
+msgstr "tabel"
 
 #: frontend/src/metabase/home/components/Activity.jsx:298
 #: frontend/src/metabase/home/components/Activity.jsx:328
 msgid "made changes to the metric "
-msgstr "ha hecho cambios a la métrica"
+msgstr "membuat perubahan pada metrik"
 
 #: frontend/src/metabase/home/components/Activity.jsx:312
 #: frontend/src/metabase/home/components/Activity.jsx:403
 msgid " in the "
-msgstr "en el"
+msgstr "dalam"
 
 #: frontend/src/metabase/home/components/Activity.jsx:335
 msgid "removed the metric "
-msgstr "eliminado la métrica"
+msgstr "hapus metrik"
 
 #: frontend/src/metabase/home/components/Activity.jsx:338
 msgid "created a pulse"
-msgstr "pulso creado"
+msgstr "membuat pulsa"
 
 #: frontend/src/metabase/home/components/Activity.jsx:341
 msgid "deleted a pulse"
-msgstr "pulso eliminado"
+msgstr "hapus pulsa"
 
 #: frontend/src/metabase/home/components/Activity.jsx:347
 #: frontend/src/metabase/home/components/Activity.jsx:378
 msgid "added the filter"
-msgstr "filtro añadido"
+msgstr "tambah filter"
 
 #: frontend/src/metabase/home/components/Activity.jsx:388
 #: frontend/src/metabase/home/components/Activity.jsx:419
 msgid "made changes to the filter"
-msgstr "ha hecho cambios al filtro"
+msgstr "membuat perubahan pada filter"
 
 #: frontend/src/metabase/home/components/Activity.jsx:426
 msgid "removed the filter {0}"
-msgstr "eliminado el filtro {0}"
+msgstr "hapus filter {0}"
 
 #: frontend/src/metabase/home/components/Activity.jsx:429
 msgid "joined!"
-msgstr "se ha unido!"
+msgstr "bergabung dengan kami!"
 
 #: frontend/src/metabase/home/components/Activity.jsx:529
 msgid "Hmmm, looks like nothing has happened yet."
-msgstr "Hmmm, parece que nada ha pasado aún."
+msgstr "Hmm, sepertinya belum ada yang terjadi"
 
 #: frontend/src/metabase/home/components/Activity.jsx:532
 msgid "Save a question and get this baby going!"
-msgstr "¡Guarda una pregunta y haz que esto funcione!"
+msgstr "Simpan pertanyaan dan lanjutkan!"
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:19
 msgid "Ask questions and explore"
-msgstr "Haz preguntas y explora"
+msgstr "Ajukan pertanyaan dan jelajahi"
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:20
 msgid "Click on charts or tables to explore, or ask a new question using the easy interface or the powerful SQL editor."
-msgstr "Haz clic en cuadros o tablas para explorar, o haz una nueva pregunta usando el interfaz sencillo o el potente editor SQL."
+msgstr "Klik pada grafik atau tabel untuk menjelajahinya, atau ajukan pertanyaan baru menggunakan pembangun intuitif atau editor SQL yang kuat."
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:30
 msgid "Make your own charts"
-msgstr "Crea tus propios gráficos"
+msgstr "Buat grafis Anda sendiri"
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:31
 msgid "Create line charts, scatter plots, maps, and more."
-msgstr "Crea gráficos de líneas, gráficos de dispersión, mapas y más."
+msgstr "Buat bagan, titik awan, peta, dan lainnya."
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:41
 msgid "Share what you find"
-msgstr "Comparte lo que encuentres"
+msgstr "Bagikan penemuan Anda"
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:42
 msgid "Create powerful and flexible dashboards, and send regular updates via email or Slack."
-msgstr "Crea cuadros de mando potentes y flexibles, y envía actualizaciones periódicas por correo electrónico o Slack."
+msgstr "Buat dasbor yang kuat dan fleksibel, dan kirim pembaruan rutin melalui email atau Slack."
 
 #: frontend/src/metabase/home/components/NewUserOnboardingModal.jsx:97
 msgid "Let's go"
-msgstr "Vamos allá"
+msgstr "Ayo"
 
 #: frontend/src/metabase/home/components/NextStep.jsx:34
 msgid "Setup Tip"
-msgstr "Consejo de configuración"
+msgstr "Tuning Tip"
 
 #: frontend/src/metabase/home/components/NextStep.jsx:40
 msgid "View all"
-msgstr "Ver todos"
+msgstr "Lihat semua"
 
 #: frontend/src/metabase/home/components/RecentViews.jsx:40
 msgid "Recently Viewed"
-msgstr "Visto Recientemente"
+msgstr "Baru dilihat"
 
 #: frontend/src/metabase/home/components/RecentViews.jsx:75
 msgid "You haven't looked at any dashboards or questions recently"
-msgstr "No has consultado ningún cuadro de mando o pregunta recientemente"
+msgstr "Anda belum melihat dasbor atau pertanyaan baru - baru ini"
 
 #: frontend/src/metabase/home/containers/ArchiveApp.jsx:82
 msgid "{0} items selected"
-msgstr "{0} elemento(s) seleccionado(s)"
+msgstr "{0} item yang dipilih"
 
 #: frontend/src/metabase/home/containers/ArchiveApp.jsx:102
 #: frontend/src/metabase/pulse/components/PulseEdit.jsx:172
 msgid "Unarchive"
-msgstr "Desarchivar"
+msgstr "Unarchive"
 
 #: frontend/src/metabase/home/containers/HomepageApp.jsx:74
 #: frontend/src/metabase/nav/containers/Navbar.jsx:332
 msgid "Activity"
-msgstr "Actividad"
+msgstr "Aktivitas"
 
 #: frontend/src/metabase/home/containers/SearchApp.jsx:28
 msgid "Results for \"{0}\""
-msgstr "Resultados de \"{0}\""
+msgstr "Hasil untuk \" {0} \""
 
 #: frontend/src/metabase/home/containers/SearchApp.jsx:142
 msgid "Pulse"
-msgstr "Pulso"
+msgstr "Pulse"
 
 #: frontend/src/metabase/lib/core.js:7
 msgid "Entity Key"
-msgstr "Clave Entidad"
+msgstr "Entity Key (PK)"
 
 #: frontend/src/metabase/lib/core.js:8 frontend/src/metabase/lib/core.js:14
 #: frontend/src/metabase/lib/core.js:20
 msgid "Overall Row"
-msgstr "Fila General"
+msgstr "Semua baris"
 
 #: frontend/src/metabase/lib/core.js:9
 msgid "The primary key for this table."
-msgstr "La clave principal para esta tabla."
+msgstr "Kunci utama dari tabel ini"
 
 #: frontend/src/metabase/lib/core.js:13
 msgid "Entity Name"
-msgstr "Nombre Entidad"
+msgstr "Nama entitas"
 
 #: frontend/src/metabase/lib/core.js:15
 msgid "The \"name\" of each record. Usually a column called \"name\", \"title\", etc."
-msgstr "El \"nombre\" de cada registro. Por lo general, una columna llamada \"nombre\", \"título\", etc."
+msgstr "Nama, label, kunci kandidat dari setiap record Biasanya sebuah kolom bernama \" nama \", \" title \", \" label \", dll. (UK)"
 
 #: frontend/src/metabase/lib/core.js:19
 msgid "Foreign Key"
-msgstr "Clave Foránea"
+msgstr "Kunci Asing (FK)"
 
 #: frontend/src/metabase/lib/core.js:21
 msgid "Points to another table to make a connection."
-msgstr "Referencia otra tabla para establecer una conexión."
+msgstr "Referensi kunci utama dari meja lain dan buat koneksi."
 
 #: frontend/src/metabase/lib/core.js:25
 msgid "Avatar Image URL"
-msgstr "URL Avatar"
+msgstr "URL dari gambar avatar"
 
 #: frontend/src/metabase/lib/core.js:26 frontend/src/metabase/lib/core.js:31
 #: frontend/src/metabase/lib/core.js:36 frontend/src/metabase/lib/core.js:41
@@ -3351,176 +3352,176 @@ msgstr "URL Avatar"
 #: frontend/src/metabase/lib/core.js:216 frontend/src/metabase/lib/core.js:221
 #: frontend/src/metabase/lib/core.js:226 frontend/src/metabase/lib/core.js:231
 msgid "Common"
-msgstr "Común"
+msgstr "Umum"
 
 #: frontend/src/metabase/lib/core.js:30
 #: frontend/src/metabase/meta/Dashboard.js:81
 #: frontend/src/metabase/qb/components/actions/PivotByCategoryAction.jsx:9
 msgid "Category"
-msgstr "Categoría"
+msgstr "Kategori"
 
 #: frontend/src/metabase/lib/core.js:35
 #: frontend/src/metabase/meta/Dashboard.js:61
 msgid "City"
-msgstr "Ciudad"
+msgstr "Kota / Kotamadya"
 
 #: frontend/src/metabase/lib/core.js:40
 #: frontend/src/metabase/meta/Dashboard.js:73
 msgid "Country"
-msgstr "País"
+msgstr "Negara"
 
 #: frontend/src/metabase/lib/core.js:60
 msgid "Enum"
-msgstr "Enum"
+msgstr "Enumeration"
 
 #: frontend/src/metabase/lib/core.js:65
 msgid "Image URL"
-msgstr "URL Imagen"
+msgstr "URL sebuah gambar"
 
 #: frontend/src/metabase/lib/core.js:70
 msgid "Field containing JSON"
-msgstr "Campo que contiene JSON"
+msgstr "JSON Field"
 
 #: frontend/src/metabase/lib/core.js:75
 msgid "Latitude"
-msgstr "Latitud"
+msgstr "Latitude"
 
 #: frontend/src/metabase/lib/core.js:80
 msgid "Longitude"
-msgstr "Longitud"
+msgstr "Bujur"
 
 #: frontend/src/metabase/lib/core.js:85
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:149
 #: frontend/src/metabase/visualizations/visualizations/Scalar.jsx:39
 msgid "Number"
-msgstr "Número"
+msgstr "Numeric"
 
 #: frontend/src/metabase/lib/core.js:90
 #: frontend/src/metabase/meta/Dashboard.js:65
 msgid "State"
-msgstr "Provincia"
+msgstr "Provinsi"
 
 #: frontend/src/metabase/lib/core.js:95
 msgid "UNIX Timestamp (Seconds)"
-msgstr "Marca de tiempo UNIX (Segundos)"
+msgstr "UNIX Timestamp (Detik)"
 
 #: frontend/src/metabase/lib/core.js:100
 msgid "UNIX Timestamp (Milliseconds)"
-msgstr "Marca de tiempo UNIX (Milisegundos)"
+msgstr "UNIX Timestamp (Milidetik)"
 
 #: frontend/src/metabase/lib/core.js:110
 msgid "Zip Code"
-msgstr "Código Postal"
+msgstr "Kode Pos"
 
 #: frontend/src/metabase/lib/core.js:115
 msgid "Quantity"
-msgstr "Cantidad"
+msgstr "Jumlah"
 
 #: frontend/src/metabase/lib/core.js:120
 msgid "Income"
-msgstr "Ingreso"
+msgstr "Pendapatan"
 
 #: frontend/src/metabase/lib/core.js:125
 msgid "Discount"
-msgstr "Descuento"
+msgstr "Diskon"
 
 #: frontend/src/metabase/lib/core.js:130
 msgid "Creation timestamp"
-msgstr "FechaHora de Creación"
+msgstr "Waktu pembuatan"
 
 #: frontend/src/metabase/lib/core.js:135
 msgid "Creation time"
-msgstr "Hora de Creación"
+msgstr "Waktu pembuatan"
 
 #: frontend/src/metabase/lib/core.js:140
 msgid "Creation date"
-msgstr "Fecha de Creación"
+msgstr "Tanggal pembuatan"
 
 #: frontend/src/metabase/lib/core.js:145
 msgid "Product"
-msgstr "Producto"
+msgstr "Produk"
 
 #: frontend/src/metabase/lib/core.js:150
 msgid "User"
-msgstr "Usuario"
+msgstr "Pengguna"
 
 #: frontend/src/metabase/lib/core.js:155
 msgid "Source"
-msgstr "Fuente"
+msgstr "Asal"
 
 #: frontend/src/metabase/lib/core.js:160
 msgid "Price"
-msgstr "Precio"
+msgstr "Harga"
 
 #: frontend/src/metabase/lib/core.js:165
 msgid "Join timestamp"
-msgstr "Unir por Tiempo"
+msgstr "Lampirkan stempel waktu"
 
 #: frontend/src/metabase/lib/core.js:170
 msgid "Join time"
-msgstr "Unir por Tiempo"
+msgstr "waktu bergabung"
 
 #: frontend/src/metabase/lib/core.js:175
 msgid "Join date"
-msgstr "Unir por Fecha"
+msgstr "tanggal bergabung"
 
 #: frontend/src/metabase/lib/core.js:180
 msgid "Share"
-msgstr "Compartir"
+msgstr "Bagian"
 
 #: frontend/src/metabase/lib/core.js:185
 msgid "Owner"
-msgstr "Propietario"
+msgstr "Pemilik"
 
 #: frontend/src/metabase/lib/core.js:190
 msgid "Company"
-msgstr "Empresa"
+msgstr "Bisnis"
 
 #: frontend/src/metabase/lib/core.js:195
 msgid "Subscription"
-msgstr "Suscripción"
+msgstr "Pendaftaran"
 
 #: frontend/src/metabase/lib/core.js:200
 msgid "Score"
-msgstr "Puntuación"
+msgstr "Skor"
 
 #: frontend/src/metabase/lib/core.js:210
 #: frontend/src/metabase/public/components/widgets/DisplayOptionsPane.jsx:49
 #: frontend/src/metabase/visualizations/lib/settings/visualization.js:17
 msgid "Title"
-msgstr "Título"
+msgstr "Judul"
 
 #: frontend/src/metabase/lib/core.js:215
 msgid "Comment"
-msgstr "Comentario"
+msgstr "Komentar"
 
 #: frontend/src/metabase/lib/core.js:220
 msgid "Cost"
-msgstr "Coste"
+msgstr "Biaya"
 
 #: frontend/src/metabase/lib/core.js:225
 msgid "Gross margin"
-msgstr "Margen Bruto"
+msgstr "Margin kotor"
 
 #: frontend/src/metabase/lib/core.js:230
 msgid "Birthday"
-msgstr "Cumpleaños"
+msgstr "Tanggal lahir"
 
 #: frontend/src/metabase/lib/core.js:241
 msgid "Search box"
-msgstr "Caja de Búsqueda"
+msgstr "Kotak teks"
 
 #: frontend/src/metabase/lib/core.js:242
 msgid "A list of all values"
-msgstr "Una lista con todos los valores"
+msgstr "Daftar semua nilai"
 
 #: frontend/src/metabase/lib/core.js:243
 msgid "Plain input box"
-msgstr "Caja de Texto"
+msgstr "Kotak teks"
 
 #: frontend/src/metabase/lib/core.js:249
 msgid "Everywhere"
-msgstr "En todas partes"
+msgstr "Di mana saja"
 
 #: frontend/src/metabase/lib/core.js:250
 msgid "The default setting. This field will be displayed normally in tables and charts."
@@ -3528,19 +3529,19 @@ msgstr "La configuración predeterminada. Este campo se mostrará normalmente en
 
 #: frontend/src/metabase/lib/core.js:254
 msgid "Only in Detail Views"
-msgstr "Solo en vistas detalladas"
+msgstr "Hanya dalam tampilan mendetail"
 
 #: frontend/src/metabase/lib/core.js:255
 msgid "This field will only be displayed when viewing the details of a single record. Use this for information that's lengthy or that isn't useful in a table or chart."
-msgstr "Este campo solo se mostrará cuando veas los detalles de un solo registro. Úsalo para obtener información larga o que no sea útil en una tabla o gráfico."
+msgstr "Bidang ini hanya akan ditampilkan dalam tampilan detail rekaman. Gunakan pengaturan ini untuk informasi yang lengkap atau tidak relevan dalam tabel atau bagan. "
 
 #: frontend/src/metabase/lib/core.js:259
 msgid "Do Not Include"
-msgstr "No Incluir"
+msgstr "Tidak Ada Tempat"
 
 #: frontend/src/metabase/lib/core.js:260
 msgid "Metabase will never retrieve this field. Use this for sensitive or irrelevant information."
-msgstr "Metabase nunca recuperará este campo. Úsalo para información sensible o irrelevante."
+msgstr "Metabase tidak akan pernah mengambil bidang ini, gunakan pengaturan ini untuk informasi sensitif atau tidak relevan."
 
 #: frontend/src/metabase/lib/expressions/config.js:7
 #: frontend/src/metabase/lib/query.js:614
@@ -3551,177 +3552,177 @@ msgstr "Metabase nunca recuperará este campo. Úsalo para información sensible
 #: resources/automagic_dashboards/field/Country.yaml
 #: resources/automagic_dashboards/field/GenericField.yaml
 msgid "Count"
-msgstr "Contar"
+msgstr "Jumlah baris"
 
 #: frontend/src/metabase/lib/expressions/config.js:8
 msgid "CumulativeCount"
-msgstr "RecuentoAcumulativo"
+msgstr "Jumlah baris kumulatif"
 
 #: frontend/src/metabase/lib/expressions/config.js:9
 #: frontend/src/metabase/qb/components/drill/SummarizeColumnDrill.js:17
 #: frontend/src/metabase/visualizations/lib/utils.js:127
 msgid "Sum"
-msgstr "Suma"
+msgstr "Jumlah"
 
 #: frontend/src/metabase/lib/expressions/config.js:10
 msgid "CumulativeSum"
-msgstr "SumaAcumulativa"
+msgstr "Jumlah kumulatif"
 
 #: frontend/src/metabase/lib/expressions/config.js:11
 #: frontend/src/metabase/visualizations/lib/utils.js:128
 msgid "Distinct"
-msgstr "Distinto"
+msgstr "Jumlah nilai yang berbeda"
 
 #. With accents a problem occured, I removed the accents (temporarily ?)
 #: frontend/src/metabase/lib/expressions/config.js:12
 msgid "StandardDeviation"
-msgstr "DesviacionEstandar"
+msgstr "Standar deviasi"
 
 #: frontend/src/metabase/lib/expressions/config.js:13
 #: frontend/src/metabase/visualizations/lib/utils.js:125
 msgid "Average"
-msgstr "Media"
+msgstr "Rata-rata"
 
 #: frontend/src/metabase/lib/expressions/config.js:14
 #: frontend/src/metabase/qb/components/drill/SummarizeColumnDrill.js:25
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingGaugeSegments.jsx:48
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:450
 msgid "Min"
-msgstr "Mín"
+msgstr "Minimum"
 
 #: frontend/src/metabase/lib/expressions/config.js:15
 #: frontend/src/metabase/qb/components/drill/SummarizeColumnDrill.js:29
 #: frontend/src/metabase/visualizations/components/settings/ChartSettingGaugeSegments.jsx:57
 #: frontend/src/metabase/visualizations/lib/settings/graph.js:458
 msgid "Max"
-msgstr "Máx"
+msgstr "Maksimum"
 
 #: frontend/src/metabase/lib/expressions/parser.js:384
 msgid "sad sad panda, lexing errors detected"
-msgstr "triste panda triste, errores léxicos detectados"
+msgstr "Syntax atau leksikal erupsi telah terdeteksi"
 
 #: frontend/src/metabase/lib/formatting.js:724
 msgid "{0} second"
 msgid_plural "{0} seconds"
-msgstr[0] "{0} segundo"
-msgstr[1] "{0} segundos"
+msgstr[0] "{0} detik"
+msgstr[1] "{0} detik"
 
 #: frontend/src/metabase/lib/formatting.js:727
 msgid "{0} minute"
 msgid_plural "{0} minutes"
-msgstr[0] "{0} minuto"
-msgstr[1] "{0} minutos"
+msgstr[0] "{0} menit"
+msgstr[1] "{0} menit"
 
 #: frontend/src/metabase/lib/greeting.js:4
 msgid "Hey there"
-msgstr "Hola"
+msgstr "Halo"
 
 #: frontend/src/metabase/lib/greeting.js:5
 #: frontend/src/metabase/lib/greeting.js:29
 msgid "How's it going"
-msgstr "¿Cómo te va"
+msgstr "Bagaimana kabarmu?"
 
 #: frontend/src/metabase/lib/greeting.js:6
 msgid "Howdy"
-msgstr "Hola"
+msgstr "Hai"
 
 #: frontend/src/metabase/lib/greeting.js:7
 msgid "Greetings"
-msgstr "Saludos"
+msgstr "Selamat datang"
 
 #: frontend/src/metabase/lib/greeting.js:8
 msgid "Good to see you"
-msgstr "Que bueno verte"
+msgstr "Senang bertemu dengan Anda lagi"
 
 #: frontend/src/metabase/lib/greeting.js:12
 msgid "What do you want to know?"
-msgstr "¿Que quieres saber?"
+msgstr "Apa yang ingin Anda ketahui?"
 
 #: frontend/src/metabase/lib/greeting.js:13
 msgid "What's on your mind?"
-msgstr "¿Qué tienes en mente?"
+msgstr "Apa yang ada dalam pikiranmu?"
 
 #: frontend/src/metabase/lib/greeting.js:14
 msgid "What do you want to find out?"
-msgstr "¿Qué quieres saber?"
+msgstr "Apa yang ingin Anda temukan?"
 
 #: frontend/src/metabase/lib/query.js:612
 #: frontend/src/metabase/lib/schema_metadata.js:451
 #: frontend/src/metabase/query_builder/components/GuiQueryEditor.jsx:246
 msgid "Raw data"
-msgstr "Datos brutos"
+msgstr "Data mentah"
 
 #: frontend/src/metabase/lib/query.js:616
 msgid "Cumulative count"
-msgstr "Recuento acumulativo"
+msgstr "Jumlah kumulatif"
 
 #: frontend/src/metabase/lib/query.js:619
 msgid "Average of "
-msgstr "Media de"
+msgstr "Rata-rata"
 
 #: frontend/src/metabase/lib/query.js:624
 msgid "Distinct values of "
-msgstr "Valores distintos de"
+msgstr "Nilai unik dari"
 
 #: frontend/src/metabase/lib/query.js:629
 msgid "Standard deviation of "
-msgstr "Desviación estándar de"
+msgstr "Standar deviasi dari"
 
 #: frontend/src/metabase/lib/query.js:634
 msgid "Sum of "
-msgstr "Suma de"
+msgstr "Jumlah dari"
 
 #: frontend/src/metabase/lib/query.js:639
 msgid "Cumulative sum of "
-msgstr "Suma acumulativa de"
+msgstr "Jumlah kumulatif dari"
 
 #: frontend/src/metabase/lib/query.js:644
 msgid "Maximum of "
-msgstr "Máximo de"
+msgstr "Maksimum"
 
 #: frontend/src/metabase/lib/query.js:649
 msgid "Minimum of "
-msgstr "Mínimo de"
+msgstr "Minimal "
 
 #: frontend/src/metabase/lib/query.js:663
 msgid "Grouped by "
-msgstr "Agrupado por"
+msgstr "Dikelompokan berdasarkan"
 
 #: frontend/src/metabase/lib/query.js:677
 msgid "Filtered by "
-msgstr "Filtrado por"
+msgstr "Difilter berdasarkan"
 
 #: frontend/src/metabase/lib/query.js:706
 msgid "Sorted by "
-msgstr "Ordenado por"
+msgstr "Disortir menurut"
 
 #: frontend/src/metabase/lib/schema_metadata.js:221
 msgid "True"
-msgstr "Verdadero"
+msgstr "Benar"
 
 #: frontend/src/metabase/lib/schema_metadata.js:221
 msgid "False"
-msgstr "Falso"
+msgstr "Salah"
 
 #: frontend/src/metabase/lib/schema_metadata.js:305
 msgid "Select longitude field"
-msgstr "Selecciona el campo de longitud"
+msgstr "Pilih bidang bujur"
 
 #: frontend/src/metabase/lib/schema_metadata.js:306
 msgid "Enter upper latitude"
-msgstr "Latitud Superior"
+msgstr "Masukkan lintang atas"
 
 #: frontend/src/metabase/lib/schema_metadata.js:307
 msgid "Enter left longitude"
-msgstr "Longitud Izquierda"
+msgstr "Masukkan bujur lebih rendah"
 
 #: frontend/src/metabase/lib/schema_metadata.js:308
 msgid "Enter lower latitude"
-msgstr "Latitud Inferior"
+msgstr "Masukkan lintang bawah"
 
 #: frontend/src/metabase/lib/schema_metadata.js:309
 msgid "Enter right longitude"
-msgstr "Longitud Derecha"
+msgstr "Masukkan bujur atas"
 
 #: frontend/src/metabase/lib/schema_metadata.js:345
 #: frontend/src/metabase/lib/schema_metadata.js:365
@@ -3731,7 +3732,7 @@ msgstr "Longitud Derecha"
 #: frontend/src/metabase/lib/schema_metadata.js:395
 #: frontend/src/metabase/lib/schema_metadata.js:400
 msgid "Is"
-msgstr "Es"
+msgstr "Adalah"
 
 #: frontend/src/metabase/lib/schema_metadata.js:346
 #: frontend/src/metabase/lib/schema_metadata.js:366
@@ -3739,7 +3740,7 @@ msgstr "Es"
 #: frontend/src/metabase/lib/schema_metadata.js:390
 #: frontend/src/metabase/lib/schema_metadata.js:396
 msgid "Is not"
-msgstr "No es"
+msgstr "Bukan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:347
 #: frontend/src/metabase/lib/schema_metadata.js:361
@@ -3749,7 +3750,7 @@ msgstr "No es"
 #: frontend/src/metabase/lib/schema_metadata.js:391
 #: frontend/src/metabase/lib/schema_metadata.js:401
 msgid "Is empty"
-msgstr "Vacío"
+msgstr "Apakah kosong"
 
 #: frontend/src/metabase/lib/schema_metadata.js:348
 #: frontend/src/metabase/lib/schema_metadata.js:362
@@ -3759,190 +3760,190 @@ msgstr "Vacío"
 #: frontend/src/metabase/lib/schema_metadata.js:392
 #: frontend/src/metabase/lib/schema_metadata.js:402
 msgid "Not empty"
-msgstr "No Vacío"
+msgstr "Tidak kosong"
 
 #: frontend/src/metabase/lib/schema_metadata.js:354
 msgid "Equal to"
-msgstr "Igual a"
+msgstr "Sama dengan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:355
 msgid "Not equal to"
-msgstr "Distinto a"
+msgstr "Berbeda dari"
 
 #: frontend/src/metabase/lib/schema_metadata.js:356
 msgid "Greater than"
-msgstr "Mayor que"
+msgstr "Lebih besar dari"
 
 #: frontend/src/metabase/lib/schema_metadata.js:357
 msgid "Less than"
-msgstr "Menor que"
+msgstr "Kurang dari"
 
 #: frontend/src/metabase/lib/schema_metadata.js:358
 #: frontend/src/metabase/lib/schema_metadata.js:384
 #: frontend/src/metabase/query_builder/components/filters/pickers/DatePicker.jsx:285
 #: frontend/src/metabase/query_builder/components/filters/pickers/TimePicker.jsx:96
 msgid "Between"
-msgstr "Entre"
+msgstr "Antara"
 
 #: frontend/src/metabase/lib/schema_metadata.js:359
 msgid "Greater than or equal to"
-msgstr "Mayor o igual a"
+msgstr "Lebih besar dari atau sama dengan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:360
 msgid "Less than or equal to"
-msgstr "Menos o igual a"
+msgstr "Kurang dari atau sama dengan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:367
 msgid "Contains"
-msgstr "Contiene"
+msgstr "Mengandung"
 
 #: frontend/src/metabase/lib/schema_metadata.js:368
 msgid "Does not contain"
-msgstr "No contiene"
+msgstr "Tidak mengandung"
 
 #: frontend/src/metabase/lib/schema_metadata.js:371
 msgid "Starts with"
-msgstr "Empieza con"
+msgstr "Mulai dengan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:372
 msgid "Ends with"
-msgstr "Termina en"
+msgstr "Berakhir dengan"
 
 #: frontend/src/metabase/lib/schema_metadata.js:382
 #: frontend/src/metabase/query_builder/components/filters/pickers/DatePicker.jsx:264
 #: frontend/src/metabase/query_builder/components/filters/pickers/TimePicker.jsx:74
 msgid "Before"
-msgstr "Antes"
+msgstr "Sebelum"
 
 #: frontend/src/metabase/lib/schema_metadata.js:383
 #: frontend/src/metabase/query_builder/components/filters/pickers/DatePicker.jsx:271
 #: frontend/src/metabase/query_builder/components/filters/pickers/TimePicker.jsx:85
 msgid "After"
-msgstr "Después"
+msgstr "Setelah"
 
 #: frontend/src/metabase/lib/schema_metadata.js:397
 msgid "Inside"
-msgstr "Dentro"
+msgstr "Di"
 
 #: frontend/src/metabase/lib/schema_metadata.js:453
 msgid "Just a table with the rows in the answer, no additional operations."
-msgstr "Solo una tabla con las filas en la respuesta, sin operaciones adicionales."
+msgstr "Hanya sebuah tabel dengan garis - garis ini dalam jawaban, tidak ada operasi tambahan."
 
 #: frontend/src/metabase/lib/schema_metadata.js:459
 msgid "Count of rows"
-msgstr "Número de filas"
+msgstr "Jumlah baris"
 
 #: frontend/src/metabase/lib/schema_metadata.js:461
 msgid "Total number of rows in the answer."
-msgstr "Número total de filas en la respuesta."
+msgstr "Jumlah total baris dalam respons."
 
 #: frontend/src/metabase/lib/schema_metadata.js:467
 msgid "Sum of ..."
-msgstr "Suma de ..."
+msgstr "Jumlah dari ..."
 
 #: frontend/src/metabase/lib/schema_metadata.js:469
 msgid "Sum of all the values of a column."
-msgstr "Suma de todos los valores de una columna."
+msgstr "Jumlah semua nilai dalam kolom."
 
 #: frontend/src/metabase/lib/schema_metadata.js:475
 msgid "Average of ..."
-msgstr "Media de ..."
+msgstr "Rata-rata ..."
 
 #: frontend/src/metabase/lib/schema_metadata.js:477
 msgid "Average of all the values of a column"
-msgstr "Promedio de todos los valores de una columna"
+msgstr "Rata-rata semua nilai dalam kolom"
 
 #: frontend/src/metabase/lib/schema_metadata.js:483
 msgid "Number of distinct values of ..."
-msgstr "Número de valores distintos de ..."
+msgstr "Jumlah nilai berbeda dari ..."
 
 #: frontend/src/metabase/lib/schema_metadata.js:485
 msgid "Number of unique values of a column among all the rows in the answer."
-msgstr "Número de valores únicos de una columna entre todas las filas en la respuesta."
+msgstr "Jumlah nilai unik dari suatu kolom di antara semua baris dalam tanggapan."
 
 #: frontend/src/metabase/lib/schema_metadata.js:491
 msgid "Cumulative sum of ..."
-msgstr "Suma acumulada de ..."
+msgstr "Jumlah kumulatif ..."
+
 
 #: frontend/src/metabase/lib/schema_metadata.js:493
 msgid "Additive sum of all the values of a column.\\ne.x. total revenue over time."
-msgstr "Suma aditiva de todos los valores de una columna.\n"
-" e.g. los ingresos totales a lo largo del tiempo"
+msgstr "Jumlah kumulatif dari semua nilai dalam kolom, misalnya: Total perolehan dari waktu ke waktu."
 
 #: frontend/src/metabase/lib/schema_metadata.js:499
 msgid "Cumulative count of rows"
-msgstr "Recuento acumulado de filas"
+msgstr "Jumlah baris kumulatif"
 
 #: frontend/src/metabase/lib/schema_metadata.js:501
 msgid "Additive count of the number of rows.\\ne.x. total number of sales over time."
-msgstr "Recuento aditiva del número de filas.\n"
-" e.g. número total de ventas en el tiempo"
+msgstr "Jumlah kumulatif baris, mis. Jumlah total penjualan dari waktu ke waktu."
 
 #: frontend/src/metabase/lib/schema_metadata.js:507
 msgid "Standard deviation of ..."
-msgstr "Desviación estándar de ..."
+msgstr "Standar deviasi dari ..."
+
 
 #: frontend/src/metabase/lib/schema_metadata.js:509
 msgid "Number which expresses how much the values of a column vary among all rows in the answer."
-msgstr "Número que expresa cuánto varían los valores de una columna entre todas las filas en la respuesta."
+msgstr "Angka yang menyatakan dispersi nilai kolom di antara semua baris dalam respons."
 
 #: frontend/src/metabase/lib/schema_metadata.js:515
 msgid "Minimum of ..."
-msgstr "Mínimo de ..."
+msgstr "Minimal ..."
 
 #: frontend/src/metabase/lib/schema_metadata.js:517
 msgid "Minimum value of a column"
-msgstr "Valor mínimo de una columna"
+msgstr "Nilai minimum dari sebuah kolom"
 
 #: frontend/src/metabase/lib/schema_metadata.js:523
 msgid "Maximum of ..."
-msgstr "Máximo de ..."
+msgstr "Maksimum ..."
 
 #: frontend/src/metabase/lib/schema_metadata.js:525
 msgid "Maximum value of a column"
-msgstr "Valor máximo de una columna"
+msgstr "Nilai maksimum dari sebuah kolom"
 
 #: frontend/src/metabase/lib/schema_metadata.js:533
 msgid "Break out by dimension"
-msgstr "Desglosar por dimensión"
+msgstr "Meledak berdasarkan dimensi"
 
 #: frontend/src/metabase/lib/settings.js:93
 msgid "lower case letter"
-msgstr "letra en minúsculas"
+msgstr "huruf kecil"
 
 #: frontend/src/metabase/lib/settings.js:95
 msgid "upper case letter"
-msgstr "letra en mayúsculas"
+msgstr "huruf besar"
 
 #: frontend/src/metabase/lib/settings.js:97
 #: src/metabase/automagic_dashboards/core.clj
 msgid "number"
-msgstr "número"
+msgstr "nomor"
 
 #: frontend/src/metabase/lib/settings.js:99
 msgid "special character"
-msgstr "carácter especial"
+msgstr "karakter khusus"
 
 #: frontend/src/metabase/lib/settings.js:105
 msgid "must be"
-msgstr "debe ser"
+msgstr "harus"
 
 #: frontend/src/metabase/lib/settings.js:105
 #: frontend/src/metabase/lib/settings.js:106
 msgid "characters long"
-msgstr "caracteres"
+msgstr "karakter panjang"
 
 #: frontend/src/metabase/lib/settings.js:106
 msgid "Must be"
-msgstr "Debe ser"
+msgstr "Harus"
 
 #: frontend/src/metabase/lib/settings.js:122
 msgid "and include"
-msgstr "e incluir"
+msgstr "dan sertakan"
 
 #: frontend/src/metabase/lib/utils.js:92
 msgid "zero"
-msgstr "cero"
+msgstr "nol"
 
 #: frontend/src/metabase/lib/utils.js:93
 msgid "one"
@@ -5468,35 +5469,35 @@ msgstr "Ingresa el número deseado"
 #: frontend/src/metabase/query_builder/components/filters/pickers/SelectPicker.jsx:83
 #: frontend/src/metabase/visualizations/visualizations/ObjectDetail.jsx:100
 msgid "Empty"
-msgstr "Vacío"
+msgstr "Kosong"
 
 #: frontend/src/metabase/query_builder/components/filters/pickers/SelectPicker.jsx:116
 msgid "Find a value"
-msgstr "Encuentra un valor"
+msgstr "Cari nilai"
 
 #: frontend/src/metabase/query_builder/components/filters/pickers/SpecificDatePicker.jsx:113
 msgid "Hide calendar"
-msgstr "Esconder calendario"
+msgstr "Sembunyikan kalender"
 
 #: frontend/src/metabase/query_builder/components/filters/pickers/SpecificDatePicker.jsx:113
 msgid "Show calendar"
-msgstr "Mostrar calendario"
+msgstr "Tampilkan kalender"
 
 #: frontend/src/metabase/query_builder/components/filters/pickers/TextPicker.jsx:97
 msgid "You can enter multiple values separated by commas"
-msgstr "Puedes ingresar varios valores separados por comas"
+msgstr "Anda dapat memasukan banyak nilai dipisahkan dengan koma"
 
 #: frontend/src/metabase/query_builder/components/filters/pickers/TextPicker.jsx:38
 msgid "Enter desired text"
-msgstr "Ingresa el texto deseado"
+msgstr "Masukan text"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:83
 msgid "Try it"
-msgstr "Pruébalo"
+msgstr "Coba"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:105
 msgid "What's this for?"
-msgstr "¿Para qué sirve esto?"
+msgstr "Kegunaan?"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorHelp.jsx:107
 msgid "Variables in native queries let you dynamically replace values in your queries using filter widgets or through the URL."
@@ -5536,23 +5537,23 @@ msgstr "Lee la documentación completa"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:127
 msgid "Filter label"
-msgstr "Filtro de Etiqueta"
+msgstr "Filter label"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:139
 msgid "Variable type"
-msgstr "Tipo de Variable"
+msgstr "Tipe variabel"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:148
 msgid "Text"
-msgstr "Texto"
+msgstr "Text"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:150
 msgid "Date"
-msgstr "Fecha"
+msgstr "Tanggal"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:151
 msgid "Field Filter"
-msgstr "Filtro de Campo"
+msgstr "Filter bidang"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:157
 msgid "Field to map to"
@@ -5560,88 +5561,88 @@ msgstr "Campo para mapear a"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:179
 msgid "Filter widget type"
-msgstr "Tipo de filtro"
+msgstr "Filter tipe widget"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:201
 msgid "Required?"
-msgstr "¿Obligatorio?"
+msgstr "Wajib?"
 
 #: frontend/src/metabase/query_builder/components/template_tags/TagEditorParam.jsx:211
 msgid "Default filter widget value"
-msgstr "Valor por defecto del filtro"
+msgstr "Nilai default filter widget"
 
 #: frontend/src/metabase/query_builder/containers/ArchiveQuestionModal.jsx:46
 msgid "Archive this question?"
-msgstr "¿Archivar esta pregunta?"
+msgstr "Arsip pertanyaan ini?"
 
 #: frontend/src/metabase/query_builder/containers/ArchiveQuestionModal.jsx:57
 msgid "This question will be removed from any dashboards or pulses using it."
-msgstr "Esta pregunta se eliminará de cualquier cuadto de mando o pulso que lo usen."
+msgstr "Pertanyaan ini akan dihapus dari seluruh dashboard dan pulses."
 
 #: frontend/src/metabase/query_builder/containers/QueryBuilder.jsx:136
 msgid "Question"
-msgstr "Pregunta"
+msgstr "Pertanyaan"
 
 #: frontend/src/metabase/questions/containers/AddToDashboard.jsx:11
 msgid "Pick a question to add"
-msgstr "Elige una pregunta para añadir"
+msgstr "Pilih pertanyaan untuk ditambahkan"
 
 #: frontend/src/metabase/reference/components/EditHeader.jsx:19
 msgid "You are editing this page"
-msgstr "Estás editando esta página"
+msgstr "Anda mengubah halaman ini"
 
 #: frontend/src/metabase/reference/components/EditableReferenceHeader.jsx:101
 #: frontend/src/metabase/reference/components/ReferenceHeader.jsx:63
 msgid "See this {0}"
-msgstr "Ver este {0}"
+msgstr "Anda melihat {0}"
 
 #: frontend/src/metabase/reference/components/EditableReferenceHeader.jsx:120
 msgid "A subset of"
-msgstr "Un subconjunto de"
+msgstr "Bagian dari"
 
 #: frontend/src/metabase/reference/components/Field.jsx:47
 #: frontend/src/metabase/reference/components/Field.jsx:86
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:32
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:68
 msgid "Select a field type"
-msgstr "Selecciona un tipo de campo"
+msgstr "Pilih tipe field"
 
 #: frontend/src/metabase/reference/components/Field.jsx:56
 #: frontend/src/metabase/reference/components/Field.jsx:71
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:41
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:57
 msgid "No field type"
-msgstr "Sin tipo de campo"
+msgstr "Tidak ada tipe field"
 
 #: frontend/src/metabase/reference/components/FieldToGroupBy.jsx:22
 msgid "by"
-msgstr "por"
+msgstr "untuk"
 
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:25
 #: frontend/src/metabase/reference/databases/FieldList.jsx:152
 #: frontend/src/metabase/reference/segments/SegmentFieldList.jsx:153
 msgid "Field type"
-msgstr "Tipo campo"
+msgstr "Tipe field"
 
 #: frontend/src/metabase/reference/components/FieldTypeDetail.jsx:72
 msgid "Select a Foreign Key"
-msgstr "Selecciona una Clabe foránea"
+msgstr "Pilih Foreign key"
 
 #: frontend/src/metabase/reference/components/Formula.jsx:53
 msgid "View the {0} formula"
-msgstr "Ver la fórmula de {0}"
+msgstr "Lihat formula {0}"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:80
 msgid "Why this {0} is important"
-msgstr "Por qué este {0} es importante"
+msgstr "Mengapa {0} penting"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:81
 msgid "Why this {0} is interesting"
-msgstr "Por qué este {0} es interesante"
+msgstr "Mengapa {0} menarik"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:87
 msgid "Nothing important yet"
-msgstr "Nada importante todavía"
+msgstr "Belum ada yang penting"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:88
 #: frontend/src/metabase/reference/databases/DatabaseDetail.jsx:168
@@ -5651,11 +5652,11 @@ msgstr "Nada importante todavía"
 #: frontend/src/metabase/reference/segments/SegmentDetail.jsx:219
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:229
 msgid "Nothing interesting yet"
-msgstr "Nada interesante todavía"
+msgstr "Belum ada yang menarik"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:93
 msgid "Things to be aware of about this {0}"
-msgstr "Cosas a tener en cuenta acerca de este {0}"
+msgstr "Hal yang perlu diperhatikan {0}"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:97
 #: frontend/src/metabase/reference/databases/DatabaseDetail.jsx:178
@@ -5665,44 +5666,44 @@ msgstr "Cosas a tener en cuenta acerca de este {0}"
 #: frontend/src/metabase/reference/segments/SegmentDetail.jsx:229
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:239
 msgid "Nothing to be aware of yet"
-msgstr "Nada de lo que estar enterado todavía"
+msgstr "Belum ada yang perlu diperhatikan"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:103
 msgid "Explore this metric"
-msgstr "Explora esta métrica"
+msgstr "Jelajasi metrik"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:105
 msgid "View this metric"
-msgstr "Ver esta métrica"
+msgstr "Lihat metrik"
 
 #: frontend/src/metabase/reference/components/GuideDetail.jsx:112
 msgid "By {0}"
-msgstr "Por {0}"
+msgstr "Untuk {0}"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:146
 msgid "Remove item"
-msgstr "Eliminar elemento"
+msgstr "Hapus barang"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:155
 msgid "Why is this dashboard the most important?"
-msgstr "¿Por qué este cuadro de mando es el más importante?"
+msgstr "Mengapa dashboard ini paling penting?"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:156
 msgid "What is useful or interesting about this {0}?"
-msgstr "¿Qué es útil o interesante sobre este {0}?"
+msgstr "Apa yang berguna atau bermanfaat tentang ini {0}?"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:160
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:174
 msgid "Write something helpful here"
-msgstr "Escribe algo útil aquí"
+msgstr "Tulis sesuatu yang bermanfaat disini"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:169
 msgid "Is there anything users of this dashboard should be aware of?"
-msgstr "¿Hay algo que los usuarios de este cuadro de mando deben tener en cuenta?"
+msgstr "Apakah ada yang diperhatikan oleh pengguna pada dashboard ini?"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:170
 msgid "Anything users should be aware of about this {0}?"
-msgstr "¿Hay alguna cosa que los usuarios deben saber sobre este {0}?"
+msgstr "Hal yang perlu diperhatikan oleh pengguna tentang ini {0}?"
 
 #: frontend/src/metabase/reference/components/GuideDetailEditor.jsx:182
 #: frontend/src/metabase/reference/components/MetricImportantFieldsDetail.jsx:26
@@ -5736,7 +5737,7 @@ msgstr "Cosas a tener en cuenta acerca de esta base de datos"
 #: frontend/src/metabase/reference/databases/DatabaseList.jsx:46
 #: frontend/src/metabase/reference/guide/BaseSidebar.jsx:39
 msgid "Databases and tables"
-msgstr "Bases de datos y tablas"
+msgstr "Tabel dan database"
 
 #: frontend/src/metabase/admin/tasks/containers/TasksApp.jsx:68
 #: frontend/src/metabase/reference/databases/DatabaseSidebar.jsx:27
@@ -5750,23 +5751,23 @@ msgstr "Bases de datos y tablas"
 #: frontend/src/metabase/reference/segments/SegmentFieldSidebar.jsx:31
 #: frontend/src/metabase/reference/segments/SegmentSidebar.jsx:30
 msgid "Details"
-msgstr "Detalles"
+msgstr "Detail"
 
 #: frontend/src/metabase/reference/databases/DatabaseSidebar.jsx:33
 #: frontend/src/metabase/reference/databases/TableList.jsx:111
 msgid "Tables in {0}"
-msgstr "Tablas en {0}"
+msgstr "Tabel di {0}"
 
 #: frontend/src/metabase/reference/databases/FieldDetail.jsx:222
 #: frontend/src/metabase/reference/databases/TableDetail.jsx:200
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:218
 msgid "Actual name in database"
-msgstr "Nombre real en la base de datos"
+msgstr "Nama sebenernya di dalam database"
 
 #: frontend/src/metabase/reference/databases/FieldDetail.jsx:231
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:227
 msgid "Why this field is interesting"
-msgstr "Por qué este campo es interesante"
+msgstr "Mengapa field ini menarik"
 
 #: frontend/src/metabase/reference/databases/FieldDetail.jsx:241
 #: frontend/src/metabase/reference/segments/SegmentFieldDetail.jsx:237
